@@ -1,0 +1,48 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-create-vacancy {
+  background-image: url('../images/icons-s8c2a0e3c61.png');
+  background-position: 0 -73px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 52px;
+  width: 52px;
+}
+
+.icon-create-resume {
+  background-image: url('../images/icons-s8c2a0e3c61.png');
+  background-position: 0 -16px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 52px;
+  width: 52px;
+}
+
+.icon-blue-double-arrow {
+  background-image: url('../images/icons-s8c2a0e3c61.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 11px;
+  width: 5px;
+}
+
+.icon-white-double-arrow {
+  background-image: url('../images/icons-s8c2a0e3c61.png');
+  background-position: 0 -130px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 11px;
+  width: 5px;
+}

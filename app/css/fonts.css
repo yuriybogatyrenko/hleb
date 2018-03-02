@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'RotondaC';
+    src: url('../local/templates/globus/design/fonts/hinted-RotondaC/hinted-RotondaC.eot'),
+    url('../local/templates/globus/design/fonts/hinted-RotondaC/hinted-RotondaC.ttf') format('truetype'),
+    url('../local/templates/globus/design/fonts/hinted-RotondaC/hinted-RotondaC.svg#RotondaC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RotondaC';
+    src: url('../local/templates/globus/design/fonts/hinted-RotondaC/hinted-RotondaC-Bold.eot'),
+    url('../local/templates/globus/design/fonts/hinted-RotondaC/hinted-RotondaC-Bold.ttf') format('truetype'),
+    url('../local/templates/globus/design/fonts/hinted-RotondaC/hinted-RotondaC-Bold.svg#RotondaC-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('../local/templates/globus/design/fonts/FTN88__C/FTN88__C.eot');
+    src: url('../local/templates/globus/design/fonts/FTN88__C/FTN88__C.eot?#iefix') format('embedded-opentype'), url('../local/templates/globus/design/fonts/FTN88__C/FTN88__C.woff2') format('woff2'), url('../local/templates/globus/design/fonts/FTN88__C/FTN88__C.woff') format('woff'), url('../local/templates/globus/design/fonts/FTN88__C/FTN88__C.ttf') format('truetype'), url('../local/templates/globus/design/fonts/FTN88__C/FTN88__C.svg#futura_pt_cond_boldcobl') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_pt_cond_bookcreg';
+    src: url('../local/templates/globus/design/fonts/FTN47__C/FTN47__C.eot');
+    src: url('../local/templates/globus/design/fonts/FTN47__C/FTN47__C.eot?#iefix') format('embedded-opentype'), url('../local/templates/globus/design/fonts/FTN47__C/FTN47__C.woff2') format('woff2'), url('../local/templates/globus/design/fonts/FTN47__C/FTN47__C.woff') format('woff'), url('../local/templates/globus/design/fonts/FTN47__C/FTN47__C.ttf') format('truetype'), url('../local/templates/globus/design/fonts/FTN47__C/FTN47__C.svg#futura_pt_cond_bookcreg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FTN57__C';
+    src: url('../local/templates/globus/design/fonts/FTN57__C/FTN57__C.eot');
+    src: url('../local/templates/globus/design/fonts/FTN57__C/FTN57__C.eot?#iefix') format('embedded-opentype'), url('../local/templates/globus/design/fonts/FTN57__C/FTN57__C.woff') format('woff'), url('../local/templates/globus/design/fonts/FTN57__C/FTN57__C.ttf') format('truetype'), url('../local/templates/globus/design/fonts/FTN57__C/FTN57__C.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoe';
+    src: url('../local/templates/globus/design/fonts/segoe.eot');
+    src: url('../local/templates/globus/design/fonts/segoe.eot?#iefix') format('embedded-opentype'), url('../local/templates/globus/design/fonts/segoe.woff2') format('woff2'), url('../local/templates/globus/design/fonts/segoe.woff') format('woff'), url('../local/templates/globus/design/fonts/segoe.ttf') format('truetype'), url('../local/templates/globus/design/fonts/segoe.svg#futura_pt_cond_bookcreg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*С‚СѓС‚ РЅРµС‚Сѓ РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°*/
+@font-face {
+    font-family: 'akrobatblack';
+    /*src: url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff2') format('woff2'), url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff') format('woff');*/
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-BlackA.eot');
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-BlackA.eot?#iefix') format('embedded-opentype'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-BlackA.woff') format('woff'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-BlackA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatbold';
+    /*src: url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff2') format('woff2'), url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff') format('woff');*/
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-BoldA.eot');
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-BoldA.eot?#iefix') format('embedded-opentype'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-BoldA.woff') format('woff'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-BoldA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatextrabold';
+    /*src: url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff2') format('woff2'), url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff') format('woff');*/
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ExtraBold.eot');
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ExtraBold.woff') format('woff'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatextralight';
+    /*src: url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff2') format('woff2'), url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff') format('woff');*/
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ExtraLightA.eot');
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ExtraLightA.eot?#iefix') format('embedded-opentype'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ExtraLightA.woff') format('woff'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ExtraLightA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatlight';
+    /*src: url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff2') format('woff2'), url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff') format('woff');*/
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-LightA.eot');
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-LightA.eot?#iefix') format('embedded-opentype'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-LightA.woff') format('woff'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-LightA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatregular';
+    /*src: url('../local/templates/globus/design/fonts/old/Akrobat-regular-webfont/Akrobat-Regular.woff') format('woff');*/
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-Regular.eot');
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-Regular.woff2') format('woff2'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-Regular.woff') format('woff'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatsemibold';
+    /*src: url('../local/templates/globus/design/fonts/old/Akrobat-semibold-webfont/akrobat-semibold-webfont_old.woff2') format('woff2'), url('../local/templates/globus/design/fonts/old/Akrobat-semibold-webfont/akrobat-semibold-webfont_old.woff') format('woff');*/
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-SemiBold.eot');
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-SemiBold.woff2') format('woff2'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-SemiBold.woff') format('woff'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatthin';
+    /*src: url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff2') format('woff2'), url('../local/templates/globus/design/fonts/old/Akrobat-extrabold-webfont/akrobat-extrabold-webfont.woff') format('woff');*/
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ThinA.eot');
+    src: url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ThinA.eot?#iefix') format('embedded-opentype'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ThinA.woff') format('woff'),
+    url('../local/templates/globus/design/fonts/acrobatgl4/AkrobatGl-ThinA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'globusmarket';
+    src: url('../local/templates/globus/design/fonts/Globusmarket/Globusmarket.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
