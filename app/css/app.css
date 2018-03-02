@@ -69,6 +69,14 @@
   vertical-align: middle;
 }
 
+.fw-bg-color-pink {
+  background-color: #e60278;
+}
+
+.fw-color-pink {
+  color: #e60278;
+}
+
 .fw-bg-color-white {
   background-color: #fff;
 }
@@ -623,6 +631,26 @@
   margin-right: 30px;
 }
 
+.fw-margin-35 {
+  margin: 35px;
+}
+
+.fw-mt-35 {
+  margin-top: 35px;
+}
+
+.fw-mb-35 {
+  margin-bottom: 35px;
+}
+
+.fw-ml-35 {
+  margin-left: 35px;
+}
+
+.fw-mr-35 {
+  margin-right: 35px;
+}
+
 @media screen and (max-width: 950px) {
   .fw-margin-0\@xl {
     margin: 0px;
@@ -768,6 +796,27 @@
 
   .fw-mr-30\@xl {
     margin-right: 30px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-margin-35\@xl {
+    margin: 35px;
+  }
+
+  .fw-mt-35\@xl {
+    margin-top: 35px;
+  }
+
+  .fw-mb-35\@xl {
+    margin-bottom: 35px;
+  }
+
+  .fw-ml-35\@xl {
+    margin-left: 35px;
+  }
+
+  .fw-mr-35\@xl {
+    margin-right: 35px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -917,6 +966,27 @@
     margin-right: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .fw-margin-35\@xs {
+    margin: 35px;
+  }
+
+  .fw-mt-35\@xs {
+    margin-top: 35px;
+  }
+
+  .fw-mb-35\@xs {
+    margin-bottom: 35px;
+  }
+
+  .fw-ml-35\@xs {
+    margin-left: 35px;
+  }
+
+  .fw-mr-35\@xs {
+    margin-right: 35px;
+  }
+}
 .fw-mt-inverse-5 {
   margin-top: -5px;
 }
@@ -931,6 +1001,22 @@
 
 .fw-mr-inverse-5 {
   margin-right: -5px;
+}
+
+.fw-mt-inverse-30 {
+  margin-top: -30px;
+}
+
+.fw-mb-inverse-30 {
+  margin-bottom: -30px;
+}
+
+.fw-ml-inverse-30 {
+  margin-left: -30px;
+}
+
+.fw-mr-inverse-30 {
+  margin-right: -30px;
 }
 
 .fw-mt-inverse-35 {
@@ -964,6 +1050,23 @@
 
   .fw-mr-inverse-5\@xs {
     margin-right: -5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-mt-inverse-30\@xs {
+    margin-top: -30px;
+  }
+
+  .fw-mb-inverse-30\@xs {
+    margin-bottom: -30px;
+  }
+
+  .fw-ml-inverse-30\@xs {
+    margin-left: -30px;
+  }
+
+  .fw-mr-inverse-30\@xs {
+    margin-right: -30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1021,6 +1124,10 @@
 
 .fw-padding-35 {
   padding: 35px;
+}
+
+.fw-padding-40 {
+  padding: 40px;
 }
 
 .fw-pt-0 {
@@ -1181,6 +1288,22 @@
 
 .fw-pr-35 {
   padding-right: 35px;
+}
+
+.fw-pt-40 {
+  padding-top: 40px;
+}
+
+.fw-pb-40 {
+  padding-bottom: 40px;
+}
+
+.fw-pl-40 {
+  padding-left: 40px;
+}
+
+.fw-pr-40 {
+  padding-right: 40px;
 }
 
 @media screen and (max-width: 950px) {
@@ -1393,6 +1516,27 @@
     padding-right: 35px;
   }
 }
+@media screen and (max-width: 950px) {
+  .fw-padding-40\@xl {
+    padding: 40px;
+  }
+
+  .fw-pt-40\@xl {
+    padding-top: 40px;
+  }
+
+  .fw-pb-40\@xl {
+    padding-bottom: 40px;
+  }
+
+  .fw-pl-40\@xl {
+    padding-left: 40px;
+  }
+
+  .fw-pr-40\@xl {
+    padding-right: 40px;
+  }
+}
 @media screen and (max-width: 767px) {
   .fw-padding-0\@xs {
     padding: 0px;
@@ -1601,6 +1745,27 @@
 
   .fw-pr-35\@xs {
     padding-right: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-padding-40\@xs {
+    padding: 40px;
+  }
+
+  .fw-pt-40\@xs {
+    padding-top: 40px;
+  }
+
+  .fw-pb-40\@xs {
+    padding-bottom: 40px;
+  }
+
+  .fw-pl-40\@xs {
+    padding-left: 40px;
+  }
+
+  .fw-pr-40\@xs {
+    padding-right: 40px;
   }
 }
 .fw-flex-inline {
@@ -1820,6 +1985,10 @@
   font-size: 12px;
 }
 
+.fw-fz-13 {
+  font-size: 13px;
+}
+
 .fw-fz-14 {
   font-size: 14px;
 }
@@ -1832,6 +2001,18 @@
   font-size: 16px;
 }
 
+.fw-fz-18 {
+  font-size: 18px;
+}
+
+.fw-fz-24 {
+  font-size: 24px;
+}
+
+.fw-fz-36 {
+  font-size: 36px;
+}
+
 @media screen and (max-width: 950px) {
   .fw-fz-0\@xl {
     font-size: 0px;
@@ -1840,6 +2021,11 @@
 @media screen and (max-width: 950px) {
   .fw-fz-12\@xl {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-fz-13\@xl {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -1857,6 +2043,21 @@
     font-size: 16px;
   }
 }
+@media screen and (max-width: 950px) {
+  .fw-fz-18\@xl {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-fz-24\@xl {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-fz-36\@xl {
+    font-size: 36px;
+  }
+}
 @media screen and (max-width: 767px) {
   .fw-fz-0\@xs {
     font-size: 0px;
@@ -1865,6 +2066,11 @@
 @media screen and (max-width: 767px) {
   .fw-fz-12\@xs {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-fz-13\@xs {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1880,6 +2086,21 @@
 @media screen and (max-width: 767px) {
   .fw-fz-16\@xs {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-fz-18\@xs {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-fz-24\@xs {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-fz-36\@xs {
+    font-size: 36px;
   }
 }
 .fw-line-height-0 {
@@ -1930,19 +2151,19 @@
   font-family: globusmarket, "Open Sans", sans-serif, Arial;
 }
 
-.fw-font-light {
+.fw-text-300 {
   font-weight: 300;
 }
 
-.fw-font-500 {
-  font-weight: 500;
-}
-
-.fw-font-400 {
+.fw-text-400 {
   font-weight: 400;
 }
 
-.fw-font-600 {
+.fw-text-500 {
+  font-weight: 500;
+}
+
+.fw-text-600 {
   font-weight: 600;
 }
 
@@ -2036,6 +2257,10 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+
+.fw-border-color-pink {
+  border-color: #e60278;
 }
 
 .fw-border-color-white {
@@ -2432,6 +2657,10 @@ body {
   margin-left: -15px;
   width: 1px;
   background-color: #fff;
+}
+
+.header {
+  border-bottom: 1px solid #a7a7a7;
 }
 
 .header__form {
