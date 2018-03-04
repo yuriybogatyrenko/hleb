@@ -1,0 +1,47 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Scan&amp;Go. Делаю покупки еще быстрее – Система самостоятельного сканирования товаров{% endblock %}
+
+{% block content %}
+    <!-- Header block -->
+    {% include "layouts/header.twig" %}
+    <!-- Header block end -->
+
+    <div class="fw-pt-35 fw-pb-35">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="fw-mb-35">
+                        {% include 'components/breadcrumbs.twig' %}
+                    </div>
+                    <div class="fw-fz-36 fw-mb-30">
+                        Плюс пять миллионов резюме в январе!
+                    </div>
+                    <div class="fw-fz-0 fw-relative">
+                        <img alt="" src="http://placehold.it/600x400" class="fw-width-1-1"/>
+                        <div class="fw-bg-color-pink fw-color-white fw-fz-24 fw-text-300 fw-padding-5 fw-pt-10 fw-pb-10 fw-absolute fw-left-0 fw-top-0">
+                            22/<span class="fw-fz-18">02</span>
+                        </div>
+                    </div>
+                    <div class="content-area fw-mt-30 fw-pt-30">
+                        <p>Мы уже делились с вами новостью о том, что HeadHunter приобрел часть активов job.ru, в том
+                            числе доменное имя и товарные знаки. Для соискателей hh.ru это означает еще больший выбор
+                            вакансий, а для работодателей — рост базы уникальных резюме, так как пользователи job.ru
+                            теперь продолжат поиск работы на нашем сайте!</p>
+
+                        <p>2 776 836 новых соискателей, которые раньше не пользовались нашим сайтом, ищут работу на
+                            hh.ru! Еще больше специалистов сферы производства и продаж, разработчиков, строителей,
+                            водителей, логистов — количество соискателей выросло во всех профессиональных отраслях.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="images/promo/kfc.jpg" class="fw-width-1-1" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer block -->
+    {% include "layouts/footer.twig" %}
+    <!-- footer block end -->
+{% endblock %}
