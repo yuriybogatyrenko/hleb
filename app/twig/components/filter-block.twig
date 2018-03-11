@@ -1,0 +1,37 @@
+<div class="js-show-more-container fw-fz-14">
+    {% for i in 1..4 %}
+        <div>
+            <label class="d-flex justify-content-between fw-pt-5 fw-pb-5">
+                <span class="d-flex align-items-center">
+                    <span class="filter-checkbox">
+                        <input type="checkbox">
+                        <span class="filter-checkbox__detector"></span>
+                    </span>
+                    <span class="fw-ml-5 fw-mr-5">|</span>
+                    <span>Казахстан</span>
+                </span>
+                <span class="fw-color-gray fw-ml-10">1700</span>
+            </label>
+        </div>
+    {% endfor %}
+    <div class="js-show-more-content fw-hidden">
+        {% for i in 1..4 %}
+            <div>
+                <label class="d-flex justify-content-between fw-pt-5 fw-pb-5">
+                    <span class="d-flex align-items-center">
+                        <span class="filter-checkbox">
+                            <input type="checkbox">
+                            <span class="filter-checkbox__detector"></span>
+                        </span>
+                        <span class="fw-ml-5 fw-mr-5">|</span>
+                        <span>Казахстан</span>
+                    </span>
+                    <span class="fw-color-gray fw-ml-10">1700</span>
+                </label>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="fw-mt-20">
+        <a href="#" class="js-show-more-trigger fw-color-blue-dark fw-text-underline">Показать еще</a>
+    </div>
+</div>

@@ -15,6 +15,9 @@ body
 *
   box-sizing: border-box
 
+label
+  cursor: pointer
+
 .container
   max-width: 1320px
   margin-left: auto
@@ -32,6 +35,26 @@ body
   background-color: #e60278
   color: #fff
   padding: 5px 25px
+
+  &.btn-blue
+    background-color: $colorBlueLight
+
+  &.btn-empty
+    background-color: transparent
+    border: 1px solid #b6b6b6
+    color: $colorDark
+
+  &.btn--small
+    padding: 3px 10px
+    font-size: 14px
+
+  &.btn--long
+    padding-left: 30px
+    padding-right: 30px
+
+  &.btn--big
+    padding: 10px 30px
+    font-size: 18px
 
 .top-line__menu
   li
@@ -182,3 +205,163 @@ body
     li
       &:after
         border-left: 4px solid $colorWhite
+        
+.filter
+  background: $colorGrayLight
+
+.filter__section
+  position: relative
+
+  &:not(:last-child)
+    border-bottom: 1px solid #d6d6d6
+
+    &:after
+      display: block
+      content: ''
+      position: absolute
+      left: 0
+      top: 100%
+      border-bottom: 1px solid #fff
+
+.catalog__listing-item
+  &:nth-child(odd)
+    background-color: #eeeeee
+
+.filter-checkbox, .empty-checkbox
+  display: inline-block
+  vertical-align: middle
+  font-size: 0
+
+  input
+    display: none
+
+    &:checked
+      & + .filter-checkbox__detector, & + .empty-checkbox__detector
+        border-color: #0066cc
+
+.filter-checkbox__detector, .empty-checkbox__detector
+  display: inline-block
+  vertical-align: middle
+  width: 12px
+  height: 7px
+  border-bottom: 3px solid #444444
+  border-left: 3px solid #444444
+  transform: rotate(-45deg)
+
+.filled-checkbox
+  display: inline-block
+  vertical-align: middle
+  font-size: 0
+  width: 20px
+  height: 20px
+  background-color: $colorBlue
+  position: relative
+
+  input
+    display: none
+
+    &:checked
+      & + .filled-checkbox__detector
+        opacity: 1
+
+.filled-checkbox__detector
+  opacity: 0
+  display: inline-block
+  vertical-align: middle
+  width: 12px
+  height: 7px
+  margin-top: -1px
+  border-bottom: 3px solid #fff
+  border-left: 3px solid #fff
+  transform: translate(-50%, -50%) rotate(-45deg)
+  position: absolute
+  top: 50%
+  left: 50%
+
+
+.catalog__filter
+  border-top: 1px solid #EEEEEE
+
+.standard-input
+  padding: 8px 15px
+  border-radius: 5px
+  background: $colorGrayLight
+  border: none
+  display: block
+  width: 100%
+  font-size: 16px
+
+  &:focus
+    outline: none
+
+.resume-section
+  &:not(:last-child)
+    border-bottom: 1px solid $colorGray
+
+.work-history__item
+  &:not(:last-child)
+    .work-history__item-right-border
+      border-bottom: 1px solid $colorGray
+
+.radio-box
+  font-size: 0
+  input
+    display: none
+
+    &:checked
+      & + .radio-box__detector
+        &:after
+          display: block
+          content: ''
+          position: absolute
+          top: 50%
+          left: 50%
+          width: 8px
+          height: 8px
+          transform: translate(-50%, -50%)
+          background-color: #fff
+          border-radius: 100%
+
+.radio-box__detector
+  width: 16px
+  height: 16px
+  border-radius: 100%
+  background-color: $colorBlue
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  margin-right: 5px
+
+.custom-select
+  @extend .standard-input
+  position: relative
+  background: $colorGrayLight url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%230066cc' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center
+  background-size: 8px 10px
+  padding-top: 5px
+  padding-bottom: 5px
+  line-height: 1.2
+
+  &:focus
+    outline: none
+    box-shadow: none
+
+  &.custom-select--small
+    padding-top: 3px
+    padding-bottom: 3px
+    padding-right: 30px
+
+.standard-input-right-icon
+  position: absolute
+  height: 100%
+  right: 15px
+  display: flex
+  align-items: center
+  cursor: pointer
+
+  & + input
+    padding-right: 40px
+
+.add-resume-driver-license-checkbox
+  input:checked
+    & + span
+      color: $colorBlueDark

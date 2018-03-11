@@ -81,24 +81,9 @@
                     <div class="block-title fw-mb-25">Новые вакансии</div>
 
                     <div class="row fw-mb-inverse-30">
-                        {% for item in 1..8 %}
+                        {% for item in 1..15 %}
                             <div class="col-4 fw-mb-30">
-                                <div><a class="fw-color-dark fw-text-decoration-none" href="#">Продавец-консультант</a>
-                                </div>
-                                <div class="fw-color-gray">з/п не указана</div>
-                                <div class="fw-fz-12 fw-mt-5"><a href="#" class="fw-color-blue-light">Hoff, Москва</a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                        {% for item in 1..7 %}
-                            <div class="col-4 fw-mb-30">
-                                <div><a class="fw-color-dark fw-text-decoration-none" href="#">Аккаунт
-                                        менеджер/Специалист по
-                                        интернет-рекламе</a>
-                                </div>
-                                <div class="fw-color-gray">от 100 000 руб.</div>
-                                <div class="fw-fz-12 fw-mt-5"><a href="#" class="fw-color-blue-light">Hoff, Москва</a>
-                                </div>
+                                {% include 'components/resume-preview.twig' %}
                             </div>
                         {% endfor %}
                     </div>
