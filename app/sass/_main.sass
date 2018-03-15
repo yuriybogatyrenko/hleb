@@ -1,367 +1,476 @@
 @import "mixins/mixins"
 
 .parallax-mirror
-  @media screen and (max-width: 767px)
-    display: none !important
+    @media screen and (max-width: 767px)
+        display: none !important
 
 body
-  @extend .fw-reset
-  font-family: fs, sans-serif, arial
-  font-size: 16px
-  font-weight: 400
-  color: #3d3d3d
-  line-height: 1.2
+    @extend .fw-reset
+    font-family: fs, sans-serif, arial
+    font-size: 16px
+    font-weight: 400
+    color: #3d3d3d
+    line-height: 1.2
 
 *
-  box-sizing: border-box
+    box-sizing: border-box
 
 label
-  cursor: pointer
+    cursor: pointer
+
+a
+    &.fw-color-white
+        &:hover, &:focus
+            color: #fff
+
+    &.fw-color-blue-dark
+        &:hover, &:focus
+            color: $colorBlueDark
+
+    &.fw-color-blue-light
+        &:hover, &:focus
+            color: $colorBlueLight
+
+    &.fw-text-underline
+        &:hover
+            text-decoration: none
+
 
 .container
-  max-width: 1320px
-  margin-left: auto
-  margin-right: auto
-  padding-left: 20px
-  padding-right: 20px
-  width: 100%
+    max-width: 1320px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 20px
+    padding-right: 20px
+    width: 100%
 
 .app-wrapper
-  min-width: 320px
-  width: 100%
-  overflow: hidden
-  
+    min-width: 320px
+    width: 100%
+    overflow: hidden
+
 .btn
-  background-color: #e60278
-  color: #fff
-  padding: 5px 25px
-
-  &.btn-blue
-    background-color: $colorBlueLight
-
-  &.btn-empty
-    background-color: transparent
-    border: 1px solid #b6b6b6
-    color: $colorDark
-
-  &.btn--small
-    padding: 3px 10px
-    font-size: 14px
-
-  &.btn--long
-    padding-left: 30px
-    padding-right: 30px
-
-  &.btn--big
-    padding: 10px 30px
-    font-size: 18px
-
-.top-line__menu
-  li
-    position: relative
-
-    &:not(:first-child)
-      margin-left: 30px
-
-      &:after
-        display: block
-        content: ''
-        height: 80%
-        top: 50%
-        transform: translate(0, -50%)
-        position: absolute
-        left: 0
-        margin-left: -15px
-        width: 1px
-        background-color: #fff
-
-.header
-  border-bottom: 1px solid #a7a7a7
-
-.header__form
-  background-color: #eeeeee
-  border-radius: 7px
-
-.first-screen
-  background: url(../images/first-scree-bg.png) no-repeat center center / cover
-
-  &__form
-    background-color: rgba($colorBlue, 0.9)
-    padding: 70px 35px
-    max-width: 360px
-    width: 100%
-
-.first-screen__button
-  border: 1px solid #ffffff
-  border-radius: 5px
-  padding: 15px
-  background-color: rgba(#000, 0.9)
-  display: flex
-  align-items: center
-  min-width: 270px
-  color: #ffffff
-  text-decoration: underline
-  font-size: 18px
-
-.block-title
-  font-weight: 500
-  font-size: 24px
-
-.company-jobs-list-number
-  border-left: 1px dashed #ccc
-  border-right: 1px dashed #ccc
-
-.link-marked
-  position: relative
-  padding-left: 15px
-  display: inline-block
-
-  &:after
-    display: block
-    content: ''
-    position: absolute
-    left: 0
-    top: 50%
-    transform: translate(0, -50%)
-    border: 4px solid transparent
-    border-left: 4px solid $colorBlueLight
-
-.vacancies-block-full-height
-  position: absolute
-  top: -35px
-  bottom: -35px
-  left: 0
-  right: 0
-  display: block
-
-  img
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    object-fit: cover
-
-.pagination
-  vertical-align: middle
-  display: flex
-  justify-content: center
-  width: 100%
-
-  &__list
-    @extend .fw-reset
-    display: flex
-    list-style: none
-    border-top: 1px solid #EEEEEE
-    border-bottom: 1px solid #EEEEEE
-
-  &__item
-    @extend .fw-reset
-
-    &.active
-      .pagination__link
-        position: relative
-        &:after
-          display: block
-          content: ''
-          position: absolute
-          top: 0
-          left: 0
-          width: 100%
-          height: 100%
-          border-top: 2px solid $colorBlueDark
-          border-bottom: 2px solid $colorBlueDark
-
-  &__link
-    @extend .fw-reset
-    display: block
-    padding: 10px 15px
+    background-color: #e60278
+    color: #fff
+    padding: 5px 25px
 
     &:hover
-      color: $colorBlueDark
-      text-decoration: none
+        color: #fff
+        box-shadow: 0 0 0 1000px rgba(#000, 0.2) inset
+
+    &.btn-blue
+        background-color: $colorBlueLight
+        color: #fff
+        box-shadow: none
+
+        &:hover
+            background-color: transparent
+            border: 1px solid #b6b6b6
+            color: $colorDark
+
+    &.btn-empty
+        background-color: transparent
+        border: 1px solid #b6b6b6
+        color: $colorDark
+        box-shadow: none
+
+        &:hover
+            background-color: $colorBlueLight
+            color: #fff
+            box-shadow: none
+            border-color: $colorBlueLight
+
+    &.btn--small
+        padding: 3px 10px
+        font-size: 14px
+
+    &.btn--long
+        padding-left: 30px
+        padding-right: 30px
+
+    &.btn--big
+        padding: 10px 30px
+        font-size: 18px
+
+.top-line
+    height: 60px
+    display: flex
+    align-items: center
+
+    li.active
+        a.fw-color-white
+            opacity: 0.5
+            color: #fff
+            text-decoration: underline
+
+        a.fw-color-gray
+            text-decoration: underline
+            color: $colorGray
+
+    a.fw-color-white
+        &:hover
+            opacity: 0.5
+            color: #fff
+
+    a.fw-color-gray
+        &:hover
+            text-decoration: underline
+            color: $colorGray
+
+    .dropdown-menu
+        background-color: $colorBlue
+        margin-top: 15px
+        padding-top: 5px
+        border-radius: 0
+        margin-left: -20px
+        box-shadow: none
+        border: none
+
+    .dropdown-item
+        color: #fff
+        padding: 5px 0
+        margin: 5px 0
+
+        &:hover
+            background-color: transparent
+            text-decoration: underline
+
+.top-line__profile
+    height: 60px
+    cursor: pointer
+    position: relative
+
+    &:hover, &[aria-expanded="true"]
+        background-color: $colorPink
+
+    & + .dropdown-menu
+        top: 100%
+        left: 0
+        width: 100%
+        margin: 0
+
+.top-line__menu
+    > li
+        position: relative
+
+        &:not(:first-child)
+            margin-left: 30px
+
+            &:after
+                display: block
+                content: ''
+                height: 80%
+                top: 50%
+                transform: translate(0, -50%)
+                position: absolute
+                left: 0
+                margin-left: -15px
+                width: 1px
+                background-color: #fff
+
+.header
+    border-bottom: 1px solid #a7a7a7
+
+.header__form
+    background-color: #eeeeee
+    border-radius: 7px
+
+.first-screen
+    background: url(../images/first-scree-bg.png) no-repeat center center / cover
+
+    &__form
+        background-color: rgba($colorBlue, 0.9)
+        padding: 70px 35px
+        max-width: 360px
+        width: 100%
+
+.first-screen__button
+    border: 1px solid #ffffff
+    border-radius: 5px
+    padding: 15px
+    background-color: rgba(#000, 0.9)
+    display: flex
+    align-items: center
+    min-width: 270px
+    color: #ffffff
+    text-decoration: underline
+    font-size: 18px
+    transition: all 0.3s ease
+
+    &:hover
+        background-color: #19386a
+        color: #fff
+
+.block-title
+    font-weight: 500
+    font-size: 24px
+
+.company-jobs-list-number
+    border-left: 1px dashed #ccc
+    border-right: 1px dashed #ccc
+
+.link-marked
+    position: relative
+    padding-left: 15px
+    display: inline-block
+
+    &:after
+        display: block
+        content: ''
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translate(0, -50%)
+        border: 4px solid transparent
+        border-left: 4px solid $colorBlueLight
+
+.vacancies-block-full-height
+    position: absolute
+    top: -35px
+    bottom: -35px
+    left: 0
+    right: 0
+    display: block
+
+    img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.pagination
+    vertical-align: middle
+    display: flex
+    justify-content: center
+    width: 100%
+
+    &__list
+        @extend .fw-reset
+        display: flex
+        list-style: none
+        border-top: 1px solid #EEEEEE
+        border-bottom: 1px solid #EEEEEE
+
+    &__item
+        @extend .fw-reset
+
+        &.active
+            .pagination__link
+                position: relative
+                &:after
+                    display: block
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    border-top: 2px solid $colorBlueDark
+                    border-bottom: 2px solid $colorBlueDark
+
+    &__link
+        @extend .fw-reset
+        display: block
+        padding: 10px 15px
+
+        &:hover
+            color: $colorBlueDark
+            text-decoration: none
 
 .standard-list
-  @extend .fw-reset
-  padding-left: 0
+    @extend .fw-reset
+    padding-left: 0
 
-  li
-    position: relative
-    list-style: none
-    display: block
-    padding-left: 15px
-
-    &:after
-      display: block
-      content: ''
-      position: absolute
-      left: 0
-      top: 50%
-      transform: translate(0, -50%)
-      border: 4px solid transparent
-      border-left: 4px solid $colorBlueDark
-
-  &.standard-list--white
     li
-      &:after
-        border-left: 4px solid $colorWhite
-        
+        position: relative
+        list-style: none
+        display: block
+        padding-left: 15px
+
+        &:after
+            display: block
+            content: ''
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translate(0, -50%)
+            border: 4px solid transparent
+            border-left: 4px solid $colorBlueDark
+
+    &.standard-list--white
+        li
+            &:after
+                border-left: 4px solid $colorWhite
+
 .filter
-  background: $colorGrayLight
+    background: $colorGrayLight
 
 .filter__section
-  position: relative
+    position: relative
 
-  &:not(:last-child)
-    border-bottom: 1px solid #d6d6d6
+    &:not(:last-child)
+        border-bottom: 1px solid #d6d6d6
 
-    &:after
-      display: block
-      content: ''
-      position: absolute
-      left: 0
-      top: 100%
-      border-bottom: 1px solid #fff
+        &:after
+            display: block
+            content: ''
+            position: absolute
+            left: 0
+            top: 100%
+            border-bottom: 1px solid #fff
 
 .catalog__listing-item
-  &:nth-child(odd)
-    background-color: #eeeeee
+    &:nth-child(odd)
+        background-color: #eeeeee
 
 .filter-checkbox, .empty-checkbox
-  display: inline-block
-  vertical-align: middle
-  font-size: 0
+    display: inline-block
+    vertical-align: middle
+    font-size: 0
 
-  input
-    display: none
+    input
+        display: none
 
-    &:checked
-      & + .filter-checkbox__detector, & + .empty-checkbox__detector
-        border-color: #0066cc
+        &:checked
+            & + .filter-checkbox__detector, & + .empty-checkbox__detector
+                border-color: #0066cc
 
 .filter-checkbox__detector, .empty-checkbox__detector
-  display: inline-block
-  vertical-align: middle
-  width: 12px
-  height: 7px
-  border-bottom: 3px solid #444444
-  border-left: 3px solid #444444
-  transform: rotate(-45deg)
+    display: inline-block
+    vertical-align: middle
+    width: 12px
+    height: 7px
+    border-bottom: 3px solid #444444
+    border-left: 3px solid #444444
+    transform: rotate(-45deg)
 
 .filled-checkbox
-  display: inline-block
-  vertical-align: middle
-  font-size: 0
-  width: 20px
-  height: 20px
-  background-color: $colorBlue
-  position: relative
+    display: inline-block
+    vertical-align: middle
+    font-size: 0
+    width: 20px
+    height: 20px
+    background-color: $colorBlue
+    position: relative
 
-  input
-    display: none
+    input
+        display: none
 
-    &:checked
-      & + .filled-checkbox__detector
-        opacity: 1
+        &:checked
+            & + .filled-checkbox__detector
+                opacity: 1
+
+    &--white
+        background-color: #fff
+
+        .filled-checkbox__detector
+            border-bottom: 3px solid $colorBlueDark
+            border-left: 3px solid $colorBlueDark
 
 .filled-checkbox__detector
-  opacity: 0
-  display: inline-block
-  vertical-align: middle
-  width: 12px
-  height: 7px
-  margin-top: -1px
-  border-bottom: 3px solid #fff
-  border-left: 3px solid #fff
-  transform: translate(-50%, -50%) rotate(-45deg)
-  position: absolute
-  top: 50%
-  left: 50%
+    opacity: 0
+    display: inline-block
+    vertical-align: middle
+    width: 12px
+    height: 7px
+    margin-top: -1px
+    border-bottom: 3px solid #fff
+    border-left: 3px solid #fff
+    transform: translate(-50%, -50%) rotate(-45deg)
+    position: absolute
+    top: 50%
+    left: 50%
 
 
 .catalog__filter
-  border-top: 1px solid #EEEEEE
+    border-top: 1px solid #EEEEEE
 
-.standard-input
-  padding: 8px 15px
-  border-radius: 5px
-  background: $colorGrayLight
-  border: none
-  display: block
-  width: 100%
-  font-size: 16px
+.standard-input, .form-control
+    padding: 8px 15px
+    border-radius: 5px
+    background: $colorGrayLight
+    border: none
+    display: block
+    width: 100%
+    font-size: 16px
 
-  &:focus
-    outline: none
+    &:focus
+        outline: none
 
 .resume-section
-  &:not(:last-child)
-    border-bottom: 1px solid $colorGray
+    &:not(:last-child)
+        border-bottom: 1px solid $colorGray
 
 .work-history__item
-  &:not(:last-child)
-    .work-history__item-right-border
-      border-bottom: 1px solid $colorGray
+    &:not(:last-child)
+        .work-history__item-right-border
+            border-bottom: 1px solid $colorGray
 
 .radio-box
-  font-size: 0
-  input
-    display: none
+    font-size: 0
+    input
+        display: none
 
-    &:checked
-      & + .radio-box__detector
-        &:after
-          display: block
-          content: ''
-          position: absolute
-          top: 50%
-          left: 50%
-          width: 8px
-          height: 8px
-          transform: translate(-50%, -50%)
-          background-color: #fff
-          border-radius: 100%
+        &:checked
+            & + .radio-box__detector
+                &:after
+                    display: block
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    width: 8px
+                    height: 8px
+                    transform: translate(-50%, -50%)
+                    background-color: #fff
+                    border-radius: 100%
 
 .radio-box__detector
-  width: 16px
-  height: 16px
-  border-radius: 100%
-  background-color: $colorBlue
-  position: relative
-  display: inline-block
-  vertical-align: middle
-  margin-right: 5px
+    width: 16px
+    height: 16px
+    border-radius: 100%
+    background-color: $colorBlue
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    margin-right: 5px
 
 .custom-select
-  @extend .standard-input
-  position: relative
-  background: $colorGrayLight url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%230066cc' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center
-  background-size: 8px 10px
-  padding-top: 5px
-  padding-bottom: 5px
-  line-height: 1.2
+    @extend .standard-input
+    position: relative
+    background: $colorGrayLight url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%230066cc' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center
+    background-size: 8px 10px
+    padding-top: 5px
+    padding-bottom: 5px
+    line-height: 1.2
 
-  &:focus
-    outline: none
-    box-shadow: none
+    &:focus
+        outline: none
+        box-shadow: none
 
-  &.custom-select--small
-    padding-top: 3px
-    padding-bottom: 3px
-    padding-right: 30px
+    &.custom-select--small
+        padding-top: 3px
+        padding-bottom: 3px
+        padding-right: 30px
 
 .standard-input-right-icon
-  position: absolute
-  height: 100%
-  right: 15px
-  display: flex
-  align-items: center
-  cursor: pointer
+    position: absolute
+    height: 100%
+    right: 15px
+    display: flex
+    align-items: center
+    cursor: pointer
 
-  & + input
-    padding-right: 40px
+    & + input
+        padding-right: 40px
 
 .add-resume-driver-license-checkbox
-  input:checked
-    & + span
-      color: $colorBlueDark
+    input:checked
+        & + span
+            color: $colorBlueDark
+
+.modal-cities
+    .modal-dialog
+        max-width: 670px

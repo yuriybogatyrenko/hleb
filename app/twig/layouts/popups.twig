@@ -1,46 +1,72 @@
-<div class="js-popup popup-wrapper popup-mobile-menu fw-hidden" data-popup="mobile-menu">
-    <div class="popup fw-text-center fw-bg-color-white">
-        <div class="fw-flex fw-flex-space-between fw-flex-middle fw-pt-18 fw-pb-18 fw-padding-20">
-            <div class="icon icon-cross-grey fw-hidden fw-visible@xs js-close-popup"></div>
-            {#<div class="js-close-popup popup__close"><i class="icon icon-cross-grey"></i></div>#}
-        </div>
-        <div>
-            <ul class="fw-reset header-menu">
-                <li class="header-menu__item fw-reset fw-fz-18 active"><a class="js-close-popup js-scroll-to fw-reset header-menu__link" href="#about">О Scan&Go</a></li>
-                <li class="header-menu__item fw-reset fw-fz-18"><a class="js-close-popup js-scroll-to fw-reset header-menu__link" href="#how-it-works">Как это работает?</a></li>
-                <li class="header-menu__item fw-reset fw-fz-18"><a class="js-close-popup js-scroll-to fw-reset header-menu__link" href="#where-it-works">Где работает?</a></li>
-                {#<li class="header-menu__item fw-reset fw-fz-18"><a class="js-close-popup js-scroll-to fw-reset header-menu__link" href="#faq">F.A.Q</a></li>#}
-                <li class="header-menu__item fw-reset fw-fz-18"><a class="fw-reset header-menu__link" href="#">Обратная связь</a></li>
-                <li class="header-menu__item fw-reset fw-fz-18 fw-text-uppercase"><a class="fw-reset header-menu__link" href="http://globus.ru" target="_blank">Globus.ru</a></li>
-            </ul>
-        </div>
-        <div class="fw-pt-30 fw-pb-30">
-            <div class="fw-flex-grow-1 fw-flex-order-0@xl fw-text-uppercase fw-flex fw-flex-middle fw-flex-center fw-text-center fw-font-bold">
-                <div class="fw-mr-15 fw-hidden@xl">www.globus.ru</div>
-                <a href="https://vk.com/globusru" target="_blank" class="fw-reset fw-mr-20 soc-link-hover">
-                    <svg height="32" width="32">
-                        <use xlink:href="#soc-vk"></use>
-                    </svg>
-                    <svg height="32" width="32" class="fw-hidden">
-                        <use xlink:href="#soc-vk-hover"></use>
-                    </svg>
-                </a>
-                <a href="https://www.facebook.com/globusRU" target="_blank" class="fw-reset fw-mr-20 soc-link-hover">
-                    <svg height="32" width="32">
-                        <use xlink:href="#soc-fb"></use>
-                    </svg>
-                    <svg height="32" width="32" class="fw-hidden">
-                        <use xlink:href="#soc-fb-hover"></use>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/user/GlobusRu" target="_blank" class="fw-reset soc-link-hover">
-                    <svg height="32" width="32">
-                        <use xlink:href="#soc-yt"></use>
-                    </svg>
-                    <svg height="32" width="32" class="fw-hidden">
-                        <use xlink:href="#soc-yt-hover"></use>
-                    </svg>
-                </a>
+<!-- Modal -->
+<div class="modal fade modal-cities" id="cities-modal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content fw-padding-20 fw-pl-30 fw-pr-30">
+            <div class="modal-body">
+                <div class="fw-mb-20">
+                    <input type="text" class="form-control fw-bg-color-gray-light" placeholder="Быстрый поиск">
+                </div>
+                <div id="accordion">
+                    <div class="fw-pt-10 fw-pb-10">
+                        <div>
+                            <div class="fw-fz-18 fw-text-600" data-toggle="collapse"
+                                  aria-expanded="true" data-target="#collapse-1">
+                                <div class="icon icon-chevron-right fw-mr-10"></div>
+                                <div class="d-inline-block align-middle">Россия</div>
+                            </div>
+                        </div>
+
+                        <div class="collapse" data-parent="#accordion" id="collapse-1">
+                            <div>
+                                <ul class="fw-reset">
+                                    {% for i in 1..5 %}
+                                        <li class="fw-mt-15 fw-mb-15 fw-ml-20">
+                                            <label>
+                                            <span class="radio-box d-inline-block align-middle">
+                                                <input type="radio" name="1" checked="">
+                                                <span class="radio-box__detector"></span>
+                                            </span>
+                                                <span class="d-inline-block align-middle">Алматы</span>
+                                            </label>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fw-pt-10 fw-pb-10">
+                        <div>
+                            <div class="fw-fz-18 fw-text-600" data-toggle="collapse"
+                                 aria-expanded="true" data-target="#collapse-2">
+                                <div class="icon icon-chevron-right fw-mr-10"></div>
+                                <div class="d-inline-block align-middle">Россия</div>
+                            </div>
+                        </div>
+
+                        <div class="collapse" data-parent="#accordion" id="collapse-2">
+                            <div>
+                                <ul class="fw-reset">
+                                    {% for i in 1..5 %}
+                                        <li class="fw-mt-15 fw-mb-15 fw-ml-20">
+                                            <label>
+                                            <span class="radio-box d-inline-block align-middle">
+                                                <input type="radio" name="1" checked="">
+                                                <span class="radio-box__detector"></span>
+                                            </span>
+                                                <span class="d-inline-block align-middle">Алматы</span>
+                                            </label>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fw-padding-15">
+                <button type="button" class="btn btn-empty fw-mr-15" data-dismiss="modal">Отменить</button>
+                <button type="button" class="btn btn-blue">Выбрать</button>
             </div>
         </div>
     </div>

@@ -2810,6 +2810,19 @@ label {
   cursor: pointer;
 }
 
+a.fw-color-white:hover, a.fw-color-white:focus {
+  color: #fff;
+}
+a.fw-color-blue-dark:hover, a.fw-color-blue-dark:focus {
+  color: #0066cc;
+}
+a.fw-color-blue-light:hover, a.fw-color-blue-light:focus {
+  color: #51b0e1;
+}
+a.fw-text-underline:hover {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1320px;
   margin-left: auto;
@@ -2830,13 +2843,39 @@ label {
   color: #fff;
   padding: 5px 25px;
 }
+.btn:hover {
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2) inset;
+}
 .btn.btn-blue {
   background-color: #51b0e1;
+  color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn.btn-blue:hover {
+  background-color: transparent;
+  border: 1px solid #b6b6b6;
+  color: #333333;
 }
 .btn.btn-empty {
   background-color: transparent;
   border: 1px solid #b6b6b6;
   color: #333333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn.btn-empty:hover {
+  background-color: #51b0e1;
+  color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #51b0e1;
 }
 .btn.btn--small {
   padding: 3px 10px;
@@ -2851,13 +2890,81 @@ label {
   font-size: 18px;
 }
 
-.top-line__menu li {
+.top-line {
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.top-line li.active a.fw-color-white {
+  opacity: 0.5;
+  color: #fff;
+  text-decoration: underline;
+}
+.top-line li.active a.fw-color-gray {
+  text-decoration: underline;
+  color: #bebebe;
+}
+.top-line a.fw-color-white:hover {
+  opacity: 0.5;
+  color: #fff;
+}
+.top-line a.fw-color-gray:hover {
+  text-decoration: underline;
+  color: #bebebe;
+}
+.top-line .dropdown-menu {
+  background-color: #00225a;
+  margin-top: 15px;
+  padding-top: 5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-left: -20px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+.top-line .dropdown-item {
+  color: #fff;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+.top-line .dropdown-item:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.top-line__profile {
+  height: 60px;
+  cursor: pointer;
   position: relative;
 }
-.top-line__menu li:not(:first-child) {
+.top-line__profile:hover, .top-line__profile[aria-expanded="true"] {
+  background-color: #e60278;
+}
+.top-line__profile + .dropdown-menu {
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.top-line__menu > li {
+  position: relative;
+}
+.top-line__menu > li:not(:first-child) {
   margin-left: 30px;
 }
-.top-line__menu li:not(:first-child):after {
+.top-line__menu > li:not(:first-child):after {
   display: block;
   content: "";
   height: 80%;
@@ -2916,6 +3023,14 @@ label {
   color: #ffffff;
   text-decoration: underline;
   font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.first-screen__button:hover {
+  background-color: #19386a;
+  color: #fff;
 }
 
 .block-title {
@@ -3104,6 +3219,13 @@ label {
 .filled-checkbox input:checked + .filled-checkbox__detector {
   opacity: 1;
 }
+.filled-checkbox--white {
+  background-color: #fff;
+}
+.filled-checkbox--white .filled-checkbox__detector {
+  border-bottom: 3px solid #0066cc;
+  border-left: 3px solid #0066cc;
+}
 
 .filled-checkbox__detector {
   opacity: 0;
@@ -3128,7 +3250,7 @@ label {
   border-top: 1px solid #EEEEEE;
 }
 
-.standard-input, .custom-select {
+.standard-input, .custom-select, .form-control {
   padding: 8px 15px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -3139,7 +3261,7 @@ label {
   width: 100%;
   font-size: 16px;
 }
-.standard-input:focus, .custom-select:focus {
+.standard-input:focus, .custom-select:focus, .form-control:focus {
   outline: none;
 }
 
@@ -3232,4 +3354,8 @@ label {
 
 .add-resume-driver-license-checkbox input:checked + span {
   color: #0066cc;
+}
+
+.modal-cities .modal-dialog {
+  max-width: 670px;
 }

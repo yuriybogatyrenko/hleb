@@ -4,7 +4,7 @@
 }
 
 .icon-create-vacancy {
-  background-image: url('../images/icons-s2635380207.png');
+  background-image: url('../images/icons-se35ef14054.png');
   background-position: 0 -92px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -15,7 +15,7 @@
 }
 
 .icon-create-resume {
-  background-image: url('../images/icons-s2635380207.png');
+  background-image: url('../images/icons-se35ef14054.png');
   background-position: 0 -35px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -26,7 +26,7 @@
 }
 
 .icon-blue-double-arrow {
-  background-image: url('../images/icons-s2635380207.png');
+  background-image: url('../images/icons-se35ef14054.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -37,7 +37,7 @@
 }
 
 .icon-white-double-arrow {
-  background-image: url('../images/icons-s2635380207.png');
+  background-image: url('../images/icons-se35ef14054.png');
   background-position: 0 -194px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -48,7 +48,7 @@
 }
 
 .icon-white-apply {
-  background-image: url('../images/icons-s2635380207.png');
+  background-image: url('../images/icons-se35ef14054.png');
   background-position: 0 -170px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -59,7 +59,7 @@
 }
 
 .icon-blue-hamburger {
-  background-image: url('../images/icons-s2635380207.png');
+  background-image: url('../images/icons-se35ef14054.png');
   background-position: 0 -16px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -70,7 +70,7 @@
 }
 
 .icon-trash {
-  background-image: url('../images/icons-s2635380207.png');
+  background-image: url('../images/icons-se35ef14054.png');
   background-position: 0 -149px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -78,4 +78,27 @@
   vertical-align: middle;
   height: 16px;
   width: 14px;
+}
+
+.icon-white-profile {
+  background-image: url('../images/icons-se35ef14054.png');
+  background-position: 0 -210px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-chevron-right {
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

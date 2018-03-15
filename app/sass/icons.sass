@@ -6,6 +6,13 @@
   display: inline-block
   vertical-align: middle
 
-@each $icon in create-vacancy, create-resume, blue-double-arrow, white-double-arrow, white-apply, blue-hamburger, trash
+@each $icon in create-vacancy, create-resume, blue-double-arrow, white-double-arrow, white-apply, blue-hamburger, trash, white-profile
   .icon-#{$icon}
     +sprite(icon-#{$icon})
+
+.icon-chevron-right
+  width: 8px
+  height: 8px
+  border-top: 2px solid #000000
+  border-right: 2px solid #000000
+  transform: rotate(45deg)
