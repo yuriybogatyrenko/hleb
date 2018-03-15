@@ -1,8 +1,11 @@
-<div class="top-line fw-bg-color-blue">
+<div class="top-line fw-bg-color-blue fw-relative navbar navbar-light navbar-expand-md">
     <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-            <div>
-                <ul class="top-line__menu fw-reset d-flex">
+        <div class="d-flex align-items-center justify-content-between fw-width-1-1">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-line-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="top-line-navbar">
+                <ul class="top-line__menu navbar-nav fw-reset d-flex">
                     <li class="fw-reset active dropdown">
                         <a  class="fw-color-white" data-toggle="dropdown" href="#" role="button">Ищу работу</a>
                         <div class="dropdown-menu fw-pl-15 fw-pr-15">
@@ -24,7 +27,7 @@
                         <div class="fw-mr-10">
                             <i class="icon icon-white-profile"></i>
                         </div>
-                        <div class="fw-color-white fw-text-underline">
+                        <div class="fw-color-white fw-text-underline d-none d-md-block">
                             Роман Сыромятников
                         </div>
                     </div>
@@ -59,12 +62,12 @@
 </div>
 <header class="header">
     <div class="container">
-        <div class="d-flex fw-pt-30 fw-pb-30 align-items-center">
-            <div>
+        <div class="d-flex fw-pt-30 fw-pb-30 fw-pt-15@xs fw-pb-15@xs align-items-center flex-wrap">
+            <div class="logo-wrapper">
                 <a href="/" class="fw-reset"><img src="images/logo.jpg" alt=""></a>
             </div>
-            <div class="col">
-                <form action="#" class="header__form d-flex align-items-center">
+            <div class="col fw-pr-0@xs fw-pl-0@xs">
+                <form action="#" class="header__form d-flex align-items-center flex-wrap fw-relative">
                     <div class="header__form-input col">
                         <input type="text" class="standard-input col-12 fw-reset fw-pt-8 fw-pb-8" placeholder="Ищу...">
                     </div>
@@ -83,7 +86,7 @@
                     </div>
                 </form>
             </div>
-            <div>
+            <div class="d-none d-md-block">
                 <a href="#" class="fw-color-blue fw-text-underline">Расширенный поиск</a>
             </div>
         </div>

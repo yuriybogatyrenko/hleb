@@ -9,10 +9,10 @@
 
     <div class="first-screen">
         <div class="container">
-            <div class="d-flex">
+            <div class="d-flex flex-wrap flex-sm-nowrap">
                 <div class="col d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-wrap flex-lg-nowrap">
-                        <div class="fw-padding-10 fw-ml-auto fw-mr-auto fw-text-center d-inline-block">
+                        <div class="fw-padding-10 fw-ml-auto fw-mr-auto fw-pl-0@xs fw-pr-0@xs fw-text-center d-inline-block">
                             <a href="#" class="fw-reset first-screen__button">
                                 <i class="icon icon-create-resume"></i>
                                 <div class="fw-ml-10">
@@ -20,7 +20,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="fw-padding-10 fw-ml-auto fw-mr-auto fw-text-center d-inline-block">
+                        <div class="fw-padding-10 fw-ml-auto fw-mr-auto fw-pl-0@xs fw-pr-0@xs fw-text-center d-inline-block">
                             <a href="#" class="fw-reset first-screen__button">
                                 <i class="icon icon-create-vacancy"></i>
                                 <div class="fw-ml-10">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="first-screen__form">
+                <div class="first-screen__form fw-ml-auto@xs mx-auto fw-mb-20@xs">
                     <div class="fw-mb-30 d-flex">
                         <div>
                             <a href="#" class="fw-color-white">Вход</a>
@@ -77,18 +77,18 @@
     <div class="fw-pt-35 fw-pb-35">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-12 col-sm-8">
                     <div class="block-title fw-mb-25">Новые вакансии</div>
 
                     <div class="row fw-mb-inverse-30">
                         {% for item in 1..15 %}
-                            <div class="col-4 fw-mb-30">
+                            <div class="col-6 col-sm-6 col-md-4 fw-mb-30">
                                 {% include 'components/resume-preview.twig' %}
                             </div>
                         {% endfor %}
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-4 mt-4 mt-sm-0">
                     <div class="block-title fw-mb-25">Работа в компаниях</div>
                     <div class="fw-mb-30">
                         <img src="images/promo/home-credit.jpg" class="fw-width-1-1" alt="">
@@ -116,12 +116,12 @@
     <div class="fw-pt-35 fw-pb-35 fw-bg-color-gray-light">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-12 col-md-8">
                     <div class="block-title fw-mb-25">Работа по профессиям</div>
 
                     <div class="row">
                         {% for item in 1..3 %}
-                            <div class="col-4">
+                            <div class="col-12 col-sm-4">
                                 <ul class="fw-reset">
                                     <li class="fw-reset fw-mt-10 fw-mb-10">
                                         <a href="#" class="fw-reset link-marked fw-text-underline">
@@ -141,7 +141,7 @@
                         {% endfor %}
                     </div>
                 </div>
-                <div class="col-3 fw-relative">
+                <div class="col-12 col-sm-4 d-none d-md-block fw-relative">
                     <div class="vacancies-block-full-height fw-reset">
                         <img src="images/promo/kfc.jpg" alt="">
                     </div>

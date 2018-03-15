@@ -10,32 +10,34 @@
     <div class="fw-pt-35 fw-pb-35">
         <div class="container">
             <div class="row">
-                <div class="col-9">
-                    <div class="d-flex align-items-center fw-mb-30 row">
-                        <div class="fw-mr-30 col">
-                            <div class="fw-fz-24 fw-text-500 fw-mb-20">Мастер/ученик по оклейке защитных пленок на
-                                автомобиль
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <div class="d-flex align-items-center fw-mb-30 flex-sm-nowrap flex-column-reverse flex-sm-row">
+                            <div class="mr-0 mr-sm-5 col-sm">
+                                <div class="fw-fz-24 fw-text-500 fw-mb-20">
+                                    Мастер/ученик по оклейке защитных пленок на автомобиль
+                                </div>
+                                <div class="fw-fz-24 fw-mb-20">
+                                    от 150 000 до 300 000 KZT до вычета НДФЛ
+                                </div>
+                                <div>
+                                    <a href="#" target="_blank" class="fw-color-blue-dark fw-text-underline">ТОО JTS
+                                        (ДжейТиЭс)</a>
+                                </div>
+                                <div class="fw-mt-40 d-flex align-items-center">
+                                    <a href="#" class="btn btn--small fw-mr-20">
+                                        <i class="icon icon-white-apply"></i>
+                                        <span>Откликнуться</span>
+                                    </a>
+                                    <a href="#" class="btn btn--small btn--long btn-empty ">Контакты</a>
+                                </div>
                             </div>
-                            <div class="fw-fz-24 fw-mb-20">
-                                от 150 000 до 300 000 KZT до вычета НДФЛ
+                            <div class="col-sm-auto pr-sm-3 pl-3 pr-3 pr-sm-0 text-center mb-4 mb-sm-0">
+                                <img alt="" src="http://placehold.it/170x140"/>
                             </div>
-                            <div>
-                                <a href="#" target="_blank" class="fw-color-blue-dark fw-text-underline">ТОО JTS
-                                    (ДжейТиЭс)</a>
-                            </div>
-                            <div class="fw-mt-40 d-flex align-items-center">
-                                <a href="#" class="btn btn--small fw-mr-20">
-                                    <i class="icon icon-white-apply"></i>
-                                    <span>Откликнуться</span>
-                                </a>
-                                <a href="#" class="btn btn--small btn--long btn-empty ">Контакты</a>
-                            </div>
-                        </div>
-                        <div class="fw-pr-35">
-                            <img alt="" src="http://placehold.it/170x140"/>
                         </div>
                     </div>
-                    <div class="fw-padding-30 fw-bg-color-gray-light">
+                    <div class="fw-bg-color-gray-light fw-padding-30 fw-padding-20@xs fw-ml-inverse-20@xs fw-mr-inverse-20@xs">
                         <div class="fw-mb-inverse-15">
                             <p>Мастера и ученики по оклейке защитных пленок на автомобиль.</p>
 
@@ -46,7 +48,7 @@
                                 <br>Опыт в данной сфере приветствуется.</p>
                         </div>
                     </div>
-                    <div class="fw-padding-30">
+                    <div class="fw-padding-30 fw-padding-0@xs fw-pt-20@xs fw-pb-20@xs">
                         <div class="fw-text-600 fw-mb-20">Требования:</div>
 
                         <ul class="fw-reset fw-mb-20">
@@ -84,9 +86,9 @@
                     </div>
                     <div class="fw-mt-40">
                         <div class="fw-fz-24 fw-text-500 fw-mb-30">Отклик на вакансию</div>
-                        <div class="fw-bg-color-blue fw-padding-30">
+                        <div class="fw-bg-color-blue fw-padding-30 fw-padding-20@xs fw-ml-inverse-20@xs fw-mr-inverse-20@xs">
                             <div class="row">
-                                <div class="col-8">
+                                <div class="col-12 col-md-6 col-lg-8">
                                     <form action="#">
                                         <div class="fw-mb-15">
                                             <input type="text" class="standard-input" placeholder="Имя">
@@ -102,7 +104,7 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="col-4 fw-color-white">
+                                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-md-0 fw-color-white">
                                     <div class="d-flex align-items-center fw-mb-30 fw-text-500">
                                         <div>
                                             <a href="#" class="fw-color-white">Вход</a>
@@ -130,17 +132,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="fw-pb-30">
+                <div class="col-12 col-md-3">
+                    <div class="fw-pb-30 d-none d-md-block">
                         <img src="images/promo/kfc.jpg" class="fw-width-1-1" alt="">
                     </div>
                     <div class="fw-mt-30">
                         <div class="fw-fz-24 fw-text-500">
                             Похожие резюме
                         </div>
-                        <div>
+                        <div class="row">
                             {% for i in 1..8 %}
-                                <div class="fw-mt-25">
+                                <div class="fw-mt-25 col-12 col-sm-6 col-md-12">
                                     {% include 'components/resume-preview.twig' %}
                                 </div>
                             {% endfor %}
