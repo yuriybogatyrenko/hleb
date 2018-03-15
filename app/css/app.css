@@ -1,52 +1,3 @@
-@font-face {
-  font-family: "fs";
-  src: url("../fonts/FiraSasnsOT-Regular.eot");
-  src: url("../fonts/FiraSasnsOT-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSasnsOT-Regular.woff") format("woff"), url("../fonts/FiraSasnsOT-Regular.ttf") format("truetype"), url("../fonts/FiraSasnsOT-Regular.svg#fs") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "fs";
-  src: url("../fonts/FiraSasnsOT-RegularItalic.eot");
-  src: url("../fonts/FiraSasnsOT-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSasnsOT-RegularItalic.woff") format("woff"), url("../fonts/FiraSasnsOT-RegularItalic.ttf") format("truetype"), url("../fonts/FiraSasnsOT-RegularItalic.svg#fs") format("svg");
-  font-style: italic;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "fs";
-  src: url("../fonts/FiraSasnsOT-Bold.eot");
-  src: url("../fonts/FiraSasnsOT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSasnsOT-Bold.woff") format("woff"), url("../fonts/FiraSasnsOT-Bold.ttf") format("truetype"), url("../fonts/FiraSasnsOT-Bold.svg#fs") format("svg");
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "fs";
-  src: url("../fonts/FiraSasnsOT-Light.eot");
-  src: url("../fonts/FiraSasnsOT-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSasnsOT-Light.woff") format("woff"), url("../fonts/FiraSasnsOT-Light.ttf") format("truetype"), url("../fonts/FiraSasnsOT-Light.svg#fs") format("svg");
-  font-style: normal;
-  font-weight: 300;
-}
-@font-face {
-  font-family: "fs";
-  src: url("../fonts/FiraSasnsOT-LightItalic.eot");
-  src: url("../fonts/FiraSasnsOT-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSasnsOT-LightItalic.woff") format("woff"), url("../fonts/FiraSasnsOT-LightItalic.ttf") format("truetype"), url("../fonts/FiraSasnsOT-LightItalic.svg#fs") format("svg");
-  font-style: italic;
-  font-weight: 300;
-}
-@font-face {
-  font-family: "fs";
-  src: url("../fonts/FiraSasnsOT-Medium.eot");
-  src: url("../fonts/FiraSasnsOT-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSasnsOT-Medium.woff") format("woff"), url("../fonts/FiraSasnsOT-Medium.ttf") format("truetype"), url("../fonts/FiraSasnsOT-Medium.svg#fs") format("svg");
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "fs";
-  src: url("../fonts/FiraSasnsOT-BoldItalic.eot");
-  src: url("../fonts/FiraSasnsOT-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSasnsOT-BoldItalic.woff") format("woff"), url("../fonts/FiraSasnsOT-BoldItalic.ttf") format("truetype"), url("../fonts/FiraSasnsOT-BoldItalic.svg#fs") format("svg");
-  font-style: italic;
-  font-weight: 700;
-}
 .fw-reset, body, .pagination__list, .pagination__item, .pagination__link, .standard-list {
   margin: 0;
   font-weight: normal;
@@ -687,6 +638,26 @@
   margin-right: 40px;
 }
 
+.fw-margin-50 {
+  margin: 50px;
+}
+
+.fw-mt-50 {
+  margin-top: 50px;
+}
+
+.fw-mb-50 {
+  margin-bottom: 50px;
+}
+
+.fw-ml-50 {
+  margin-left: 50px;
+}
+
+.fw-mr-50 {
+  margin-right: 50px;
+}
+
 @media screen and (max-width: 950px) {
   .fw-margin-0\@xl {
     margin: 0px;
@@ -876,6 +847,27 @@
     margin-right: 40px;
   }
 }
+@media screen and (max-width: 950px) {
+  .fw-margin-50\@xl {
+    margin: 50px;
+  }
+
+  .fw-mt-50\@xl {
+    margin-top: 50px;
+  }
+
+  .fw-mb-50\@xl {
+    margin-bottom: 50px;
+  }
+
+  .fw-ml-50\@xl {
+    margin-left: 50px;
+  }
+
+  .fw-mr-50\@xl {
+    margin-right: 50px;
+  }
+}
 @media screen and (max-width: 767px) {
   .fw-margin-0\@xs {
     margin: 0px;
@@ -1063,6 +1055,27 @@
 
   .fw-mr-40\@xs {
     margin-right: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-margin-50\@xs {
+    margin: 50px;
+  }
+
+  .fw-mt-50\@xs {
+    margin-top: 50px;
+  }
+
+  .fw-mb-50\@xs {
+    margin-bottom: 50px;
+  }
+
+  .fw-ml-50\@xs {
+    margin-left: 50px;
+  }
+
+  .fw-mr-50\@xs {
+    margin-right: 50px;
   }
 }
 .fw-mt-inverse-5 {
@@ -2793,7 +2806,7 @@
 }
 
 body {
-  font-family: fs, sans-serif, arial;
+  font-family: "Fira Sans", sans-serif, arial;
   font-size: 16px;
   font-weight: 400;
   color: #3d3d3d;
@@ -2958,6 +2971,12 @@ a.fw-text-underline:hover {
   margin: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .top-line__menu {
+    display: block !important;
+    padding: 20px;
+  }
+}
 .top-line__menu > li {
   position: relative;
 }
@@ -2979,6 +2998,18 @@ a.fw-text-underline:hover {
   margin-left: -15px;
   width: 1px;
   background-color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .top-line__menu > li:nth-child(n) {
+    margin-left: 0;
+  }
+  .top-line__menu > li:nth-child(n):after {
+    display: none;
+  }
+  .top-line__menu > li a {
+    padding: 10px 0;
+    display: block;
+  }
 }
 
 .header {
@@ -3358,4 +3389,62 @@ a.fw-text-underline:hover {
 
 .modal-cities .modal-dialog {
   max-width: 670px;
+}
+
+.navbar-toggler {
+  background-color: #fff;
+}
+
+.navbar {
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar .dropdown-menu {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #00225a;
+    z-index: 100;
+  }
+}
+
+.logo-wrapper {
+  margin-right: 15px;
+}
+@media screen and (max-width: 575px) {
+  .logo-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header__form {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header__form-button {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+  }
+  .header__form-button button {
+    width: 100%;
+  }
 }

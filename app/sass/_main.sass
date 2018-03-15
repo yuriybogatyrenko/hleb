@@ -6,7 +6,7 @@
 
 body
     @extend .fw-reset
-    font-family: fs, sans-serif, arial
+    font-family: 'Fira Sans', sans-serif, arial
     font-size: 16px
     font-weight: 400
     color: #3d3d3d
@@ -150,6 +150,10 @@ a
         margin: 0
 
 .top-line__menu
+    @media screen and (max-width: 767px)
+        display: block !important
+        padding: 20px
+
     > li
         position: relative
 
@@ -167,6 +171,17 @@ a
                 margin-left: -15px
                 width: 1px
                 background-color: #fff
+
+        @media screen and (max-width: 767px)
+            &:nth-child(n)
+                margin-left: 0
+
+                &:after
+                    display: none
+
+            a
+                padding: 10px 0
+                display: block
 
 .header
     border-bottom: 1px solid #a7a7a7
@@ -474,3 +489,48 @@ a
 .modal-cities
     .modal-dialog
         max-width: 670px
+
+.navbar-toggler
+    background-color: #fff
+
+.navbar
+    padding: 0
+
+    @media screen and (max-width: 767px)
+        padding-left: 20px
+        padding-right: 20px
+
+        .dropdown-menu
+            margin-left: 0
+            margin-top: 0
+
+.navbar-collapse
+    @media screen and (max-width: 767px)
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        background-color: $colorBlue
+        z-index: 100
+
+.logo-wrapper
+    margin-right: 15px
+
+    @media screen and (max-width: 575px)
+        width: 100%
+        text-align: center
+        margin-bottom: 15px
+
+.header__form
+    @media screen and (max-width: 575px)
+        margin-bottom: 50px
+
+.header__form-button
+    @media screen and (max-width: 575px)
+        width: 100%
+        position: absolute
+        top: 100%
+        margin-top: 10px
+
+        button
+            width: 100%

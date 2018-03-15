@@ -4,15 +4,15 @@
 
 {% block content %}
     <!-- Header block -->
-    {% include "layouts/header.twig" %}
+    {% include "layouts/header-main.twig" %}
     <!-- Header block end -->
 
     <div class="first-screen">
         <div class="container">
             <div class="d-flex">
                 <div class="col d-flex align-items-center justify-content-center">
-                    <div class="d-flex">
-                        <div>
+                    <div class="d-flex flex-wrap flex-lg-nowrap">
+                        <div class="fw-padding-10 fw-ml-auto fw-mr-auto fw-text-center d-inline-block">
                             <a href="#" class="fw-reset first-screen__button">
                                 <i class="icon icon-create-resume"></i>
                                 <div class="fw-ml-10">
@@ -20,7 +20,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="fw-ml-20">
+                        <div class="fw-padding-10 fw-ml-auto fw-mr-auto fw-text-center d-inline-block">
                             <a href="#" class="fw-reset first-screen__button">
                                 <i class="icon icon-create-vacancy"></i>
                                 <div class="fw-ml-10">
@@ -153,9 +153,9 @@
     <div class="fw-pt-35 fw-pb-35">
         <div class="container">
             <div class="block-title fw-mb-20">Новости</div>
-            <div class="row">
+            <div class="row fw-mb-inverse-20">
                 {% for i in 1..4 %}
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-sm-6 fw-mb-20">
                         <a href="#" class="fw-reset d-flex align-items-center">
                             <div class="fw-width-100 fw-flex-shrink-no fw-mr-10">
                                 <img src="http://placehold.it/100" alt="" class="fw-width-1-1">
