@@ -44,6 +44,13 @@ a
     padding-right: 20px
     width: 100%
 
+    &--small
+        max-width: 630px
+
+    &--large
+        max-width: 1600px
+
+
 .app-wrapper
     min-width: 320px
     width: 100%
@@ -73,6 +80,13 @@ a
         border: 1px solid #b6b6b6
         color: $colorDark
         box-shadow: none
+
+        &.btn-white
+            border-color: #fff
+            color: #fff
+
+            &:hover
+                border-color: $colorBlueLight
 
         &:hover
             background-color: $colorBlueLight
@@ -479,6 +493,9 @@ a
         padding-bottom: 3px
         padding-right: 30px
 
+    &.text-center
+        text-align: center
+
 .standard-input-right-icon
     position: absolute
     height: 100%
@@ -561,3 +578,18 @@ a
 
         button
             width: 100%
+
+.register-page
+    background: url(../images/register-page-bg.jpg) center center / cover
+    min-height: 100vh
+
+.register-form
+    background: rgba($colorBlue, 0.8)
+
+    &__inner
+        max-width: 393px
+
+.register-info
+    position: absolute
+    left: 0
+    top: 0

@@ -2264,6 +2264,10 @@
   font-size: 24px;
 }
 
+.fw-fz-30 {
+  font-size: 30px;
+}
+
 .fw-fz-36 {
   font-size: 36px;
 }
@@ -2314,6 +2318,11 @@
   }
 }
 @media screen and (max-width: 950px) {
+  .fw-fz-30\@xl {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 950px) {
   .fw-fz-36\@xl {
     font-size: 36px;
   }
@@ -2361,6 +2370,11 @@
 @media screen and (max-width: 767px) {
   .fw-fz-24\@xs {
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-fz-30\@xs {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2917,6 +2931,12 @@ a.fw-text-underline:hover {
   padding-right: 20px;
   width: 100%;
 }
+.container--small {
+  max-width: 630px;
+}
+.container--large {
+  max-width: 1600px;
+}
 
 .app-wrapper {
   min-width: 320px;
@@ -2954,6 +2974,13 @@ a.fw-text-underline:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+.btn.btn-empty.btn-white {
+  border-color: #fff;
+  color: #fff;
+}
+.btn.btn-empty.btn-white:hover {
+  border-color: #51b0e1;
 }
 .btn.btn-empty:hover {
   background-color: #51b0e1;
@@ -3454,6 +3481,9 @@ a.fw-text-underline:hover {
   padding-bottom: 3px;
   padding-right: 30px;
 }
+.custom-select.text-center {
+  text-align: center;
+}
 
 .standard-input-right-icon {
   position: absolute;
@@ -3563,4 +3593,22 @@ a.fw-text-underline:hover {
   .header__form-button button {
     width: 100%;
   }
+}
+
+.register-page {
+  background: url(../images/register-page-bg.jpg) center center/cover;
+  min-height: 100vh;
+}
+
+.register-form {
+  background: rgba(0, 34, 90, 0.8);
+}
+.register-form__inner {
+  max-width: 393px;
+}
+
+.register-info {
+  position: absolute;
+  left: 0;
+  top: 0;
 }

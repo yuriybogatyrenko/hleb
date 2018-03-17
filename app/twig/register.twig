@@ -1,0 +1,111 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Scan&amp;Go. Делаю покупки еще быстрее – Система самостоятельного сканирования товаров{% endblock %}
+
+{% block content %}
+    <div class="register-page">
+        <div class="container container--small ">
+            <div class="fw-bg-color-white pt-5 pb-5">
+                <div class="container container--small text-center">
+                    <div>
+                        <i class="icon icon-register"></i>
+                    </div>
+                    <div class="mt-2 fw-text-uppercase">
+                        Регистрация работодателя
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container--large fw-relative mx-auto">
+            <div class="register-info pt-5 d-none d-lg-block pl-3">
+                <div><img src="images/register-logo.png" alt=""></div>
+                <div class="mt-5 mb-5">
+                    <div class="fw-color-white mb-1">Ответим на ваши вопросы</div>
+                    <div class="fw-fz-30 fw-color-gray">+7 727 250 13 30</div>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-white btn-empty btn--small">Вход в личный кабинет</a>
+                </div>
+            </div>
+            <div class="container container--small">
+                <div class="register-form pt-5 pb-5 fw-color-white">
+                    <div class="container container--small text-center">
+                        <form action="#" class="register-form__inner mx-auto">
+                            <div class="mb-5">
+                                <div class="mb-3">
+                                    <select class="custom-select text-center">
+                                        <option value="">ТОО</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Название компании" class="form-control">
+                                </div>
+                                <div>
+                                    <label class="d-flex align-items-center justify-content-center mb-0">
+                                            <span class="filled-checkbox filled-checkbox--white mr-3">
+                                                <input type="checkbox">
+                                                <span class="filled-checkbox__detector"></span>
+                                            </span>
+                                        <span>Кадоровое агенство</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Сайт" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="custom-select text-center">
+                                        <option value="">Менее 50 сотрудников</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="custom-select text-center">
+                                        <option value="">Алматы</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="mb-3 text-center">
+                                    Контактное лицо (конфиденциально)
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Имя" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Фамилия" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Электронная почта" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Телефонный номер" class="form-control">
+                                </div>
+                            </div>
+                            <div class="fw-fz-14 mb-5">
+                                Нажимая «Зарегистрировать компанию», вы
+                                подтверждаете, что ознакомлены и полностью
+                                согласны с <a href="#" class="fw-color-white">условиями использования сайта</a>.
+                            </div>
+                            <div>
+                                <button class="btn">Зарегистрировать <span class="d-none d-sm-inline">компанию</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
