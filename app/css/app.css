@@ -3256,7 +3256,6 @@ a.fw-text-underline:hover {
 }
 @media screen and (max-width: 575px) {
   .pagination__link {
-    padding: 5px 2px;
     min-width: 30px;
     text-align: center;
   }
