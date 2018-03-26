@@ -50,6 +50,10 @@ a
     &--large
         max-width: 1600px
 
+    @media screen and (max-width: 767px)
+        padding-left: 15px
+        padding-right: 15px
+
 
 .app-wrapper
     min-width: 320px
@@ -139,6 +143,10 @@ a
         margin-left: -20px
         box-shadow: none
         border: none
+
+        &.dropdown-menu-right
+            left: auto
+            right: -15px
 
     .dropdown-item
         color: #fff
@@ -536,17 +544,21 @@ a
 
 .navbar-toggler
     background-color: #fff
+    padding: 0 5px
 
 .navbar
     padding: 0
 
     @media screen and (max-width: 767px)
-        padding-left: 20px
-        padding-right: 20px
+        padding-left: 15px
+        padding-right: 15px
 
         .dropdown-menu
             margin-left: 0
             margin-top: 0
+
+            &.dropdown-menu-right
+                margin-top: 15px
 
 .navbar-collapse
     @media screen and (max-width: 767px)
@@ -580,7 +592,7 @@ a
             width: 100%
 
 .register-page
-    background: url(../images/register-page-bg.jpg) center center / cover
+    background: url(../images/register-page-bg.jpg) center center / cover fixed
     min-height: 100vh
 
 .register-form

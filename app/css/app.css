@@ -2937,6 +2937,12 @@ a.fw-text-underline:hover {
 .container--large {
   max-width: 1600px;
 }
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .app-wrapper {
   min-width: 320px;
@@ -3045,6 +3051,10 @@ a.fw-text-underline:hover {
   -moz-box-shadow: none;
   box-shadow: none;
   border: none;
+}
+.top-line .dropdown-menu.dropdown-menu-right {
+  left: auto;
+  right: -15px;
 }
 .top-line .dropdown-item {
   color: #fff;
@@ -3538,6 +3548,7 @@ a.fw-text-underline:hover {
 
 .navbar-toggler {
   background-color: #fff;
+  padding: 0 5px;
 }
 
 .navbar {
@@ -3545,12 +3556,15 @@ a.fw-text-underline:hover {
 }
 @media screen and (max-width: 767px) {
   .navbar {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .navbar .dropdown-menu {
     margin-left: 0;
     margin-top: 0;
+  }
+  .navbar .dropdown-menu.dropdown-menu-right {
+    margin-top: 15px;
   }
 }
 
@@ -3595,7 +3609,7 @@ a.fw-text-underline:hover {
 }
 
 .register-page {
-  background: url(../images/register-page-bg.jpg) center center/cover;
+  background: url(../images/register-page-bg.jpg) center center/cover fixed;
   min-height: 100vh;
 }
 
