@@ -12,9 +12,9 @@
     .fw-fz-#{$value}\@xs
       font-size: #{$value}px
 
-@each $value in 0, 18, 22, 25, 40
-  .fw-line-height-#{$value}
-    line-height: #{$value}px
+  @each $value in 0, 18, 22, 25, 30, 40
+    .fw-line-height-#{$value}
+      line-height: #{$value}px
 
 @each $value in '1-2', '1-4', '1-5', '1-7', '2', '1-0'
   .fw-line-height-#{$value}
@@ -52,3 +52,18 @@
 
 .fw-text-no-wrap
   white-space: nowrap
+
+.fw-font-mr
+  font-family: "MontserratRegular"
+
+.fw-font-mb
+  font-family: "MontserratBold"
+
+.fw-font-mm
+  font-family: "MontserratMedium"
+
+.fw-font-msb
+  font-family: "MontserratSemiBold"
+
+.fw-font-ml
+  font-family: "MontserratLight"

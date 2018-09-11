@@ -25,18 +25,6 @@
 @import "visibilities"
 @import "text"
 
-.fw-opacity-5
-  opacity: 0.5
-
-.fw-opacity-7
-  opacity: 0.7
-
-.fw-opacity-8
-  opacity: 0.8
-
-.fw-opacity-1
-  opacity: 1
-
 .fw-dashed-link
   border-bottom: 1px dashed #fff
   text-decoration: none
@@ -44,29 +32,13 @@
   &:hover
     border-color: transparent
 
-.fw-absolute
-  position: absolute
-
-.fw-relative
-  position: relative
-
 @each $value in $top
   .fw-top-#{$value}
     top: $value
 
-.fw-top-100-percent
-  top: 100%
-
-.fw-top-50-percent
-  top: 50%
-
 @each $value in $bottom
   .fw-bottom-#{$value}
     bottom: $value
-
-.fw-bottom-100-percent
-  bottom: 100%
-
 
 @each $value in $left
   .fw-left-#{$value}
@@ -78,27 +50,6 @@
 @each $value in $right
   .fw-right-#{$value}
     right: $value
-
-.fw-right-100-percent
-  right: 100%
-
-.fw-box-shadow
-  border: solid 1px #ececec
-
-.fw-transition
-  transition: all 0.3s ease
-  
-.fw-z-index-1
-  z-index: 1
-  
-.fw-text-nowrap
-  white-space: nowrap
-  
-.fw-block
-  display: block
-
-.fw-transform-origin-left
-  transform-origin: 40% 100%
 
 .fw-link
   &:hover
