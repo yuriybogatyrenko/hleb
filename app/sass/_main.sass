@@ -11,6 +11,34 @@ body
 *
 	box-sizing: border-box
 
+// Button style
+.fw-button
+	position: relative
+	height: 50px
+	padding-left: 34px
+	padding-right: 34px
+	&:hover
+		.icon-arrow
+			margin-left: 10px
+		&:before
+			width: 100%
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		z-index: 0
+		top: 0
+		width: 57px
+		height: 100%
+		background-color: #fdf7f2
+		transition: all .4s ease
+
+.fw-button-opacity
+	&:before
+		opacity: .5
+
+//__________________________________________________________________________________
+
 .container
 	max-width: 1760px
 	width: 100%
@@ -21,6 +49,7 @@ body
 	width: 100%
 	margin: auto
 
+// Header section
 .header-content
 	background-image: url('/images/main/header/header-bg.jpg')
 	-webkit-background-size: cover
@@ -54,6 +83,8 @@ body
 	&:before
 		height: 10px
 		top: -10px
+
+// History  section
 .history-in-numbers-item
 	&:last-child
 		.history-in-numbers-item--number
@@ -73,23 +104,40 @@ body
 		background-color: #000
 .icon-arrow
 	transition: all .3s ease
-.fw-button
-	position: relative
-	height: 50px
-	padding-left: 34px
-	padding-right: 34px
-	&:hover
-		.icon-arrow
-			margin-left: 10px
-		&:before
-			width: 100%
+
+// Modern section
+$modernSectionPadding: 160px
+$modernSectionAfterHeight: 138px
+
+.modern-production-item-left-before
 	&:before
 		content: ''
 		position: absolute
-		left: 0
-		z-index: 0
 		top: 0
-		width: 57px
-		height: 100%
-		background-color: #fdf7f2
-		transition: all .4s ease
+		left: -$modernSectionPadding
+		width: $modernSectionPadding
+		height: $modernSectionAfterHeight
+		background-color: $colorDarkRed
+
+.partnership
+	max-width: 1760px
+	width: 100%
+	margin: auto
+	padding-right: 160px
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		width: $modernSectionPadding
+		height: 70%
+		background-color: $colorLightPaleYellow
+	.container
+		padding-left: $modernSectionPadding
+		padding-right: $modernSectionPadding
+
+
+// locations
+.locations-info
+	top: 50%
+	transform: translateY(-50%)
