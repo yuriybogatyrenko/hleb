@@ -26,3 +26,7 @@
 
 .fw-z-index-4
   z-index: 4
+
+@each $value in 300, 400, 500
+  .fw-transition-#{$value}
+    transition: #{$value}ms

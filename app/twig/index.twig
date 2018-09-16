@@ -7,6 +7,52 @@
     {% include "layouts/header.twig" %}
     <!-- Header block end -->
     <div class="index">
+        {# header slider #}
+        <div class="container">
+            <div class="fw-width-1-1">
+                <div class="header-slider fw-bg-color-light-pale-yellow owl-carousel  fw-width-1-1 fw-flex fw-flex-top fw-flex-left fw-flex-column fw-text-left fw-color-white">
+                    <div class="header-slider-slide fw-min-height-760 fw-width-1-1">
+                        <h1 class="fw-color-pale-yellow">11</h1>
+                        <img src="/images/main/header/header-bg.jpg" alt="">
+
+                        <div class="fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-pl-95 fw-pb-290 fw-pt-220 ">
+                            <span class="fw-fz-14 fw-font-msb">Торгово-производственная компания «Хлебпром»</span>
+                            <h1 class="fw-font-mr fw-mt-35 fw-mb-35 fw-fz-60">Торты №1 в России</h1>
+                            <p class="fw-fz-18 fw-margin-0 fw-max-width-615 fw-width-1-1 fw-line-height-30">Торгово-производственная компания ОАО «Хлебпром» основана в 1982 году. Входит в число ведущих российских производителей кондитерского рынка. Компания насчитывает более 4000
+                                сотрудников, включает четыре производственные площадки.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="header-slider-slide fw-min-height-760 fw-width-1-1">
+                        <h1 class="fw-color-pale-yellow">11</h1>
+                        <img src="/images/main/header/header-bg.jpg" alt="">
+
+                        <div class="fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-pl-95 fw-pb-290 fw-pt-220 ">
+                            <span class="fw-fz-14 fw-font-msb">Торгово-производственная компания «Хлебпром»</span>
+                            <h1 class="fw-font-mr fw-mt-35 fw-mb-35 fw-fz-60">Торты №1 в России</h1>
+                            <p class="fw-fz-18 fw-margin-0 fw-max-width-615 fw-width-1-1 fw-line-height-30">Торгово-производственная компания ОАО «Хлебпром» основана в 1982 году. Входит в число ведущих российских производителей кондитерского рынка. Компания насчитывает более 4000
+                                сотрудников, включает четыре производственные площадки.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fw-width-1-1 fw-pb-45 fw-relative">
+                    <ul id="carousel-custom-dots" class="fw-relative fw-z-index-1 owl-dots header-slider-navigation fw-pl-0 fw-margin-0 fw-fz-16 fw-flex fw-flex-left fw-flex-to fw-list-style-type fw-color-gray-text">
+                        <li class="owl-dot fw-pointer header-slider-navigation--link slider-navigation-active fw-reset fw-pr-110 fw-pt-20 fw-pb-20 fw-mr-15 fw-block">О компании</li>
+                        <li class="owl-dot fw-pointer header-slider-navigation--link slider-navigation-active fw-reset fw-pr-110 fw-pt-20 fw-pb-20 fw-mr-15 fw-block">Наша история</li>
+                        <li class="owl-dot fw-pointer header-slider-navigation--link slider-navigation-active fw-reset fw-pr-110 fw-pt-20 fw-pb-20 fw-mr-15 fw-block">Карьера</li>
+                    </ul>
+
+                    <a href="#" class="fw-reset fw-z-index-1 fw-block fw-width-255 fw-pt-90 fw-pb-90 fw-bg-color-dark-red fw-pl-55 fw-absolute fw-right-0 fw-bottom-0">
+                        <p class="fw-flex fw-flex-middle fw-flex-left fw-margin-0 fw-text-uppercase fw-font-msb fw-fz-14 fw-color-white">вся история
+                            <i class="icon-arrow fw-fz-18 fw-ml-15"></i>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
         {# section number info #}
         <div class="fw-width-1-1 fw-pt-90 fw-pb-170">
             <div class="container">
@@ -316,9 +362,9 @@
             <div class="container">
                 <p class="fw-margin-0 fw-mb-40 fw-color-dark-text fw-fz-60 fw-font-ml">Лучшие эксперты</p>
                     
-                <div class="fw-width-1-1 fw-relative">
+                <div id="map" class="fw-width-1-1 fw-min-height-500 fw-relative">
                     
-                    <div class="locations-info fw-max-width-520 fw-pt-50 fw-pl-50 fw-pb-70 fw-pr-70 fw-bg-color-white fw-absolute fw-right-80">
+                    <div class="locations-info fw-z-index-1 fw-max-width-520 fw-pt-50 fw-pl-50 fw-pb-70 fw-pr-70 fw-bg-color-white fw-absolute fw-right-80">
                         <p class="fw-margin-0 fw-mb-30 fw-color-dark-text fw-fz-30 fw-font-ml">Санкт-Петербург <i class=""></i></p>
                         <div class="fw-fz-16 fw-font-mr fw-width-1-1 fw-color-text">
                             <p class="fw-mb-15">Адрес: 192102, Санкт-Петербург,</p>
@@ -329,7 +375,7 @@
                         </div>
                     </div>
 
-                    <img src="/images/map.jpg" class="fw-block" alt="">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55e843dbd5d869306c1c172b8d9b89c7969bc9b011b11b93aa11c57942b08606&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
                 </div>
                 
             </div>
