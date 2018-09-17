@@ -5,7 +5,7 @@
                 <a href="#" class="fw-block"><img src="/images/logo.svg" class="fw-width-1-1" alt=""></a>
             </div>
 
-            <div class="fw-flex fw-flex-middle fw-flex-right">
+            <div class="fw-flex fw-relative fw-flex-middle fw-flex-right">
                 <ul class="fw-flex fw-flex-middle fw-flex-left fw-text-left fw-fz-16 fw-color-text fw-list-style-type fw-mr-110">
                     <li class="fw-ml-20 fw-mr-20"><a href="#" class="fw-reset fw-hover-color-pale-yellow fw-transition-300">О компании</a></li>
                     <li class="fw-ml-20 fw-mr-20"><a href="#" class="fw-reset fw-hover-color-pale-yellow fw-transition-300">Бренды</a></li>
@@ -15,27 +15,120 @@
                     <li class="fw-ml-20 fw-mr-20"><a href="#" class="fw-reset fw-hover-color-pale-yellow fw-transition-300">Контакты</a></li>
                 </ul>
 
-                <div class="fw-flex fw-flex-middle fw-flex-left fw-text-left fw-fz-16 fw-color-text fw-mr-140">
+                <div class="fw-flex fw-flex-middle fw-flex-left fw-text-left fw-fz-16 fw-color-text fw-pr-220">
                     <i class="icon-place fw-fz-18 fw-mr-10"></i>
                     <p>Ярославль</p>
                 </div>
 
+                {# fixed menu #}
                 <div class="fixed-menu">
-                    <div class="container">
-                        <p>главная</p>
-                        
-                        <div class=""></div>
+                    <div class="fw-grid fixed-menu-relative fw-relative fw-flex-space-between fw-height-1-1">
+                        {# fixed-menu-left-content #}
+                        <div class="fixed-menu-left fw-relative fw-flex fw-flex-space-between fw-flex-bottom fw-width-1-2 fw-pl-160 fw-pt-50 fw-pb-100">
+                            <p class="fw-absolute fw-left-160 fw-top-50 fw-fz-14 fw-text-uppercase fw-color-white fw-font-msb">главная</p>
+                            <div class="fw-width-fit-content fw-flex fw-flex-space-between fw-flex-middle">
+                                <span class="fw-block fw-fz-14 fw-text-uppercase fw-color-white fw-font-msb">english</span>
+                            </div>
+                            <div class="fw-pr-70 fw-overflow-hidden">
+                                <ul class="fixed-menu-tabs-navigation fw-pl-0 fw-margin-0 fw-pt-130 fw-list-style-type fw-fz-30 fw-font-mr fw-color-white">
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab1">О компании <i class="icon-keyboard_arrow_right"></i></li>
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab2">Бренды <i class="icon-keyboard_arrow_right"></i></li>
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab3">Партнерам</li>
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Карьера<i class="icon-keyboard_arrow_right"></i></li>
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Интернет-магазин</li>
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Где купить</li>
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Банк идей</li>
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Контакты</li>
+                                </ul>
+
+                                <div class="fw-flex fw-flex-left fw-fz-20 fw-flex-middle fw-color-white">
+                                    <a class="fw-reset fw-transition-300 fw-ml-0 fw-mr-10 fw-hover-color-pale-yellow"
+                                       href="#"><i class="icon-vk"></i></a>
+                                    <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
+                                       href="#"><i class="icon-facebook"></i></a>
+                                    <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
+                                       href="#"><i class="icon-twitter"></i></a>
+                                    <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
+                                       href="#"><i class="icon-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        {#  /  #}
+
+                        {# fixed-menu-right-content #}
+                        <div class="js-fixed-menu-right fixed-menu-right fw-width-1-2 fw-pt-120">
+                            <div class="js-fixed-menu-tabs-container fixed-menu-tabs-container fw-pl-70 fw-pr-160 fw-height-1-1 fw-width-1-1 fw-flex fw-flex-left fw-flex-bottom fw-flex-column">
+                                {% for i in 1..4  %}
+                                    <div id="tab{{i}}" class="js-fixed-menu-tab-content fixed-menu-tab-content fw-width-1-1">
+                                        <ul class="fixed-menu-tab-content-menu fw-pl-0 fw-margin-0 fw-list-style-type fw-font-mr fw-color-white">
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">{{i}}Хлебпром</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Производство</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Политика компании</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Наша история</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Новости</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- #tab {{i}} -->
+                                {% endfor %}
+                                <div id="tab1" class="fixed-menu-tab-content fw-width-1-1">
+                                    <ul class="fixed-menu-tab-content-menu fw-pl-0 fw-margin-0 fw-list-style-type fw-font-mr fw-color-white">
+                                        <li class="fw-pointer">
+                                            <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Хлебпром</a>
+                                        </li>
+
+                                        <li class="">
+                                            <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Хлебпром</a>
+                                        </li>
+
+                                        <li class="">
+                                            <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Хлебпром</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- #tab1 -->
+                                <div id="tab2" class="fixed-menu-tab-content">
+                                    2
+                                </div>
+                                <!-- #tab2 -->
+                                <div id="tab3" class="fixed-menu-tab-content">
+                                    3
+                                </div>
+                                <!-- #tab3 -->
+                                <div id="tab4" class="fixed-menu-tab-content">
+                                    4
+                                </div>
+                                <!-- #tab4 -->
+                            </div>
+                        </div>
+                        {#  /  #}
                     </div>
                 </div>
-                
+                {# / #}
+
+                {# burger #}
                 <a href="#" class="main-menu-link fw-flex fw-flex-middle fw-reset fw-flex-left fw-color-dark-red">
-                    <div class="burger-menu burger-menu--opened fw-mr-20">
+                    <div class="burger-menu burger-menu--closed fw-mr-20">
                         <div class="bar fw-bg-color-dark-red"></div>
                         <div class="bar fw-bg-color-dark-red"></div>
                         <div class="bar fw-bg-color-dark-red"></div>
                     </div>
-                    <span class="fw-fz-16 fw-color-white fw-relative fw-z-index-1">Меню</span>
+                    <span class="fw-fz-16 fw-color-dark-red fw-relative fw-z-index-1">Меню</span>
                 </a>
+                {# / #}
             </div>
         </div>
     </div>

@@ -11,31 +11,19 @@
         <div class="container">
             <div class="fw-width-1-1">
                 <div class="header-slider fw-bg-color-light-pale-yellow owl-carousel  fw-width-1-1 fw-flex fw-flex-top fw-flex-left fw-flex-column fw-text-left fw-color-white">
-                    <div class="header-slider-slide fw-min-height-760 fw-width-1-1">
-                        <h1 class="fw-color-pale-yellow">11</h1>
-                        <img src="/images/main/header/header-bg.jpg" alt="">
+                    {% for i in 1..2  %}
+                        <div class="header-slider-slide fw-min-height-760 fw-width-1-1">
+                            <img src="/images/main/header/header-bg.jpg" alt="">
 
-                        <div class="fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-pl-95 fw-pb-290 fw-pt-220 ">
-                            <span class="fw-fz-14 fw-font-msb">Торгово-производственная компания «Хлебпром»</span>
-                            <h1 class="fw-font-mr fw-mt-35 fw-mb-35 fw-fz-60">Торты №1 в России</h1>
-                            <p class="fw-fz-18 fw-margin-0 fw-max-width-615 fw-width-1-1 fw-line-height-30">Торгово-производственная компания ОАО «Хлебпром» основана в 1982 году. Входит в число ведущих российских производителей кондитерского рынка. Компания насчитывает более 4000
-                                сотрудников, включает четыре производственные площадки.
-                            </p>
+                            <div class="fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-pl-95 fw-pb-290 fw-pt-220 ">
+                                <span class="fw-fz-14 fw-font-msb">Торгово-производственная компания «Хлебпром»</span>
+                                <h1 class="fw-font-mr fw-mt-35 fw-mb-35 fw-fz-60">{{ i }} Торты №1 в России</h1>
+                                <p class="fw-fz-18 fw-margin-0 fw-max-width-615 fw-width-1-1 fw-line-height-30">Торгово-производственная компания ОАО «Хлебпром» основана в 1982 году. Входит в число ведущих российских производителей кондитерского рынка. Компания насчитывает более 4000
+                                    сотрудников, включает четыре производственные площадки.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="header-slider-slide fw-min-height-760 fw-width-1-1">
-                        <h1 class="fw-color-pale-yellow">11</h1>
-                        <img src="/images/main/header/header-bg.jpg" alt="">
-
-                        <div class="fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-pl-95 fw-pb-290 fw-pt-220 ">
-                            <span class="fw-fz-14 fw-font-msb">Торгово-производственная компания «Хлебпром»</span>
-                            <h1 class="fw-font-mr fw-mt-35 fw-mb-35 fw-fz-60">Торты №1 в России</h1>
-                            <p class="fw-fz-18 fw-margin-0 fw-max-width-615 fw-width-1-1 fw-line-height-30">Торгово-производственная компания ОАО «Хлебпром» основана в 1982 году. Входит в число ведущих российских производителей кондитерского рынка. Компания насчитывает более 4000
-                                сотрудников, включает четыре производственные площадки.
-                            </p>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
 
                 <div class="fw-width-1-1 fw-pb-45 fw-relative">

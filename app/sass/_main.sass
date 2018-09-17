@@ -77,8 +77,23 @@ body
 			margin: 6px 0
 		&:nth-of-type(3)
 			width: 50%
-
+.main-menu-link
+	position: absolute
+	right: 0
+	span
+		transition: all .3s ease
+		opacity: 1
+		height: auto
+		overflow: hidden
+	&-active
+		span
+			transition: all .3s ease
+			opacity: 0
+			height: 0
 .burger-menu--opened
+	position: fixed
+	top: 45px
+	left: calc(100% - 160px)
 	.bar
 		background-color: #fff
 		&:nth-of-type(1)
@@ -100,15 +115,136 @@ body
 			transition-delay: .3s
 			height: 3px
 
-// fixed menu
+// fixed menu tabs
 .fixed-menu
+	transition: all .68s ease-out
+	overflow: hidden
 	position: fixed
 	top: 0
 	left: 0
-	width: 100%
+	width: 0
 	height: 100vh
+	opacity: 0
 	background-color: $colorDarkRed
 	z-index: 10
+	&-tab-content
+		transition: all .4s ease-out
+		position: absolute
+		width: 100%
+		padding-left: 100px
+		transition-delay: .3s
+		right: -100px
+		opacity: 0
+		visibility: hidden
+	&-tab-content-active
+		transition: all .4s ease-out
+		transition-delay: .3s
+		right: 0
+		opacity: 1
+		visibility: visible
+	&-tabs-container
+		position: relative
+		transition-delay: 1s
+	&-relative
+		&:after
+			transition: all .7s ease-out
+			content: ''
+			position: absolute
+			right: 100%
+			top: 0
+			height: 100vh
+			width: 100%
+			background-color: rgba(#fff, .1)
+		&:before
+			transition: all .4s ease-out
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			height: 100vh
+			width: 100%
+			background-color: rgba(#fff, .7)
+	&-tabs-navigation
+		transition: all .6s ease
+		opacity: 0
+		li
+			position: relative
+			padding-right: 30px
+			.icon-keyboard_arrow_right
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				transition: all .6s ease
+			&:after
+				transition: all .5s ease
+				content: ''
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				height: 1px
+				width: 0
+				background-color: $colorMenuBorder
+		li.active
+			.icon-keyboard_arrow_right
+				transition: all .6s ease
+				right: -1000px
+			&:after
+				transition: all .5s ease
+				right: -1000px
+				width: 1000px
+
+	&-tab-content-menu
+		li
+			max-width: 400px
+			width: 100%
+			a
+				border-bottom: 1px solid $colorMenuBorder
+				border-top: 1px solid $colorMenuBorder
+				position: relative
+		&:first-child li a
+			border-top: none
+		//&:last-child
+		//	border-bottom: none
+	&-left
+		background-color: #a61c35
+	&-right
+		background-color: #b4203b
+		position: relative
+		right: 0
+		width: 0
+		overflow: hidden
+		transition: all .4s ease-out
+	&-right-active
+		width: 50%
+
+
+
+.fixed-menu-open
+	transition: all .5s ease-out !important
+	width: 100% !important
+	opacity: 1 !important
+	.fixed-menu-relative
+		&:before
+			transition-delay: .6s
+			transition: all .8s ease-out
+			width: 0
+			left: 100%
+		&:after
+			transition-delay: 1s
+			transition: all .80s ease-out
+			width: 0
+			right: 0
+	.fixed-menu-tabs-navigation
+		transition-delay: .6s
+		opacity: 1
+
+ul.tabs li.active
+	display: block
+	color: red
+.tab_content
+	display: none
 //__________________________________________________________________________________
 
 .container
