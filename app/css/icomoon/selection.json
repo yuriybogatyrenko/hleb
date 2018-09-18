@@ -4,6 +4,35 @@
     {
       "icon": {
         "paths": [
+          "M316 334l196 196 196-196 60 60-256 256-256-256z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "keyboard_arrow_down"
+        ],
+        "grid": 24
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 1,
+        "name": "keyboard_arrow_down",
+        "prevSize": 24,
+        "code": 59657
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M366 698l196-196-196-196 60-60 256 256-256 256z"
         ],
         "attrs": [
@@ -28,7 +57,7 @@
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 0
+      "iconIdx": 1
     },
     {
       "icon": {

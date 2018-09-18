@@ -1,6 +1,24 @@
 $(document).ready(function() {
+    // select
     $('select').niceSelect();
 
+     // WOW js
+    new WOW().init();
+
+     // toggle contacts
+    $('.js-toggle-contacts').on('click', function () {
+       $(this).toggleClass('active');
+       $(this).next().slideToggle();
+    });
+
+     // smooth scroll
+    $('.js-go-to').on('click', function(){
+        var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length != 0){
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+        }
+        return false;
+    });
      //owl
     $('.header-slider ').owlCarousel({
         items: 1,

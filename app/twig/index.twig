@@ -7,6 +7,9 @@
     {% include "layouts/header.twig" %}
     <!-- Header block end -->
     <div class="index">
+        {# scroll top button #}
+        <a href="#header" class="js-go-to scroll-top-button fw-block"><img src="/images/scroll-top.png" class="fw-block" alt=""></a>
+        {# / #}
         {# header slider #}
         <div class="container">
             <div class="fw-width-1-1">
@@ -33,7 +36,7 @@
                         <li class="owl-dot fw-pointer header-slider-navigation--link slider-navigation-active fw-reset fw-pr-110 fw-pt-20 fw-pb-20 fw-mr-15 fw-block">Карьера</li>
                     </ul>
 
-                    <a href="#" class="fw-reset fw-z-index-1 fw-block fw-width-255 fw-pt-90 fw-pb-90 fw-bg-color-dark-red fw-pl-55 fw-absolute fw-right-0 fw-bottom-0">
+                    <a href="#" class="fw-hover-bg-color-light-red fw-transition-400 fw-reset fw-z-index-1 fw-block fw-width-255 fw-pt-90 fw-pb-90 fw-bg-color-dark-red fw-pl-55 fw-absolute fw-right-0 fw-bottom-0">
                         <p class="fw-flex fw-flex-middle fw-flex-left fw-margin-0 fw-text-uppercase fw-font-msb fw-fz-14 fw-color-white">вся история
                             <i class="icon-arrow fw-fz-18 fw-ml-15"></i>
                         </p>
@@ -45,22 +48,22 @@
         <div class="fw-width-1-1 fw-pt-90 fw-pb-170">
             <div class="container">
                 <div class="history-in-numbers fw-grid fw-grid-90">
-                    <div class="history-in-numbers-item fw-width-1-5">
+                    <div class="history-in-numbers-item fw-width-1-5 wow fadeInUp" data-wow-offset="100" data-wow-duration="1.5s" data-wow-delay=".25s">
                         <span class="history-in-numbers-item--number fw-block fw-font-ml fw-fz-100 fw-color-pale-yellow">1982</span>
                         <p class="fw-margin-0 fw-font-mr fw-pt-30 fw-fz-14 fw-text-uppercase fw-color-gray-text">год начала работы</p>
                     </div>
 
-                    <div class="history-in-numbers-item fw-width-1-5">
+                    <div class="history-in-numbers-item fw-width-1-5 wow fadeInUp" data-wow-offset="100" data-wow-duration="1.8s" data-wow-delay=".4s">
                         <span class="history-in-numbers-item--number fw-block fw-font-ml fw-fz-100 fw-color-pale-yellow">14</span>
                         <p class="fw-margin-0 fw-font-mr fw-pt-30 fw-fz-14 fw-text-uppercase fw-color-gray-text">регионов присутствия</p>
                     </div>
 
-                    <div class="history-in-numbers-item fw-width-1-5">
+                    <div class="history-in-numbers-item fw-width-1-5 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".5s">
                         <span class="history-in-numbers-item--number fw-block fw-font-ml fw-fz-100 fw-color-pale-yellow">416</span>
                         <p class="fw-margin-0 fw-font-mr fw-pt-30 fw-fz-14 fw-text-uppercase fw-color-gray-text">сотрудников в КОМПАНИИ</p>
                     </div>
 
-                    <div class="history-in-numbers-item fw-width-1-5">
+                    <div class="history-in-numbers-item fw-width-1-5 wow fadeInUp" data-wow-offset="100" data-wow-duration="2.2s" data-wow-delay=".6s">
                         <span class="history-in-numbers-item--number fw-block fw-font-ml fw-fz-100 fw-color-pale-yellow">4</span>
                         <p class="fw-margin-0 fw-font-mr fw-pt-30 fw-fz-14 fw-text-uppercase fw-color-gray-text">
                             производственных <br>
@@ -68,7 +71,7 @@
                         </p>
                     </div>
 
-                    <div class="history-in-numbers-item fw-width-1-5">
+                    <div class="history-in-numbers-item fw-width-1-5 wow fadeInUp" data-wow-offset="100" data-wow-duration="2.4s" data-wow-delay=".7s">
                         <span class="history-in-numbers-item--number fw-block fw-font-ml fw-fz-100 fw-color-pale-yellow">32</span>
                         <p class="fw-margin-0 fw-font-mr fw-pt-30 fw-fz-14 fw-text-uppercase fw-color-gray-text">
                             подразделения
@@ -83,7 +86,7 @@
             <div class="container-small">
                 <div class="fw-grid brands-items">
                     <div class="brands-items-line fw-width-1-4">
-                        <div class="brands-items-line-item fw-width-1-1 fw-pb-70">
+                        <div class="brands-items-line-item fw-width-1-1 fw-pb-70 wow fadeInUpBig" data-wow-offset="50" data-wow-duration="1s" data-wow-delay=".3s">
                             <span class="fw-block fw-fz-60 fw-font-ml">Бренды</span>
                             <p class="fw-fz-16 fw-font-mr fw-color-text fw-line-height-30 fw-margin-0 fw-pr-30 fw-mt-35 fw-mb-25">Продукция компании представлена
                                 15 брендами: Mirel, Мой, Усладов,
@@ -101,7 +104,7 @@
                             </a>
                         </div>
 
-                        <div class="brands-items-line-item fw-width-1-1">
+                        <div class="brands-items-line-item fw-width-1-1 wow fadeInUpBig" data-wow-offset="50" data-wow-duration="1.3s" data-wow-delay=".4s">
                             <div class="brands-items-line-item-overlay fw-flex fw-flex-middle fw-flex-center">
                                 <p class="fw-fz-40">Brand Logo</p>
                             </div>
@@ -110,22 +113,22 @@
                         </div>
                     </div>
 
-                    <div class="fw-width-1-4 fw-bg-color-dark-red">
-                        <div class="brands-items-line-item fw-width-1-1">
+                    <div class="brands-items-line fw-width-1-4">
+                        <div class="brands-items-line-item fw-width-1-1 wow fadeInUpBig" data-wow-offset="50" data-wow-duration="1.6s" data-wow-delay=".5s">
                             <div class="brands-items-line-item-overlay fw-flex fw-flex-middle fw-flex-center">
                                 <p class="fw-fz-40">Brand Logo</p>
                             </div>
                             <img src="/images/main/section1-brands/2.jpg" class="fw-block fw-width-1-1" alt="">
                         </div>
 
-                        <div class="brands-items-line-item fw-width-1-1">
+                        <div class="brands-items-line-item fw-width-1-1 wow fadeInUpBig" data-wow-offset="50" data-wow-duration="1.9s" data-wow-delay=".6s">
                             <div class="brands-items-line-item-overlay fw-flex fw-flex-middle fw-flex-center">
                                 <p class="fw-fz-40">Brand Logo</p>
                             </div>
                             <img src="/images/main/section1-brands/3.jpg" class="fw-block fw-width-1-1" alt="">
                         </div>
 
-                        <div class="brands-items-line-item fw-width-1-1">
+                        <div class="brands-items-line-item fw-width-1-1 wow fadeInUpBig" data-wow-offset="50" data-wow-duration="2.1s" data-wow-delay=".7s">
                             <div class="brands-items-line-item-overlay fw-flex fw-flex-middle fw-flex-center">
                                 <p class="fw-fz-40">Brand Logo</p>
                             </div>
@@ -134,15 +137,15 @@
 
                     </div>
 
-                    <div class="fw-width-1-4 fw-flex fw-flex-middle fw-flex-center fw-flex-column">
-                        <div class="brands-items-line-item fw-width-1-1">
+                    <div class="brands-items-line fw-width-1-4 fw-flex fw-flex-middle fw-flex-center fw-flex-column">
+                        <div class="brands-items-line-item fw-width-1-1 wow fadeInUpBig" data-wow-offset="50" data-wow-duration="2.4s" data-wow-delay=".8s">
                             <div class="brands-items-line-item-overlay fw-flex fw-flex-middle fw-flex-center">
                                 <p class="fw-fz-40">Brand Logo</p>
                             </div>
                             <img src="/images/main/section1-brands/5.jpg" class="fw-block fw-width-1-1" alt="">
                         </div>
 
-                        <a href="#" class="fw-reset fw-width-1-1 fw-bg-color-dark-red fw-pl-50 fw-pr-50 fw-pt-35 fw-pb-30">
+                        <a href="#" class="fw-reset fw-width-1-1 fw-bg-color-dark-red fw-pl-50 fw-pr-50 fw-pt-35 fw-pb-30 wow fadeInUpBig" data-wow-offset="50" data-wow-duration="2.6s" data-wow-delay=".9s">
                             <img src="/images/main/section1-brands/6.png" class="fw-block fw-margin-auto" alt="">
                             <p class="fw-fz-18 fw-margin-0 fw-mb-15 fw-mt-30 fw-font-mr fw-color-white">
                                 Традиционные торты по
@@ -157,8 +160,8 @@
                         </a>
                     </div>
 
-                    <div class="fw-width-1-4 fw-flex fw-flex-center fw-flex-middle">
-                        <div class="brands-items-line-item fw-width-1-1 fw-mt-150">
+                    <div class="brands-items-line fw-width-1-4 fw-flex fw-flex-center fw-flex-middle">
+                        <div class="brands-items-line-item fw-width-1-1 fw-mt-150 wow fadeInUpBig" data-wow-offset="50" data-wow-duration="2.9s" data-wow-delay="1s">
                             <div class="brands-items-line-item-overlay fw-flex fw-flex-middle fw-flex-center">
                                 <p class="fw-fz-40">Brand Logo</p>
                             </div>
@@ -174,7 +177,7 @@
             <div class="container-small">
                 <div class="fw-grid fw-grid-195">
                     <div class="fw-width-1-2">
-                        <div class="fw-width-1-1 fw-pb-70">
+                        <div class="fw-width-1-1 fw-pb-70 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                             <span class="fw-block fw-fz-60 fw-font-ml fw-color-dark-text">Рекомендуем попробовать</span>
                             <p class="fw-fz-16 fw-font-mr fw-color-text fw-line-height-30 fw-margin-0 fw-pt-35 fw-pr-80 fw-pb-70">Продукция компании представлена
                                 Мы также производим воздушные фруктовые пироги,
@@ -186,7 +189,7 @@
                             </p>
                         </div>
 
-                        <div class="fw-width-1-1 fw-mb-130">
+                        <div class="fw-width-1-1 fw-mb-130 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                             <div class="fw-width-1-1">
                                 <img src="/images/main/section2-recommendation/1.jpg" class="fw-block fw-width-1-1" alt="">
                             </div>
@@ -195,7 +198,7 @@
                                 <span class="fw-text-uppercase fw-fz-14 fw-font-msb fw-color-gray-text fw-block fw-mb-20">Пирожные</span>
                                 <p class="fw-max-width-170 fw-margin-0 fw-color-dark-text fw-fz-30 fw-font-ml">Творожные колечки</p>
 
-                                <a href="#" class="fw-reset fw-block fw-width-255 fw-pt-80 fw-pb-80 fw-pl-20 fw-pr-30 fw-bg-color-dark-red fw-absolute fw-right-0 fw-bottom-0">
+                                <a href="#" class="fw-hover-bg-color-light-red fw-transition-400 fw-reset fw-block fw-width-255 fw-pt-75 fw-pb-75 fw-pl-20 fw-pr-30 fw-bg-color-dark-red fw-absolute fw-right-0 fw-bottom-0">
                                     <p class="fw-margin-0 fw-text-uppercase fw-color-white fw-fz-14 fw-font-msb fw-line-height-22">
                                        купить на shop.hlebprom.ru
                                        <i class="icon-arrow fw-fz-14 fw-ml-15"></i>
@@ -204,7 +207,7 @@
                             </div>
                         </div>
 
-                        <div class="fw-width-1-1">
+                        <div class="fw-width-1-1 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                             <div class="fw-width-1-1">
                                 <img src="/images/main/section2-recommendation/2.jpg" class="fw-block fw-width-1-1" alt="">
                             </div>
@@ -213,7 +216,7 @@
                                 <span class="fw-text-uppercase fw-fz-14 fw-font-msb fw-color-gray-text fw-block fw-mb-20">торты</span>
                                 <p class="fw-max-width-170 fw-margin-0 fw-color-dark-text fw-fz-30 fw-font-ml">Торт «Пломбирный»</p>
 
-                                <a href="#" class="fw-reset fw-block fw-width-255 fw-pt-80 fw-pb-80 fw-pl-20 fw-pr-30 fw-bg-color-dark-red fw-absolute fw-right-0 fw-bottom-0">
+                                <a href="#" class="fw-hover-bg-color-light-red fw-transition-400 fw-reset fw-block fw-width-255 fw-pt-75 fw-pb-75 fw-pl-20 fw-pr-30 fw-bg-color-dark-red fw-absolute fw-right-0 fw-bottom-0">
                                     <p class="fw-margin-0 fw-text-uppercase fw-color-white fw-fz-14 fw-font-msb fw-line-height-22">
                                         купить на shop.hlebprom.ru
                                         <i class="icon-arrow fw-fz-14 fw-ml-15"></i>
@@ -225,7 +228,7 @@
 
 
                     <div class="fw-width-1-2 fw-flex fw-flex-column fw-flex-space-between">
-                        <div class="fw-width-1-1 fw-mb-130">
+                        <div class="fw-width-1-1 fw-mb-130 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                             <div class="fw-width-1-1">
                                 <img src="/images/main/section2-recommendation/3.jpg" class="fw-block fw-width-1-1" alt="">
                             </div>
@@ -234,7 +237,7 @@
                                 <span class="fw-text-uppercase fw-fz-14 fw-font-msb fw-color-gray-text fw-block fw-mb-20">Пирожные</span>
                                 <p class="fw-max-width-170 fw-margin-0 fw-color-dark-text fw-fz-30 fw-font-ml">Эклеры со сметанным кремом</p>
 
-                                <a href="#" class="fw-reset fw-block fw-width-255 fw-pt-80 fw-pb-80 fw-pl-20 fw-pr-30 fw-bg-color-dark-red fw-absolute fw-right-0 fw-bottom-0">
+                                <a href="#" class="fw-hover-bg-color-light-red fw-transition-400 fw-reset fw-block fw-width-255 fw-pt-75 fw-pb-75 fw-pl-20 fw-pr-30 fw-bg-color-dark-red fw-absolute fw-right-0 fw-bottom-0">
                                     <p class="fw-margin-0 fw-text-uppercase fw-color-white fw-fz-14 fw-font-msb fw-line-height-22">
                                         купить на shop.hlebprom.ru
                                         <i class="icon-arrow fw-fz-14 fw-ml-15"></i>
@@ -243,7 +246,7 @@
                             </div>
                         </div>
 
-                        <div class="fw-width-1-1 fw-mb-130">
+                        <div class="fw-width-1-1 fw-mb-130 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                             <div class="fw-width-1-1">
                                 <img src="/images/main/section2-recommendation/4.jpg" class="fw-block fw-width-1-1" alt="">
                             </div>
@@ -252,7 +255,7 @@
                                 <span class="fw-text-uppercase fw-fz-14 fw-font-msb fw-color-gray-text fw-block fw-mb-20">торты</span>
                                 <p class="fw-max-width-170 fw-margin-0 fw-color-dark-text fw-fz-30 fw-font-ml">Торт «Эстерхази»</p>
 
-                                <a href="#" class="fw-reset fw-block fw-width-255 fw-pt-80 fw-pb-80 fw-pl-20 fw-pr-30 fw-bg-color-dark-red fw-absolute fw-right-0 fw-bottom-0">
+                                <a href="#" class="fw-hover-bg-color-light-red fw-transition-400 fw-reset fw-block fw-width-255 fw-pt-75 fw-pb-75 fw-pl-20 fw-pr-30 fw-bg-color-dark-red fw-absolute fw-right-0 fw-bottom-0">
                                     <p class="fw-margin-0 fw-text-uppercase fw-color-white fw-fz-14 fw-font-msb fw-line-height-22">
                                         купить на shop.hlebprom.ru
                                         <i class="icon-arrow fw-fz-14 fw-ml-15"></i>
@@ -261,7 +264,7 @@
                             </div>
                         </div>
 
-                        <div class="fw-width-1-1 fw-mt-73">
+                        <div class="fw-width-1-1 fw-mt-73 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                             <p class="fw-fz-16 fw-font-mr fw-color-text fw-line-height-30 fw-margin-0 fw-pr-30 fw-mt-35 fw-mb-25">
                                 Мы также производим воздушные фруктовые пироги,
                                 хрустящее  печенье с натуральным шоколадом, тающие
@@ -285,9 +288,9 @@
         <div class="modern-production fw-width-1-1">
             <div class="container fw-pl-160 fw-pr-160 fw-pt-100 fw-bg-color-light-pale-yellow">
 
-                <span class="fw-block fw-color-dark-text fw-fz-60 fw-font-ml fw-pl-50 fw-mb-60">Современное производство</span>
+                <span class="fw-block fw-color-dark-text fw-fz-60 fw-font-ml fw-pl-50 fw-mb-60 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">Современное производство</span>
 
-                <div class="modern-production-line fw-width-1-1 fw-relative fw-pb-100">
+                <div class="modern-production-line fw-width-1-1 fw-relative fw-pb-100 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                     <div class="modern-production-item-left modern-production-item-text fw-width-2-4 fw-bg-color-white fw-absolute fw-left-0 fw-top-0 fw-pl-85 fw-pr-90 fw-pt-70 fw-pb-70">
                         <p class="fw-margin-0 fw-mb-50 fw-color-dark-text fw-fz-40 fw-font-ml">Творожные колечки</p>
                         <p class="fw-fz-14 fw-font-mr fw-color-text fw-line-height-30 fw-margin-0 fw-mb-30">
@@ -309,7 +312,7 @@
                     </div>
                 </div>
 
-                <div class="modern-production-line fw-width-1-1 fw-relative fw-pb-100">
+                <div class="modern-production-line fw-width-1-1 fw-relative fw-pb-100 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                     <div class="modern-production-item-left modern-production-item-text fw-width-2-4 fw-bg-color-white fw-absolute fw-right-0 fw-top-0 fw-pl-85 fw-pr-90 fw-pt-70 fw-pb-70">
                         <p class="fw-margin-0 fw-mb-50 fw-color-dark-text fw-fz-40 fw-font-ml">Высокое качество</p>
                         <p class="fw-fz-14 fw-font-mr fw-color-text fw-line-height-30 fw-margin-0 fw-mb-30">
@@ -333,7 +336,7 @@
                     </div>
                 </div>
 
-                <div class="modern-production-line fw-width-1-1 fw-relative">
+                <div class="modern-production-line fw-width-1-1 fw-relative wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                     <div class="fw-width-1-1 fw-absolute fw-left-0 fw-top-0">
                         <div class="modern-production-item-left modern-production-item-text fw-relative fw-width-2-4 fw-bg-color-white fw-pl-85 fw-pr-90 fw-pt-70 fw-pb-70 fw-z-index-3">
                             <p class="fw-margin-0 fw-mb-50 fw-color-dark-text fw-fz-40 fw-font-ml">Лучшие эксперты</p>
@@ -366,9 +369,9 @@
         {# section partnership #}
         <div class="partnership fw-width-1-1 fw-relative">
             <div class="container fw-relative fw-bg-color-dark-red fw-pb-200 fw-pt-100">
-                <img src="/images/main/section4-partnership/1.png" class="fw-absolute fw-right-0 fw-bottom-0" alt="">
+                <img src="/images/main/section4-partnership/1.png" class="fw-absolute fw-right-0 fw-bottom-0 wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s" alt="">
 
-                <div class="fw-width-1-1 fw-relative fw-z-index-1 fw-color-white">
+                <div class="fw-width-1-1 fw-relative fw-z-index-1 fw-color-white wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
                     <p class="fw-margin-0 fw-mb-50 fw-fz-60 fw-font-ml">Лучшие эксперты</p>
                     <p class="fw-max-width-520 fw-fz-16 fw-font-mr fw-line-height-30 fw-margin-0 fw-mb-30">
                         Каждый день в компании проходит ярко и не похож на предыдущий. Мы нашли оптимальный баланс рабочего дня, совместив решение бизнес-задач с разнообразными корпоративными программами
@@ -384,14 +387,14 @@
         </div>
 
         {# section locations #}
-        <div class="locations fw-pt-100">
+        <div class="locations fw-pt-100 wow fadeInUpBig" data-wow-offset="-300" data-wow-duration="2s" data-wow-delay=".25s">
             <div class="container">
                 <p class="fw-margin-0 fw-mb-40 fw-color-dark-text fw-fz-60 fw-font-ml">Лучшие эксперты</p>
                     
                 <div id="map" class="fw-width-1-1 fw-min-height-500 fw-relative">
                     
-                    <div class="locations-info fw-z-index-1 fw-max-width-520 fw-pt-50 fw-pl-50 fw-pb-70 fw-pr-70 fw-bg-color-white fw-absolute fw-right-80">
-                        <p class="fw-margin-0 fw-mb-30 fw-color-dark-text fw-fz-30 fw-font-ml">Санкт-Петербург <i class=""></i></p>
+                    <div class="locations-info fw-z-index-1 fw-max-width-520 fw-width-1-1 fw-pt-50 fw-pl-50 fw-pb-70 fw-pr-70 fw-bg-color-white fw-absolute fw-right-80">
+                        <p class="js-toggle-contacts active toggle-contacts-title fw-margin-0 fw-mb-30 fw-color-dark-text fw-fz-30 fw-font-ml fw-flex fw-flex-middle fw-flex-left fw-pointer">Санкт-Петербург <i class="fw-ml-10 icon-keyboard_arrow_down"></i></p>
                         <div class="fw-fz-16 fw-font-mr fw-width-1-1 fw-color-text">
                             <p class="fw-mb-15">Адрес: 192102, Санкт-Петербург,</p>
                             <p class="fw-mb-15">Набережная реки Волковки, 7, лит. А, офис 208</p>
