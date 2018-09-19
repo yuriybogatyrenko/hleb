@@ -308,6 +308,14 @@
   max-width: 615px;
 }
 
+.fw-width-740 {
+  width: 740px;
+}
+
+.fw-max-width-740 {
+  max-width: 740px;
+}
+
 .fw-width-1-1 {
   width: 100%;
 }
@@ -439,6 +447,15 @@
 
   .fw-max-width-615\@xl {
     max-width: 615px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-width-740\@xl {
+    width: 740px;
+  }
+
+  .fw-max-width-740\@xl {
+    max-width: 740px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -593,6 +610,15 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .fw-width-740\@xs {
+    width: 740px;
+  }
+
+  .fw-max-width-740\@xs {
+    max-width: 740px;
+  }
+}
+@media screen and (max-width: 767px) {
   .fw-width-1-1\@xs {
     width: 100%;
   }
@@ -708,6 +734,18 @@
 
 .fw-min-height-138 {
   min-height: 138px;
+}
+
+.fw-height-470 {
+  height: 470px;
+}
+
+.fw-max-height-470 {
+  max-height: 470px;
+}
+
+.fw-min-height-470 {
+  min-height: 470px;
 }
 
 .fw-height-500 {
@@ -1073,6 +1111,26 @@
   margin-right: 40px;
 }
 
+.fw-margin-45 {
+  margin: 45px;
+}
+
+.fw-mt-45 {
+  margin-top: 45px;
+}
+
+.fw-mb-45 {
+  margin-bottom: 45px;
+}
+
+.fw-ml-45 {
+  margin-left: 45px;
+}
+
+.fw-mr-45 {
+  margin-right: 45px;
+}
+
 .fw-margin-50 {
   margin: 50px;
 }
@@ -1420,6 +1478,27 @@
 
   .fw-mr-40\@xl {
     margin-right: 40px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-margin-45\@xl {
+    margin: 45px;
+  }
+
+  .fw-mt-45\@xl {
+    margin-top: 45px;
+  }
+
+  .fw-mb-45\@xl {
+    margin-bottom: 45px;
+  }
+
+  .fw-ml-45\@xl {
+    margin-left: 45px;
+  }
+
+  .fw-mr-45\@xl {
+    margin-right: 45px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -1780,6 +1859,27 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .fw-margin-45\@xs {
+    margin: 45px;
+  }
+
+  .fw-mt-45\@xs {
+    margin-top: 45px;
+  }
+
+  .fw-mb-45\@xs {
+    margin-bottom: 45px;
+  }
+
+  .fw-ml-45\@xs {
+    margin-left: 45px;
+  }
+
+  .fw-mr-45\@xs {
+    margin-right: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
   .fw-margin-50\@xs {
     margin: 50px;
   }
@@ -2086,6 +2186,10 @@
 
 .fw-padding-220 {
   padding: 220px;
+}
+
+.fw-padding-270 {
+  padding: 270px;
 }
 
 .fw-padding-290 {
@@ -2522,6 +2626,22 @@
 
 .fw-pr-220 {
   padding-right: 220px;
+}
+
+.fw-pt-270 {
+  padding-top: 270px;
+}
+
+.fw-pb-270 {
+  padding-bottom: 270px;
+}
+
+.fw-pl-270 {
+  padding-left: 270px;
+}
+
+.fw-pr-270 {
+  padding-right: 270px;
 }
 
 .fw-pt-290 {
@@ -3105,6 +3225,27 @@
 
   .fw-pr-220\@xl {
     padding-right: 220px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-padding-270\@xl {
+    padding: 270px;
+  }
+
+  .fw-pt-270\@xl {
+    padding-top: 270px;
+  }
+
+  .fw-pb-270\@xl {
+    padding-bottom: 270px;
+  }
+
+  .fw-pl-270\@xl {
+    padding-left: 270px;
+  }
+
+  .fw-pr-270\@xl {
+    padding-right: 270px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -3696,6 +3837,27 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .fw-padding-270\@xs {
+    padding: 270px;
+  }
+
+  .fw-pt-270\@xs {
+    padding-top: 270px;
+  }
+
+  .fw-pb-270\@xs {
+    padding-bottom: 270px;
+  }
+
+  .fw-pl-270\@xs {
+    padding-left: 270px;
+  }
+
+  .fw-pr-270\@xs {
+    padding-right: 270px;
+  }
+}
+@media screen and (max-width: 767px) {
   .fw-padding-290\@xs {
     padding: 290px;
   }
@@ -3963,6 +4125,14 @@
   font-size: 24px;
 }
 
+.fw-fz-26 {
+  font-size: 26px;
+}
+
+.fw-fz-28 {
+  font-size: 28px;
+}
+
 .fw-fz-30 {
   font-size: 30px;
 }
@@ -4021,6 +4191,16 @@
 @media screen and (max-width: 950px) {
   .fw-fz-24\@xl {
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-fz-26\@xl {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-fz-28\@xl {
+    font-size: 28px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -4254,6 +4434,64 @@
 @media screen and (max-width: 767px) {
   .fw-fz-24\@xs {
     font-size: 24px;
+  }
+}
+.fw-line-height-0 {
+  line-height: 0px;
+}
+
+.fw-line-height-18 {
+  line-height: 18px;
+}
+
+.fw-line-height-22 {
+  line-height: 22px;
+}
+
+.fw-line-height-25 {
+  line-height: 25px;
+}
+
+.fw-line-height-30 {
+  line-height: 30px;
+}
+
+.fw-line-height-40 {
+  line-height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .fw-fz-26\@xs {
+    font-size: 26px;
+  }
+}
+.fw-line-height-0 {
+  line-height: 0px;
+}
+
+.fw-line-height-18 {
+  line-height: 18px;
+}
+
+.fw-line-height-22 {
+  line-height: 22px;
+}
+
+.fw-line-height-25 {
+  line-height: 25px;
+}
+
+.fw-line-height-30 {
+  line-height: 30px;
+}
+
+.fw-line-height-40 {
+  line-height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .fw-fz-28\@xs {
+    font-size: 28px;
   }
 }
 .fw-line-height-0 {

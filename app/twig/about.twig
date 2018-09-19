@@ -1,0 +1,66 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}ХлебПром{% endblock %}
+
+{% block content %}
+    <!-- Header block -->
+    {% include "layouts/header.twig" %}
+    <!-- Header block end -->
+    <div class="about">
+        <div class="container">
+            <div class="fw-pt-20 fw-pb-20">
+                {% include "partials/breadcrumbs.twig" %}
+            </div>
+
+            {# video block #}
+            <div class="fw-width-1-1">
+                <div class="fw-bg-color-light-pale-yellow owl-carousel  fw-width-1-1 fw-flex fw-flex-top fw-flex-left fw-flex-column fw-text-left fw-color-white">
+                    <div class="fw-min-height-760 fw-width-1-1">
+                        <img src="/images/about/1.jpg" class="fw-block" alt="">
+
+                        <div class="fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-pl-95 fw-flex fw-flex-middle fw-flex-left">
+                            <h1 class="fw-font-mr fw-text-400 fw-margin-0 fw-mt-35 fw-mb-35 fw-fz-60">
+                                Хлебпром – один из ведущих <br>
+                                российских производителей <br>
+                                кондитерского рынка
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fw-width-1-1 fw-pb-40 fw-pt-40 fw-relative">
+                    <a href="#" class="fw-hover-bg-color-light-red fw-transition-400 fw-reset fw-z-index-1 fw-block fw-width-255 fw-pt-80 fw-pb-80 fw-bg-color-dark-red fw-pl-55 fw-absolute fw-right-0 fw-bottom-0">
+                        <p class="fw-flex fw-flex-middle fw-flex-left fw-margin-0 fw-text-uppercase fw-font-msb fw-fz-14 fw-color-white">
+                            СМОТРЕТЬ <br>
+                            ВИДЕО
+                            <i class="icon-play fw-fz-26 fw-ml-20"></i>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            {# / #}
+
+            <div class="fw-relative fw-width-1-1 fw-pt-120 fw-min-height-470 fw-pl-200 fw-pr-270 fw-flex fw-flex-space-between">
+                <div>
+                    <p class="fw-fz-28 fw-color-text fw-font-mr fw-margin-0 fw-mb-45 fw-max-width-740">
+                        Наша миссия – честно и открыто вести бизнес,
+                        воплощать лучшие идеи, предлагать людям
+                        наслаждаться вкусными и качественными
+                        сладостями, приносящими радость в каждый дом.
+                    </p>
+                    <p class="fw-fz-16 fw-color-gray-text fw-font-mr fw-margin-0">Ярослав Шадыря, генеральный директор</p>
+                </div>
+
+                <img src="/images/about/2.png" class="fw-block fw-absolute fw-right-0 fw-bottom-0" alt="">
+            </div>
+
+
+        </div>
+
+        {% include 'partials/scroll-top.twig' %}
+    </div>
+
+    <!-- footer block -->
+    {% include "layouts/footer.twig" %}
+    <!-- footer block end -->
+{% endblock %}
