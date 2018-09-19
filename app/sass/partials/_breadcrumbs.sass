@@ -1,0 +1,18 @@
+@import "../colors"
+
+.b-breadcrumbs__item
+  display: block
+  position: relative
+
+  &:not(:first-child)
+    &:before
+      display: block
+      content: ''
+      width: 4px
+      height: 4px
+      background-color: $colorDarkText
+      top: 50%
+      position: absolute
+      left: -13px
+      transform: translate(0, -50%)
+      border-radius: 100%

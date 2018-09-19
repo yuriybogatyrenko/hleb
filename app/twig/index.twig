@@ -7,9 +7,6 @@
     {% include "layouts/header.twig" %}
     <!-- Header block end -->
     <div class="index">
-        {# scroll top button #}
-        <a href="#header" class="js-go-to scroll-top-button fw-block"><img src="/images/scroll-top.png" class="fw-block" alt=""></a>
-        {# / #}
         {# header slider #}
         <div class="container">
             <div class="fw-width-1-1">
@@ -410,6 +407,7 @@
             </div>
         </div>
 
+        {% include 'partials/scroll-top.twig' %}
     </div>
 
     <!-- footer block -->
