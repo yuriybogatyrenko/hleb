@@ -2,6 +2,8 @@ $(document).ready(function() {
     // select
     $('select').niceSelect();
 
+     // modal video
+    $(".js-modal-btn").modalVideo();
      // WOW js
     new WOW().init();
 
@@ -20,6 +22,16 @@ $(document).ready(function() {
         return false;
     });
      //owl
+
+    $('.js-command-slider').owlCarousel({
+        items: 3,
+        dots: false,
+        nav:true,
+        margin: 160,
+        smartSpeed: 350,
+        navText: ['<i class="icon-arrow fw-fz-16"></i>','<i class="icon-arrow fw-fz-16"></i>']
+    });
+
     $('.header-slider ').owlCarousel({
         items: 1,
         dots: true,
@@ -49,10 +61,17 @@ $(document).ready(function() {
 //    tabs
 
     $(function () {
-        // $(".fixed-menu-tab-content").hide();
-        // $(".fixed-menu-tab-content:first").show();
+        $('.priorities-wrap-list-item').on('click', function () {
+            var activeTab = $(this).attr("rel");
+            $('.js-priorities-wrap-tabs-tab').removeClass('active');
+            $("#"+activeTab).fadeIn(function () {
+                $(this).addClass('active');
+            });
 
-        /* if in tab mode */
+            $(".priorities-wrap-list-item").removeClass("active");
+            $(this).addClass("active");
+        });
+
         $("ul.fixed-menu-tabs-navigation li").on('click', function() {
             var activeTab = $(this).attr("rel");
             $('.js-fixed-menu-right').addClass('fixed-menu-right-active');
