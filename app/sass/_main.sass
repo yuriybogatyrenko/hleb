@@ -273,8 +273,8 @@ ul.tabs li.active
 	width: 100%
 	margin-left: auto
 	margin-right: auto
-	padding-left: 80px
-	padding-right: 80px
+	padding-left: 15px
+	padding-right: 15px
 
 .container-small
 	max-width: 1350px
@@ -382,19 +382,34 @@ $modernSectionAfterHeight: 138px
 .partnership
 	max-width: 1760px
 	width: 100%
-	margin: auto
-	padding-right: 160px
-	&:after
+	margin-left: auto
+	margin-right: auto
+	//padding-right: 160px
+
+	&:before
 		content: ''
 		position: absolute
 		top: 0
 		right: 0
-		width: $modernSectionPadding
-		height: 70%
+		bottom: 100px
+		width: 100%
 		background-color: $colorLightPaleYellow
-	.container
-		padding-left: $modernSectionPadding
-		padding-right: $modernSectionPadding
+
+	&:after
+		display: block
+		content: ''
+		position: absolute
+		width: 50%
+		right: 50%
+		top: 0
+		bottom: 0
+		background-color: $colorDarkRed
+
+	.container-small
+		position: relative
+		z-index: 1
+		//padding-left: $modernSectionPadding
+		//padding-right: $modernSectionPadding
 
 // brands
 
