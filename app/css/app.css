@@ -292,6 +292,14 @@
   max-width: 300px;
 }
 
+.fw-width-310 {
+  width: 310px;
+}
+
+.fw-max-width-310 {
+  max-width: 310px;
+}
+
 .fw-width-520 {
   width: 520px;
 }
@@ -453,6 +461,15 @@
 
   .fw-max-width-300\@xl {
     max-width: 300px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-width-310\@xl {
+    width: 310px;
+  }
+
+  .fw-max-width-310\@xl {
+    max-width: 310px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -640,6 +657,15 @@
 
   .fw-max-width-300\@xs {
     max-width: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-width-310\@xs {
+    width: 310px;
+  }
+
+  .fw-max-width-310\@xs {
+    max-width: 310px;
   }
 }
 @media screen and (max-width: 767px) {
