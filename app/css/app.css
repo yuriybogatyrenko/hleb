@@ -5646,6 +5646,35 @@ body {
   height: 3px;
 }
 
+.menu-search-input {
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-family: "MontserratSemiBold";
+  -webkit-box-shadow: inset 0px 0px 0px 0px white;
+  -moz-box-shadow: inset 0px 0px 0px 0px white;
+  box-shadow: inset 0px 0px 0px 0px white;
+}
+.menu-search-input:focus {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-box-shadow: inset 0px -2px 0px 0px white;
+  -moz-box-shadow: inset 0px -2px 0px 0px white;
+  box-shadow: inset 0px -2px 0px 0px white;
+}
+.menu-search-input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+}
+
 .fixed-menu {
   -webkit-transition: all 0.68s ease-out;
   -o-transition: all 0.68s ease-out;

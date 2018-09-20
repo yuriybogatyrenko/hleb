@@ -116,6 +116,22 @@ body
 			height: 3px
 
 // fixed menu tabs
+
+.menu-search-input
+	border: none
+	outline: none
+	transition: all .3s ease-out
+	background-color: transparent
+	padding: 5px 10px
+	font-family: 'MontserratSemiBold'
+	box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,1)
+	&:focus
+		transition: all .3s ease-out
+		box-shadow: inset 0px -2px 0px 0px rgba(255,255,255,1)
+	&::-webkit-input-placeholder
+		font-size: 20px
+		color: $colorWhite
+		background-color: transparent
 .fixed-menu
 	transition: all .68s ease-out
 	overflow: hidden
