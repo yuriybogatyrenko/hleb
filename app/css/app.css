@@ -796,6 +796,12 @@
   max-height: 100%;
 }
 
+.fw-height-fit-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .fw-height-1-1 {
   height: 100%;
 }
@@ -874,6 +880,18 @@
 
 .fw-min-height-750 {
   min-height: 750px;
+}
+
+.fw-height-760 {
+  height: 760px;
+}
+
+.fw-max-height-760 {
+  max-height: 760px;
+}
+
+.fw-min-height-760 {
+  min-height: 760px;
 }
 
 .fw-grid {
@@ -1319,6 +1337,26 @@
   margin-right: 73px;
 }
 
+.fw-margin-100 {
+  margin: 100px;
+}
+
+.fw-mt-100 {
+  margin-top: 100px;
+}
+
+.fw-mb-100 {
+  margin-bottom: 100px;
+}
+
+.fw-ml-100 {
+  margin-left: 100px;
+}
+
+.fw-mr-100 {
+  margin-right: 100px;
+}
+
 .fw-margin-110 {
   margin: 110px;
 }
@@ -1690,6 +1728,27 @@
 
   .fw-mr-73\@xl {
     margin-right: 73px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-margin-100\@xl {
+    margin: 100px;
+  }
+
+  .fw-mt-100\@xl {
+    margin-top: 100px;
+  }
+
+  .fw-mb-100\@xl {
+    margin-bottom: 100px;
+  }
+
+  .fw-ml-100\@xl {
+    margin-left: 100px;
+  }
+
+  .fw-mr-100\@xl {
+    margin-right: 100px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -2068,6 +2127,27 @@
 
   .fw-mr-73\@xs {
     margin-right: 73px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-margin-100\@xs {
+    margin: 100px;
+  }
+
+  .fw-mt-100\@xs {
+    margin-top: 100px;
+  }
+
+  .fw-mb-100\@xs {
+    margin-bottom: 100px;
+  }
+
+  .fw-ml-100\@xs {
+    margin-left: 100px;
+  }
+
+  .fw-mr-100\@xs {
+    margin-right: 100px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -6125,7 +6205,6 @@ ul.tabs li.active {
 .modern-production-item-img-box {
   overflow: hidden;
   width: 100%;
-  max-height: 637px;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
