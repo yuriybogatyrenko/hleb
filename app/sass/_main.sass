@@ -11,6 +11,15 @@ body
 *
 	box-sizing: border-box
 
+.header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	background-color: #fff
+	box-shadow: 0 0 5px rgba(#000, 0.2)
+	z-index: 500
+
 // Button style
 .fw-button
 	position: relative
@@ -267,14 +276,16 @@ ul.tabs li.active
 	max-width: 1760px
 	width: 100%
 	margin: auto
+	padding-left: 15px
+	padding-right: 15px
 
 .app-wrapper
 	max-width: 1920px
 	width: 100%
 	margin-left: auto
 	margin-right: auto
-	padding-left: 15px
-	padding-right: 15px
+	//padding-left: 15px
+	//padding-right: 15px
 
 .container-small
 	max-width: 1350px
@@ -283,8 +294,7 @@ ul.tabs li.active
 
 // Header section
 .header-content
-	background-image: url('/images/main/header/header-bg.jpg')
-	-webkit-background-size: cover
+	background-image: url('../images/main/header/header-bg.jpg')
 	background-size: cover
 	background-position: center center
 
@@ -440,7 +450,7 @@ $modernSectionAfterHeight: 138px
 			.modern-production-item-img-box-image
 				transform: scale(1.2)
 	&-item-text
-		z-index: 2
+		z-index: 3
 	&-item-img
 		&-box
 			overflow: hidden
@@ -531,3 +541,24 @@ footer
 	right: 80px
 	bottom: 100px
 	z-index: 10
+	opacity: 0
+	visibility: hidden
+	transition: all 0.3s ease
+
+	&.visible
+		opacity: 1
+		visibility: visible
+
+.first-screen-animated-image
+	background-size: cover
+	background-repeat: no-repeat
+	transform: scale(1.10) rotate(0.01deg)
+	transition: transform 8s ease-in
+
+	&--active
+		transform: scale(1) rotate(0deg)
+
+	&:after
+		padding-bottom: 48%
+		content: ''
+		display: block
