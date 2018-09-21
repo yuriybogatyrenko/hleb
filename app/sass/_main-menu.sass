@@ -97,7 +97,7 @@
 		color: $colorWhite
 		background-color: transparent
 .fixed-menu
-	transition: all .68s ease-out
+	transition: all .4s ease-out
 	overflow: hidden
 	position: fixed
 	top: 0
@@ -106,7 +106,7 @@
 	height: 100vh
 	opacity: 0
 	transition-delay: 1.8s
-	//background-color: $colorDarkRed
+	background-color: $colorDarkRed
 	z-index: 10
 	.serch-input-wrap
 		position: relative
@@ -120,6 +120,7 @@
 		position: relative
 		transition: all 1s ease
 		left: -100px
+
 		opacity: 0
 	&-layout
 		height: 100vh
@@ -127,21 +128,22 @@
 		position: fixed
 		left: 0
 		top: 0
-	&-layout1
-		background-color: red
-		transition: all .44s ease-out
-		transition-delay: 1s
-		z-index: 1
-	&-layout2
-		transition: all .73s ease-out
-		transition-delay: .65s
-		background-color: purple
-		z-index: 2
-	&-layout3
-		transition: all .5s ease
-		background-color: #a61c35
-		z-index: 3
-		transition-delay: 2s
+	//&-layout1
+	//	background-color: red
+	//	transition: all .44s ease-out
+	//	transition-delay: 1s
+	//	z-index: 1
+	//&-layout2
+	//	transition: all .73s ease-out
+	//	transition-delay: .65s
+	//	background-color: purple
+	//	z-index: 2
+	//&-layout3
+	//	transition: all .5s ease
+	//	background-color: #a61c35
+	//	z-index: 3
+	//	transition-delay: 2s
+	//	animation li in right menu________________________________________________
 	&-tab-content
 		transition: all .4s ease-out
 		position: absolute
@@ -151,21 +153,67 @@
 		right: -100px
 		opacity: 0
 		visibility: hidden
-	&-tab-content-active
+		&-menu
+			li
+				position: relative
+				opacity: 0
+				visibility: hidden
+				right: -56px
+				max-width: 400px
+				width: 100%
+				&:nth-child(1)
+					transition: all 1s ease
+				&:nth-child(2)
+					transition: all .9s ease
+				&:nth-child(3)
+					transition: all .8s ease
+				&:nth-child(4)
+					transition: all .75s ease
+				&:nth-child(5)
+					transition: all .7s ease
+				&:nth-child(6)
+					transition: all .65s ease
+				&:nth-child(7)
+					transition: all .6s ease
+				&:nth-child(8)
+					transition: all .7s ease
+				a
+					border-bottom: 1px solid $colorMenuBorder
+					border-top: 1px solid $colorMenuBorder
+					position: relative
+			&:first-child li a
+				border-top: none
+	&-tab-content.active
 		transition: all .4s ease-out
 		transition-delay: .3s
 		right: 0
 		opacity: 1
 		visibility: visible
-	&-tabs-container
-		position: relative
-		transition-delay: 1s
-	&-relative
-		width: 0
-		overflow: hidden
-		transition: all .5s ease
-		transition-delay: 2s
-		z-index: 4
+		.fixed-menu-tab-content-menu
+			li
+				opacity: 1
+				visibility: visible
+				right: 0
+				&:nth-child(1)
+					transition-delay: 2s
+				&:nth-child(2)
+					transition-delay: 1.8s
+				&:nth-child(3)
+					transition-delay: 1.65s
+				&:nth-child(4)
+					transition-delay: 1.5s
+				&:nth-child(5)
+					transition-delay: 1.4s
+				&:nth-child(6)
+					transition-delay: 1.3s
+				&:nth-child(7)
+					transition-delay: 1.2s
+				&:nth-child(8)
+					transition-delay: 1.1s
+	//	end ____________________________________________________
+
+
+	//	animated li in left menu _________________________________
 	&-tabs-navigation
 		transition: all .6s ease
 		opacity: 1
@@ -203,7 +251,7 @@
 				right: 0
 				top: 50%
 				transform: translateY(-50%)
-				height: 1px
+				height: 2px
 				width: 0
 				background-color: $colorMenuBorder
 		li.active
@@ -214,30 +262,28 @@
 				transition: all .5s ease
 				right: -1000px
 				width: 1000px
-
-	&-tab-content-menu
-		li
-			max-width: 400px
-			width: 100%
-			a
-				border-bottom: 1px solid $colorMenuBorder
-				border-top: 1px solid $colorMenuBorder
-				position: relative
-		&:first-child li a
-			border-top: none
-		//&:last-child
-		//	border-bottom: none
+	// end______________________________
+	&-tabs-container
+		position: relative
+		transition-delay: 1s
+	&-relative
+		width: 0
+		overflow: hidden
+		transition: all .5s ease
+		transition-delay: 2s
+		z-index: 4
 	&-left
 		background-color: $colorDarkRed
 	&-right
-		background-color: #b4203b
+		transition: all 2s ease
+		transition-delay: 1.5s
+		//background-color: #b4203b
+		background-color: purple
 		position: relative
-		right: 0
-		width: 0
-		overflow: hidden
-		transition: all .4s ease-out
-	&-right-active
+		right: 100%
 		width: 50%
+		z-index: 4
+		overflow: hidden
 
 
 
@@ -246,6 +292,14 @@
 	transition-delay: 0s
 	width: 100% !important
 	opacity: 1 !important
+	.fixed-menu-right
+		right: -50%
+		width: 50%
+		transition-delay: 0s
+		transition: 1s
+	.fixed-menu-right.active
+		width: 50%
+		right: 0
 	.serch-input-wrap
 		transition-delay: 1s
 		left: 0
