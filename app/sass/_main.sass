@@ -108,18 +108,35 @@ body
 				opacity: 1
 				transition-delay: .6s
 				transform: translate3d(0px, 0px, 0px)
+
 .header-slider-navigation
 	.active
 		color: #2d2d2d
-		border-color: #2d2d2d
 		&:before
 			height: 10px
 			top: -10px
+		.slider-nav-time-bar-time
+			transition: all 7s ease
+			visibility: visible
+			width: 100%
 
 	li
 		position: relative
 		transition: all .3s ease
-		border-bottom: 1px solid #edebed
+		.slider-nav-time-bar-overlay
+			height: 1px
+			position: relative
+			background-color: #edebed
+		.slider-nav-time-bar-time
+			width: 0
+			position: absolute
+			left: 0
+			top: 0
+			height: 100%
+			visibility: hidden
+			background-color: #2d2d2d
+
+
 		&:before
 			content: ''
 			position: absolute
@@ -135,8 +152,6 @@ body
 			&:before
 				height: 10px
 				top: -10px
-
-
 
 // History  section
 .history-in-numbers-item
@@ -406,10 +421,11 @@ footer
 		transform: scale(.8)
 		//overflow: hidden
 		height: 0
+		z-index: 0
 	.map-tab-wrap.active
 		transition: all 1.4s ease
 		opacity: 1
 		transform: scale(1)
 		height: auto
-
+		z-index: 1
 // _____________________________________________________________________________

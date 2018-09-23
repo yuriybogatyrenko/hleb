@@ -42,8 +42,7 @@ $(document).ready(function () {
 
     // toggle contacts
     $('.js-toggle-contacts').on('click', function () {
-        $(this).toggleClass('active');
-        $(this).next().slideToggle();
+        $(this).parent().hide();
     });
 
     // smooth scroll
@@ -70,8 +69,8 @@ $(document).ready(function () {
         dots: true,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 6500,
-        smartSpeed: 5000,
+        autoplayTimeout: 7000,
+        smartSpeed: 1000,
         animateOut: 'fadeOut',
         dotsContainer: '#carousel-custom-dots'
     });
@@ -95,22 +94,7 @@ $(document).ready(function () {
     });
 
 
-//    tabs
-//     $(function() {
-//         var box = $(".fixed-menu-tab-content-menu li").get(),
-//             len = box.length,
-//             indx = 0,
-//             opacity = 0,
-//             duration = 4000 / len;
-//         box.reverse();
-//         (function fn() {
-//             $(box[indx]).delay((len - indx) * duration / 3).fadeTo(duration, opacity, fn);
-//             indx = ++indx % len;
-//             if (!indx) opacity = +!opacity
-//         })()
-//     });
-
-
+    // tabs
     $(function () {
         $('.js-map-navigation-item').on('click', function () {
             var activeTab = $(this).attr("rel");
@@ -141,20 +125,8 @@ $(document).ready(function () {
             $('.js-fixed-menu-right').addClass('active');
             $('.js-fixed-menu-tab-content').removeClass('active');
 
+
             $("#" + activeTab).fadeIn(function () {
-                var box = $(this).find('li').get(),
-                    len = box.length,
-                    indx = 0,
-                    opacity = 1,
-                    duration = 1000 / len;
-
-                box.reverse();
-                (function fn() {
-                    $(box[indx]).delay((len - indx) * duration / 3).fadeTo(duration, opacity, fn);
-                    indx = ++indx % len;
-                    if (!indx) opacity = +!opacity
-                })()
-
                 $(this).addClass('active');
             });
 

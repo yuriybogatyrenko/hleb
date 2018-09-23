@@ -95,9 +95,9 @@
 
                 {# fixed menu #}
                 <div class="fixed-menu">
-                    <div class="fixed-menu-layout fixed-menu-layout1"></div>
-                    <div class="fixed-menu-layout fixed-menu-layout2"></div>
-                    <div class="fixed-menu-layout fixed-menu-layout3"></div>
+                    <div class="fw-absolute fw-z-index-6 main-menu-link fw-top-45 fw-right-160 fw-pointer">
+                        <i class="icon-close fw-color-white fw-fz-36"></i>
+                    </div>
                     <div class="fw-grid fixed-menu-relative fw-relative fw-flex-space-between fw-height-1-1">
                         {# fixed-menu-left-content #}
                         <div class="fixed-menu-left fw-relative fw-flex fw-flex-space-between fw-flex-bottom fw-width-1-2 fw-pl-160 fw-pt-50 fw-pb-100">
@@ -163,36 +163,8 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- #tab {{i}} -->
+                                    <!-- #tab -->
                                 {% endfor %}
-                                <div id="tab1" class="fixed-menu-tab-content fw-width-1-1">
-                                    <ul class="fixed-menu-tab-content-menu fw-pl-0 fw-margin-0 fw-list-style-type fw-font-mr fw-color-white">
-                                        <li class="fw-pointer">
-                                            <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Хлебпром</a>
-                                        </li>
-
-                                        <li class="">
-                                            <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Хлебпром</a>
-                                        </li>
-
-                                        <li class="">
-                                            <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Хлебпром</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- #tab1 -->
-                                <div id="tab2" class="fixed-menu-tab-content">
-                                    2
-                                </div>
-                                <!-- #tab2 -->
-                                <div id="tab3" class="fixed-menu-tab-content">
-                                    3
-                                </div>
-                                <!-- #tab3 -->
-                                <div id="tab4" class="fixed-menu-tab-content">
-                                    4
-                                </div>
-                                <!-- #tab4 -->
                             </div>
                         </div>
                         {#  /  #}
@@ -202,11 +174,12 @@
 
                 {# burger #}
                 <a href="#" class="main-menu-link fw-flex fw-flex-middle fw-reset fw-flex-left fw-color-dark-red">
-                    <div class="burger-menu burger-menu--closed fw-mr-20">
-                        <div class="bar fw-bg-color-dark-red"></div>
-                        <div class="bar fw-bg-color-dark-red"></div>
-                        <div class="bar fw-bg-color-dark-red"></div>
-                    </div>
+                    {#<div class="burger-menu burger-menu--closed fw-mr-20">#}
+                        {#<div class="bar fw-bg-color-dark-red"></div>#}
+                        {#<div class="bar fw-bg-color-dark-red"></div>#}
+                        {#<div class="bar fw-bg-color-dark-red"></div>#}
+                    {#</div>#}
+                    <i class="icon-menu fw-fz-36 fw-mr-20"></i>
                     <span class="fw-fz-16 fw-color-dark-red fw-relative fw-z-index-1">Меню</span>
                 </a>
                 {# / #}
