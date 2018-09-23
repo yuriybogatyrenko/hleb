@@ -247,7 +247,6 @@ $modernSectionAfterHeight: 138px
 	transform: translateY(-50%)
 
 // footer
-
 .footer-select
 	min-width: 430px
 	width: 100%
@@ -305,9 +304,29 @@ footer
 			left: calc(100% - 24px)
 
 // map
-.toggle-contacts-title.active
-	i
-		transform: rotate(-180deg)
+.map-city-select
+	border: none
+	padding-left: 0
+	display: block
+	margin-bottom: 35px
+	padding-right: 40px
+	&:after
+		height: 8px
+		width: 8px
+		margin-top: -7px
+		border-color: $colorDarkText
+	.list
+		border: none
+		border-radius: 0
+		font-family: "MontserratRegular"
+		text-transform: none
+		width: 100%
+		font-size: 14px
+		box-shadow: 0 0 15px 1px rgba(68, 68, 68, 0.11)
+		.option:hover, .nice-select .option.focus
+			background-color: #fdf7f2
+		.option.selected.focus
+			color: $colorPaleYellow
 
 // scroll button
 .scroll-top-button
