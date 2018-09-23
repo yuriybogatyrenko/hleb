@@ -1,5 +1,41 @@
 @import "mixins/mixins"
 
+
+//top menu
+.main-menu
+	padding-left: 0
+	margin-top: 0
+	margin-bottom: 0
+	padding-bottom: 15px
+	padding-top: 15px
+
+	&-item
+		position: relative
+		&:hover
+			.main-menu-item-sub-list-wrap
+				opacity: 1
+				visibility: visible
+				top: calc(100%)
+		&--sub-list
+			padding-bottom: 10px
+			padding-top: 10px
+			padding-left: 0
+			background-color: $colorWhite
+		&-sub-list-wrap
+			transition: all .3s ease
+			list-style: none
+			padding-top: 45px
+			min-width: 100%
+			position: absolute
+			left: 0
+			opacity: 0
+			visibility: hidden
+			top: calc(100% + 15px)
+			.box-shadow-menu
+				display: flex
+				justify-content: flex-start
+				box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2)
+
 // burger
 .burger-menu
 	width: 40px
