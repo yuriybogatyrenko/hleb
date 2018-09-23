@@ -6066,6 +6066,24 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   -webkit-box-shadow: 0 0 15px 1px rgba(68, 68, 68, 0.11);
   -moz-box-shadow: 0 0 15px 1px rgba(68, 68, 68, 0.11);
   box-shadow: 0 0 15px 1px rgba(68, 68, 68, 0.11);
+  max-height: 250px;
+  overflow-y: auto;
+}
+.map-city-select .list .mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}
+.map-city-select .list .mCSB_scrollTools {
+  width: 4px;
+}
+.map-city-select .list .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+  margin: 0;
+}
+.map-city-select .list .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #caa98b;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .map-city-select .list .option:hover, .map-city-select .list .nice-select .option.focus {
   background-color: #fdf7f2;

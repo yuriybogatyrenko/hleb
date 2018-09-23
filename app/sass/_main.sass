@@ -323,6 +323,19 @@ footer
 		width: 100%
 		font-size: 14px
 		box-shadow: 0 0 15px 1px rgba(68, 68, 68, 0.11)
+		max-height: 250px
+		overflow-y: auto
+		.mCSB_inside > .mCSB_container
+			margin-right: 0
+		.mCSB_scrollTools
+			width: 4px
+			.mCSB_draggerRail
+				background-color: transparent
+				margin: 0
+		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+			background-color: $colorPaleYellow
+			border-radius: 0
+
 		.option:hover, .nice-select .option.focus
 			background-color: #fdf7f2
 		.option.selected.focus

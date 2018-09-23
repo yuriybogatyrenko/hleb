@@ -1,4 +1,9 @@
 $(document).ready(function () {
+
+    $(window).on("load",function(){
+        $(".map-city-select .list").mCustomScrollbar();
+    });
+
     // select
     $('select').niceSelect();
 
@@ -121,21 +126,20 @@ $(document).ready(function () {
             $('.js-fixed-menu-tab-content').removeClass('active');
 
             $("#" + activeTab).fadeIn(function () {
+                var box = $(this).find('li').get(),
+                    len = box.length,
+                    indx = 0,
+                    opacity = 1,
+                    duration = 1000 / len;
+
+                box.reverse();
+                (function fn() {
+                    $(box[indx]).delay((len - indx) * duration / 3).fadeTo(duration, opacity, fn);
+                    indx = ++indx % len;
+                    if (!indx) opacity = +!opacity
+                })()
+
                 $(this).addClass('active');
-                // var box = $(this).find('li').get(),
-                //     len = box.length,
-                //     indx = 0,
-                //     opacity = 1,
-                //     duration = 1000 / len;
-                //
-                // box.reverse();
-                // (function fn() {
-                //     $(box[indx]).delay((len - indx) * duration / 3).fadeTo(duration, opacity, fn);
-                //     indx = ++indx % len;
-                //     // if (!indx) opacity = +!opacity
-                // })()
-                //
-                // $(box).addClass('fw-opacity-0');
             });
 
             $("ul.fixed-menu-tabs-navigation li").removeClass("active");
