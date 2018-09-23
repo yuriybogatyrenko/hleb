@@ -368,3 +368,38 @@ footer
 		padding-bottom: 48%
 		content: ''
 		display: block
+
+// ABOUT MAP SECTION ___________________________________________________________
+.geography-map
+	.map-navigation
+		&-item
+			display: block
+			position: relative
+			&:before
+				content: ''
+				transition: all .4s ease
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				height: 1px
+				width: 0
+				background-color: $colorPaleYellow
+		&-item.active
+			&:before
+				transition: all .3s ease
+				width: 1000px
+				left: -1000px
+	.map-tab-wrap
+		transition: all 1s ease
+		opacity: 0
+		transform: scale(.7)
+		height: 0
+		overflow: hidden
+	.map-tab-wrap.active
+		transition: all 1s ease
+		opacity: 1
+		transform: scale(1)
+		height: auto
+
+// _____________________________________________________________________________

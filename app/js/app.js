@@ -109,14 +109,27 @@ $(document).ready(function () {
 
 
     $(function () {
-        $('.priorities-wrap-list-item').on('click', function () {
+        $('.js-map-navigation-item').on('click', function () {
+            var activeTab = $(this).attr("rel");
+
+            $('.js-map-navigation-item').removeClass('active');
+            $('.js-map-tab-wrap').removeClass('active');
+
+            $("#" + activeTab).addClass('active');
+
+            $(".js-priorities-wrap-list-item").removeClass("active");
+            $(this).addClass("active");
+        });
+
+
+        $('.js-priorities-wrap-list-item').on('click', function () {
             var activeTab = $(this).attr("rel");
             $('.js-priorities-wrap-tabs-tab').removeClass('active');
             $("#" + activeTab).fadeIn(function () {
                 $(this).addClass('active');
             });
 
-            $(".priorities-wrap-list-item").removeClass("active");
+            $(".js-priorities-wrap-list-item").removeClass("active");
             $(this).addClass("active");
         });
 
