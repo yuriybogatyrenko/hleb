@@ -54,8 +54,8 @@ $(document).ready(function () {
         }
         return false;
     });
-    //owl
 
+    //owl
     $('.js-command-slider').owlCarousel({
         items: 3,
         dots: false,
@@ -68,7 +68,10 @@ $(document).ready(function () {
     $('.header-slider ').owlCarousel({
         items: 1,
         dots: true,
-        smartSpeed: 350,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6500,
+        smartSpeed: 5000,
         animateOut: 'fadeOut',
         dotsContainer: '#carousel-custom-dots'
     });
