@@ -5843,6 +5843,13 @@ body {
   transition: all 0.4s ease;
 }
 
+.fw-button-submit {
+  outline: none;
+}
+.fw-button-submit:before {
+  background-color: #faeee3;
+}
+
 .fw-button-opacity:before {
   opacity: 0.5;
 }
@@ -6176,6 +6183,121 @@ body {
   width: 100%;
 }
 
+footer .send-status {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  top: 20%;
+  font-size: 16px;
+  text-align: center;
+  z-index: 0;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+footer .send-status.success {
+  visibility: visible;
+  z-index: 5;
+  opacity: 1;
+  height: auto;
+}
+footer .send-status.error {
+  color: #a61c35;
+  visibility: visible;
+  z-index: 5;
+  opacity: 1;
+  height: auto;
+}
+footer .select-theme-wrap, footer .select-theme-form {
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0;
+  background: #fdf7f2;
+  position: absolute;
+  z-index: 3;
+  width: 0;
+  right: -100%;
+  height: 100%;
+}
+footer .select-theme-wrap.active, footer .select-theme-form.active {
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 1;
+  width: 40%;
+  right: 15px;
+}
+footer .select-theme-wrap .if-theme-selected-list:first-child {
+  padding-left: 0;
+}
+footer .select-theme-form .theme-form {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  color: #070707;
+  width: 690px;
+}
+footer .select-theme-form .theme-form--input {
+  padding: 20px 0;
+  border: none;
+  background-color: #fdf7f2;
+  border-bottom: 1px solid #a6a6a6;
+  outline: none;
+  width: 50%;
+}
+footer .select-theme-form .theme-form--input::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+footer .select-theme-form .theme-form--textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 142px;
+  max-height: 142px;
+  background-color: #fdf7f2;
+  border: 1px solid #a6a6a6;
+  outline: none;
+}
+footer .select-theme-form .theme-form--textarea::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+footer .select-theme-form .theme-form--select {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  color: #a6a6a6;
+  background-color: #fdf7f2;
+  border-bottom: 1px solid #a6a6a6;
+  outline: none;
+  width: 50%;
+  padding: 20px 0;
+  height: auto;
+  line-height: normal;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 40px;
+}
+footer .select-theme-form .theme-form--select .list {
+  width: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
 footer .lang-slider {
   border: none;
   position: relative;
@@ -6649,13 +6771,6 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   left: -56px;
   opacity: 0;
 }
-.fixed-menu-layout {
-  height: 100vh;
-  width: 0;
-  position: fixed;
-  left: 0;
-  top: 0;
-}
 .fixed-menu-tab-content {
   position: absolute;
   width: 100%;
@@ -6991,16 +7106,16 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
 }
 
 .fixed-menu-open {
-  -webkit-transition: all 0.5s ease-out !important;
-  -o-transition: all 0.5s ease-out !important;
-  -moz-transition: all 0.5s ease-out !important;
-  transition: all 0.5s ease-out !important;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
-  width: 100% !important;
-  opacity: 1 !important;
+  width: 100%;
+  opacity: 1;
 }
 .fixed-menu-open .fixed-menu-right.active {
   -webkit-transition: all 0.3s ease-out;
@@ -7034,7 +7149,7 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   opacity: 1;
 }
 .fixed-menu-open .fixed-menu-layout {
-  width: 100% !important;
+  width: 100%;
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   -o-transition-delay: 0s;

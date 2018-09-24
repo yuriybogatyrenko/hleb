@@ -41,7 +41,10 @@ body
 		height: 100%
 		background-color: #fdf7f2
 		transition: all .4s ease
-
+.fw-button-submit
+	outline: none
+	&:before
+		background-color: #faeee3
 .fw-button-opacity
 	&:before
 		opacity: .5
@@ -286,6 +289,93 @@ $modernSectionAfterHeight: 138px
 		width: 100%
 
 footer
+	.send-status
+		transition: all .5s ease
+		position: relative
+		top: 20%
+		font-size: 16px
+		text-align: center
+		z-index: 0
+		visibility: hidden
+		height: 0
+		opacity: 0
+		&.success
+			visibility: visible
+			z-index: 5
+			opacity: 1
+			height: auto
+		&.error
+			color: $colorDarkRed
+			visibility: visible
+			z-index: 5
+			opacity: 1
+			height: auto
+
+	.select-theme-wrap,.select-theme-form
+		transition: all 1s ease
+		opacity: 0
+		background: #fdf7f2
+		position: absolute
+		z-index: 3
+		width: 0
+		right: -100%
+		height: 100%
+		&.active
+			transition: all 1s ease
+			opacity: 1
+			width: 40%
+			right: 15px
+
+	.select-theme-wrap
+		.if-theme-selected-list
+			&:first-child
+				padding-left: 0
+	.select-theme-form
+		.theme-form
+			font-family: 'MontserratRegular'
+			font-size: 14px
+			color: $colorDarkText
+			width: 690px
+			&--input
+				padding: 20px 0
+				border: none
+				background-color: #fdf7f2
+				border-bottom: 1px solid #a6a6a6
+				outline: none
+				width: 50%
+				&::-webkit-input-placeholder
+					color: #a6a6a6
+			&--textarea
+				width: 100%
+				min-width: 100%
+				max-width: 100%
+				min-height: 142px
+				max-height: 142px
+				background-color: #fdf7f2
+				border: 1px solid #a6a6a6
+				outline: none
+				&::-webkit-input-placeholder
+					color: #a6a6a6
+			&--select
+				border-radius: 0
+				border: none
+				color: #a6a6a6
+				background-color: #fdf7f2
+				border-bottom: 1px solid #a6a6a6
+				outline: none
+				width: 50%
+				padding: 20px 0
+				height: auto
+				line-height: normal
+				font-size: 14px
+				display: flex
+				text-transform: none
+				align-items: center
+				padding-right: 40px
+				.list
+					width: 100%
+					border-radius: 0
+
 	.lang-slider
 		border: none
 		position: relative
