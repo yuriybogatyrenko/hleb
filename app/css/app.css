@@ -5731,9 +5731,6 @@ body {
   left: 0;
   width: 100%;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   z-index: 500;
 }
 
