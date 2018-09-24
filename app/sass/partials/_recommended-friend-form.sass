@@ -1,0 +1,22 @@
+@import "../colors"
+
+.recommended-friend-form
+    width: 100%
+    max-width: 700px
+    border-bottom: 1px solid #d9d9d9
+    display: flex
+    padding: 10px 0
+
+    &__input
+        @extend .form__text-input
+        border: none
+        flex-grow: 1
+        font: inherit
+
+
+    &__button
+        @extend .fw-reset
+        color: $colorGrayText
+        font-size: 32px
+        flex-shrink: 0
+        margin-left: 15px

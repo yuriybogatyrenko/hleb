@@ -1,0 +1,103 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}ХлебПром{% endblock %}
+
+{% block content %}
+    <!-- Header block -->
+    {% include "layouts/header.twig" %}
+    <!-- Header block end -->
+    <div class="vacancy fw-pb-100">
+        <div class="container-small">
+            <div class="fw-pt-20 fw-pb-20">
+                {% include "partials/breadcrumbs.twig" %}
+            </div>
+
+            <form class="fw-max-width-900">
+                <h1 class="fw-fz-60 fw-font-ml fw-font-normal fw-margin-0 fw-mb-20">Супервайзер</h1>
+                <div class="fw-color-gray-text fw-fz-20">
+                    <span class="fw-text-uppercase">Архангельск</span>
+                    <span class="fw-ml-5 fw-mr-5">&bull;</span>
+                    <span>от 65 000Р в месяц на руки</span>
+                </div>
+
+                <div class="vacancy__list fw-mt-60">
+                    <div class="vacancy__item">
+                        <div class="fw-fz-30 fw-font-ml">Обязанности:</div>
+                        <div class="fw-pl-50 fw-mt-10">
+                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt mollitia
+                                    nobis non similique sint soluta. Aliquam, aspernatur praesentium. Doloribus!
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="fw-fz-30 fw-font-ml fw-pb-25">Требования:</div>
+                        <div class="fw-pl-50 fw-mt-10">
+                            <div class="fw-fz-14 fw-text-uppercase fw-font-mb">Опыт:</div>
+                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt mollitia
+                                    nobis non similique sint soluta. Aliquam, aspernatur praesentium. Doloribus!
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                            </ul>
+                            <div class="fw-fz-14 fw-text-uppercase fw-font-mb">Знания:</div>
+                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt mollitia
+                                    nobis non similique sint soluta. Aliquam, aspernatur praesentium. Doloribus!
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                            </ul>
+                            <div class="fw-fz-14 fw-text-uppercase fw-font-mb">Образование:</div>
+                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt</li>
+                            </ul>
+                            <div class="fw-fz-14 fw-text-uppercase fw-font-mb">Навыки:</div>
+                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="fw-fz-30 fw-font-ml">Условия работы:</div>
+                        <div class="fw-pl-50 fw-mt-10">
+                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt mollitia
+                                    nobis non similique sint soluta. Aliquam, aspernatur praesentium. Doloribus!
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fw-pt-40">
+                    <button
+                       class="fw-reset fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
+                        <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">Отправить отклик</span>
+                        <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="fw-mt-60 fw-pt-50">
+                <div class="fw-fz-30 fw-font-ml">Рекомендовать другу:</div>
+                <div class="fw-mt-15">
+                    {% include 'partials/recommend-friend-form.twig' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {# / #}
+
+    <!-- footer block -->
+    {% include "layouts/footer.twig" %}
+    <!-- footer block end -->
+{% endblock %}

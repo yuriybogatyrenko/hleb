@@ -26,7 +26,7 @@
   font-family: "MontserratSemiBold";
   src: url("../fonts/MontserratSemiBold/MontserratSemiBold.ttf");
 }
-.fw-reset, body {
+.fw-reset, .recommended-friend-form__button, body {
   margin: 0;
   font-weight: normal;
   padding: 0;
@@ -364,6 +364,14 @@
   max-width: 834px;
 }
 
+.fw-width-900 {
+  width: 900px;
+}
+
+.fw-max-width-900 {
+  max-width: 900px;
+}
+
 .fw-width-1-1 {
   width: 100%;
 }
@@ -540,6 +548,15 @@
 
   .fw-max-width-834\@xl {
     max-width: 834px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-width-900\@xl {
+    width: 900px;
+  }
+
+  .fw-max-width-900\@xl {
+    max-width: 900px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -736,6 +753,15 @@
 
   .fw-max-width-834\@xs {
     max-width: 834px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-width-900\@xs {
+    width: 900px;
+  }
+
+  .fw-max-width-900\@xs {
+    max-width: 900px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5571,7 +5597,7 @@
   color: rgba(202, 169, 139, 0.69);
 }
 
-.form__text-input {
+.form__text-input, .recommended-friend-form__input {
   height: 50px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -5582,25 +5608,25 @@
 .form__text-input--error {
   border-color: #a61c35;
 }
-.form__text-input:active, .form__text-input:focus {
+.form__text-input:active, .recommended-friend-form__input:active, .form__text-input:focus, .recommended-friend-form__input:focus {
   outline: none;
 }
-.form__text-input::-webkit-input-placeholder {
+.form__text-input::-webkit-input-placeholder, .recommended-friend-form__input::-webkit-input-placeholder {
   color: rgba(166, 166, 166, 0.69);
 }
-.form__text-input:-moz-placeholder {
+.form__text-input:-moz-placeholder, .recommended-friend-form__input:-moz-placeholder {
   color: rgba(166, 166, 166, 0.69);
 }
-.form__text-input::-moz-placeholder {
+.form__text-input::-moz-placeholder, .recommended-friend-form__input::-moz-placeholder {
   color: rgba(166, 166, 166, 0.69);
 }
-.form__text-input:-ms-input-placeholder {
+.form__text-input:-ms-input-placeholder, .recommended-friend-form__input:-ms-input-placeholder {
   color: rgba(166, 166, 166, 0.69);
 }
-.form__text-input::-ms-input-placeholder {
+.form__text-input::-ms-input-placeholder, .recommended-friend-form__input::-ms-input-placeholder {
   color: rgba(166, 166, 166, 0.69);
 }
-.form__text-input::placeholder {
+.form__text-input::placeholder, .recommended-friend-form__input::placeholder {
   color: rgba(166, 166, 166, 0.69);
 }
 
@@ -5709,6 +5735,62 @@
 }
 .fw-checkbox__input:checked + .fw-checkbox__placeholder:after {
   opacity: 1;
+}
+
+.recommended-friend-form {
+  width: 100%;
+  max-width: 700px;
+  border-bottom: 1px solid #d9d9d9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+.recommended-friend-form__input {
+  border: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font: inherit;
+}
+.recommended-friend-form__button {
+  color: #a6a6a6;
+  font-size: 32px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.vacancy__item-list {
+  padding: 0;
+  margin: 15px 0;
+  list-style: none;
+}
+.vacancy__item-list li {
+  padding: 13px 0 13px 25px;
+  margin: 0;
+  position: relative;
+}
+.vacancy__item-list li:before {
+  position: absolute;
+  top: 21px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border: 3px solid #a61c35;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  content: "";
+  display: block;
 }
 
 body {
