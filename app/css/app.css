@@ -6898,6 +6898,19 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   overflow: hidden;
 }
 
+.fixed-menu-right {
+  right: -50%;
+  width: 50%;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
 .fixed-menu-open {
   -webkit-transition: all 0.5s ease-out !important;
   -o-transition: all 0.5s ease-out !important;
@@ -6909,18 +6922,6 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   transition-delay: 0s;
   width: 100% !important;
   opacity: 1 !important;
-}
-.fixed-menu-open .fixed-menu-right {
-  right: -50%;
-  width: 50%;
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  -o-transition-delay: 0s;
-  transition-delay: 0s;
-  -webkit-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  -moz-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
 }
 .fixed-menu-open .fixed-menu-right.active {
   -webkit-transition: all 0.3s ease-out;
