@@ -6370,9 +6370,9 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   text-transform: none;
   width: 100%;
   font-size: 14px;
-  -webkit-box-shadow: 0 0 15px 1px rgba(68, 68, 68, 0.11);
-  -moz-box-shadow: 0 0 15px 1px rgba(68, 68, 68, 0.11);
-  box-shadow: 0 0 15px 1px rgba(68, 68, 68, 0.11);
+  -webkit-box-shadow: 0 0 0px 0px rgba(68, 68, 68, 0.11);
+  -moz-box-shadow: 0 0 0px 0px rgba(68, 68, 68, 0.11);
+  box-shadow: 0 0 0px 0px rgba(68, 68, 68, 0.11);
   max-height: 250px;
   overflow-y: auto;
 }
