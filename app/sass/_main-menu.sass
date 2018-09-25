@@ -315,17 +315,16 @@
         z-index: 4
         overflow: hidden
 
-.fixed-menu-right
-    right: -50%
-    width: 50%
-    transition-delay: 0s
-    transition: all .8s ease-out
-
 .fixed-menu-open
     transition: all .5s ease-out
     transition-delay: 0s
     width: 100%
     opacity: 1
+    .fixed-menu-right
+        right: -50%
+        width: 50%
+        transition-delay: 0s
+        transition: all .8s ease-out
     .fixed-menu-right.active
         transition: all .3s ease-out
         width: 50%
