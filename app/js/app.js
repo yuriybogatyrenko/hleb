@@ -8,16 +8,7 @@ $(document).ready(function () {
             zoom: 10,
             controls: ['zoomControl', 'fullscreenControl'],
 
-        }).setMapStyle([
-            {
-                "featureType" : "string",
-                "stylers" : {
-                    "hue" : "double",
-                    "saturation" : "double",
-                    "lightness" : "double"
-                }
-            }
-        ]);
+        });
 
         var myPlacemark = new ymaps.Placemark([59.905782, 30.364647], {
             hintContent: 'Содержимое всплывающей подсказки',
