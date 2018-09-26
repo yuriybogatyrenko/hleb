@@ -6469,9 +6469,10 @@ footer .select-theme-form .theme-form {
   width: 690px;
 }
 footer .select-theme-form .theme-form--input {
+  font: inherit;
+  background-color: #fdf7f2;
   padding: 20px 0;
   border: none;
-  background-color: #fdf7f2;
   border-bottom: 1px solid #a6a6a6;
   outline: none;
   width: 50%;
@@ -6479,8 +6480,25 @@ footer .select-theme-form .theme-form--input {
 footer .select-theme-form .theme-form--input::-webkit-input-placeholder {
   color: #a6a6a6;
 }
+footer .select-theme-form .theme-form--input:-moz-placeholder {
+  color: #a6a6a6;
+}
+footer .select-theme-form .theme-form--input::-moz-placeholder {
+  color: #a6a6a6;
+}
+footer .select-theme-form .theme-form--input:-ms-input-placeholder {
+  color: #a6a6a6;
+}
+footer .select-theme-form .theme-form--input::-ms-input-placeholder {
+  color: #a6a6a6;
+}
+footer .select-theme-form .theme-form--input::placeholder {
+  color: #a6a6a6;
+}
 footer .select-theme-form .theme-form--textarea {
   width: 100%;
+  font: inherit;
+  resize: none;
   min-width: 100%;
   max-width: 100%;
   min-height: 142px;

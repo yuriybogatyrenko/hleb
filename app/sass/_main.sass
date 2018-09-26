@@ -1,530 +1,536 @@
 @import "mixins/mixins"
 body
-	@extend .fw-reset
-	font-family: 'MontserratRegular', sans-serif, arial
-	font-size: 16px
-	font-weight: 400
-	color: #3d3d3d
-	line-height: normal
+    @extend .fw-reset
+    font-family: 'MontserratRegular', sans-serif, arial
+    font-size: 16px
+    font-weight: 400
+    color: #3d3d3d
+    line-height: normal
 
 *
-	box-sizing: border-box
+    box-sizing: border-box
 
 .header
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	background-color: #fff
-	//box-shadow: 0 0 5px rgba(#000, 0.2)
-	z-index: 500
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #fff
+    //box-shadow: 0 0 5px rgba(#000, 0.2)
+    z-index: 500
 
 // Button style
 .fw-button
-	position: relative
-	height: 50px
-	padding-left: 34px
-	padding-right: 34px
-	&:hover
-		.icon-arrow
-			margin-left: 10px
-		&:before
-			width: 100%
-	&:before
-		content: ''
-		position: absolute
-		left: 0
-		z-index: 0
-		top: 0
-		width: 57px
-		height: 100%
-		background-color: #fdf7f2
-		transition: all .4s ease
+    position: relative
+    height: 50px
+    padding-left: 34px
+    padding-right: 34px
+    &:hover
+        .icon-arrow
+            margin-left: 10px
+        &:before
+            width: 100%
+    &:before
+        content: ''
+        position: absolute
+        left: 0
+        z-index: 0
+        top: 0
+        width: 57px
+        height: 100%
+        background-color: #fdf7f2
+        transition: all .4s ease
+
 .fw-button-submit
-	outline: none
-	&:before
-		background-color: #faeee3
+    outline: none
+    &:before
+        background-color: #faeee3
+
 .fw-button-opacity
-	&:before
-		opacity: .5
+    &:before
+        opacity: .5
 
 //__________________________________________________________________________________
 
 .container
-	max-width: 1760px
-	width: 100%
-	margin: auto
-	padding-left: 15px
-	padding-right: 15px
+    max-width: 1760px
+    width: 100%
+    margin: auto
+    padding-left: 15px
+    padding-right: 15px
 
 .app-wrapper
-	max-width: 1920px
-	width: 100%
-	margin-left: auto
-	margin-right: auto
+    max-width: 1920px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
 
 .container-small
-	max-width: 1350px
-	width: 100%
-	margin: auto
+    max-width: 1350px
+    width: 100%
+    margin: auto
 
 // Header section
 .header-content
-	background-image: url('../images/main/header/header-bg.jpg')
-	background-size: cover
-	background-position: center center
+    background-image: url('../images/main/header/header-bg.jpg')
+    background-size: cover
+    background-position: center center
 
 .header-slider
-	.header-slider-slide
-		img
-			transition: all 6s ease
-			transform: scale(1.2)
-			opacity: 0
-		span,h1,p
-			opacity: 0
-			position: relative
+    .header-slider-slide
+        img
+            transition: all 6s ease
+            transform: scale(1.2)
+            opacity: 0
+        span, h1, p
+            opacity: 0
+            position: relative
 
-		span
-			transition: all .5s ease-out
-			transform: translate3d(0px, 25px, 0px)
-		h1
-			transition: all .8s ease-out
-			opacity: 0
-			position: relative
-			transform: translate3d(0px, 55px, 0px)
-		p
-			transition: all 1.2s ease-out
-			opacity: 0
-			position: relative
-			transform: translate3d(0px, 65px, 0px)
+        span
+            transition: all .5s ease-out
+            transform: translate3d(0px, 25px, 0px)
+        h1
+            transition: all .8s ease-out
+            opacity: 0
+            position: relative
+            transform: translate3d(0px, 55px, 0px)
+        p
+            transition: all 1.2s ease-out
+            opacity: 0
+            position: relative
+            transform: translate3d(0px, 65px, 0px)
 
-	.owl-item.active
-		.header-slider-slide
-			overflow: hidden
-			img
-				transition: all 6s ease
-				transform: scale(1)
-				opacity: 1
-			span,h1,p
-				top: 0
-				opacity: 1
-				transition-delay: .6s
-				transform: translate3d(0px, 0px, 0px)
+    .owl-item.active
+        .header-slider-slide
+            overflow: hidden
+            img
+                transition: all 6s ease
+                transform: scale(1)
+                opacity: 1
+            span, h1, p
+                top: 0
+                opacity: 1
+                transition-delay: .6s
+                transform: translate3d(0px, 0px, 0px)
 
 .header-slider-navigation
-	.active
-		color: #2d2d2d
-		&:before
-			height: 10px
-			top: -10px
-		.slider-nav-time-bar-time
-			transition: all 7s ease
-			visibility: visible
-			width: 100%
+    .active
+        color: #2d2d2d
+        &:before
+            height: 10px
+            top: -10px
+        .slider-nav-time-bar-time
+            transition: all 7s ease
+            visibility: visible
+            width: 100%
 
-	li
-		position: relative
-		transition: all .3s ease
-		.slider-nav-time-bar-overlay
-			height: 1px
-			position: relative
-			background-color: #edebed
-		.slider-nav-time-bar-time
-			width: 0
-			position: absolute
-			left: 0
-			top: 0
-			height: 100%
-			visibility: hidden
-			background-color: #2d2d2d
+    li
+        position: relative
+        transition: all .3s ease
+        .slider-nav-time-bar-overlay
+            height: 1px
+            position: relative
+            background-color: #edebed
+        .slider-nav-time-bar-time
+            width: 0
+            position: absolute
+            left: 0
+            top: 0
+            height: 100%
+            visibility: hidden
+            background-color: #2d2d2d
 
-
-		&:before
-			content: ''
-			position: absolute
-			transition: all .3s ease
-			top: 0
-			left: 0
-			width: 100%
-			height: 0
-			background-color: #fff
-		&:hover
-			color: #2d2d2d
-			border-color: #2d2d2d
-			&:before
-				height: 10px
-				top: -10px
+        &:before
+            content: ''
+            position: absolute
+            transition: all .3s ease
+            top: 0
+            left: 0
+            width: 100%
+            height: 0
+            background-color: #fff
+        &:hover
+            color: #2d2d2d
+            border-color: #2d2d2d
+            &:before
+                height: 10px
+                top: -10px
 
 // History  section
 .history-in-numbers-item
-	&:last-child
-		.history-in-numbers-item--number
-			&:after
-				display: none
+    &:last-child
+        .history-in-numbers-item--number
+            &:after
+                display: none
+
 .history-in-numbers-item--number
-	position: relative
-	&:after
-		content: ''
-		position: absolute
-		right: 0
-		top: 50%
-		transform: translateY(-50%)
-		width: 7px
-		height: 7px
-		border-radius: 100%
-		background-color: #000
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 7px
+        height: 7px
+        border-radius: 100%
+        background-color: #000
+
 .icon-arrow
-	transition: all .3s ease
+    transition: all .3s ease
 
 // Modern section
 $modernSectionPadding: 160px
 $modernSectionAfterHeight: 138px
 
 .modern-production-item-left-before
-	&:before
-		content: ''
-		position: absolute
-		top: 0
-		left: -$modernSectionPadding
-		width: $modernSectionPadding
-		height: $modernSectionAfterHeight
-		background-color: $colorDarkRed
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: -$modernSectionPadding
+        width: $modernSectionPadding
+        height: $modernSectionAfterHeight
+        background-color: $colorDarkRed
 
 .partnership
-	max-width: 1760px
-	width: 100%
-	margin-left: auto
-	margin-right: auto
-	//padding-right: 160px
+    max-width: 1760px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    //padding-right: 160px
 
-	&:before
-		content: ''
-		position: absolute
-		top: 0
-		right: 0
-		bottom: 100px
-		width: 100%
-		background-color: $colorLightPaleYellow
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 100px
+        width: 100%
+        background-color: $colorLightPaleYellow
 
-	&:after
-		display: block
-		content: ''
-		position: absolute
-		width: 50%
-		right: 50%
-		top: 0
-		bottom: 0
-		background-color: $colorDarkRed
+    &:after
+        display: block
+        content: ''
+        position: absolute
+        width: 50%
+        right: 50%
+        top: 0
+        bottom: 0
+        background-color: $colorDarkRed
 
-	.container-small
-		position: relative
-		z-index: 1
-		//padding-left: $modernSectionPadding
-		//padding-right: $modernSectionPadding
+    .container-small
+        position: relative
+        z-index: 1
+//padding-left: $modernSectionPadding
+//padding-right: $modernSectionPadding
 
 // brands
 
 .brands
-	&-items
-		&-line
-			&-item
-				position: relative
-				&:hover
-					.brands-items-line-item-overlay
-						opacity: 1
-						z-index: 2
-				&-overlay
-					transition: all .3s ease-out
-					position: absolute
-					color: $colorWhite
-					width: 100%
-					height: 100%
-					background-color: $colorDarkRed
-					z-index: 0
-					opacity: 0
+    &-items
+        &-line
+            &-item
+                position: relative
+                &:hover
+                    .brands-items-line-item-overlay
+                        opacity: 1
+                        z-index: 2
+                &-overlay
+                    transition: all .3s ease-out
+                    position: absolute
+                    color: $colorWhite
+                    width: 100%
+                    height: 100%
+                    background-color: $colorDarkRed
+                    z-index: 0
+                    opacity: 0
 
 // modern-production
 
 .modern-production
-	&-line
-		&:hover
-			.modern-production-item-img-box-image
-				transform: scale(1.2)
-	&-item-text
-		z-index: 3
-	&-item-img
-		&-box
-			overflow: hidden
-			width: 100%
-			height: 100%
-			display: flex
-			align-items: center
-			justify-content: center
-			&-image
-				transition: all 4s linear
-				transform: scale(1)
-				width: 100%
-				height: 100%
-				img
-					width: 100%
-					height: 100%
+    &-line
+        &:hover
+            .modern-production-item-img-box-image
+                transform: scale(1.2)
+    &-item-text
+        z-index: 3
+    &-item-img
+        &-box
+            overflow: hidden
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            &-image
+                transition: all 4s linear
+                transform: scale(1)
+                width: 100%
+                height: 100%
+                img
+                    width: 100%
+                    height: 100%
 // locations
 .locations-info
-	top: 50%
-	transform: translateY(-50%)
+    top: 50%
+    transform: translateY(-50%)
 
 // footer
 .footer-select
-	min-width: 430px
-	width: 100%
-	border: none
-	border-radius: 0
-	background-color: $colorLightPaleYellow
-	border-bottom: 1px solid #000000
-	color: $colorGrayText
-	.list
-		border: none
-		border-radius: 0
-		width: 100%
+    min-width: 430px
+    width: 100%
+    border: none
+    border-radius: 0
+    background-color: $colorLightPaleYellow
+    border-bottom: 1px solid #000000
+    color: $colorGrayText
+    .list
+        border: none
+        border-radius: 0
+        width: 100%
 
 footer
-	.send-status
-		transition: all .5s ease
-		position: relative
-		top: 20%
-		font-size: 16px
-		text-align: center
-		z-index: 0
-		visibility: hidden
-		height: 0
-		opacity: 0
-		&.success
-			visibility: visible
-			z-index: 5
-			opacity: 1
-			height: auto
-		&.error
-			color: $colorDarkRed
-			visibility: visible
-			z-index: 5
-			opacity: 1
-			height: auto
+    .send-status
+        transition: all .5s ease
+        position: relative
+        top: 20%
+        font-size: 16px
+        text-align: center
+        z-index: 0
+        visibility: hidden
+        height: 0
+        opacity: 0
+        &.success
+            visibility: visible
+            z-index: 5
+            opacity: 1
+            height: auto
+        &.error
+            color: $colorDarkRed
+            visibility: visible
+            z-index: 5
+            opacity: 1
+            height: auto
 
-	.select-theme-wrap,.select-theme-form
-		transition: all 1s ease
-		opacity: 0
-		background: #fdf7f2
-		position: absolute
-		z-index: 3
-		width: 0
-		right: -100%
-		height: 100%
-		&.active
-			transition: all 1s ease
-			opacity: 1
-			width: 40%
-			right: 15px
+    .select-theme-wrap, .select-theme-form
+        transition: all 1s ease
+        opacity: 0
+        background: #fdf7f2
+        position: absolute
+        z-index: 3
+        width: 0
+        right: -100%
+        height: 100%
+        &.active
+            transition: all 1s ease
+            opacity: 1
+            width: 40%
+            right: 15px
 
-	.select-theme-wrap
-		.if-theme-selected-list
-			&:first-child
-				padding-left: 0
-	.select-theme-form
-		.theme-form
-			font-family: 'MontserratRegular'
-			font-size: 14px
-			color: $colorDarkText
-			width: 690px
-			&--input
-				padding: 20px 0
-				border: none
-				background-color: #fdf7f2
-				border-bottom: 1px solid #a6a6a6
-				outline: none
-				width: 50%
-				&::-webkit-input-placeholder
-					color: #a6a6a6
-			&--textarea
-				width: 100%
-				min-width: 100%
-				max-width: 100%
-				min-height: 142px
-				max-height: 142px
-				background-color: #fdf7f2
-				border: 1px solid #a6a6a6
-				outline: none
-				&::-webkit-input-placeholder
-					color: #a6a6a6
-			&--select
-				border-radius: 0
-				border: none
-				color: #a6a6a6
-				background-color: #fdf7f2
-				border-bottom: 1px solid #a6a6a6
-				outline: none
-				width: 50%
-				padding: 20px 0
-				height: auto
-				line-height: normal
-				font-size: 14px
-				display: flex
-				text-transform: none
-				align-items: center
-				padding-right: 40px
-				.list
-					width: 100%
-					border-radius: 0
+    .select-theme-wrap
+        .if-theme-selected-list
+            &:first-child
+                padding-left: 0
+    .select-theme-form
+        .theme-form
+            font-family: 'MontserratRegular'
+            font-size: 14px
+            color: $colorDarkText
+            width: 690px
+            &--input
+                font: inherit
+                background-color: #fdf7f2
+                padding: 20px 0
+                border: none
+                border-bottom: 1px solid #a6a6a6
+                outline: none
+                width: 50%
+                &::placeholder
+                    color: #a6a6a6
+            &--textarea
+                width: 100%
+                font: inherit
+                resize: none
+                min-width: 100%
+                max-width: 100%
+                min-height: 142px
+                max-height: 142px
+                background-color: #fdf7f2
+                border: 1px solid #a6a6a6
+                outline: none
+                &::-webkit-input-placeholder
+                    color: #a6a6a6
+            &--select
+                border-radius: 0
+                border: none
+                color: #a6a6a6
+                background-color: #fdf7f2
+                border-bottom: 1px solid #a6a6a6
+                outline: none
+                width: 50%
+                padding: 20px 0
+                height: auto
+                line-height: normal
+                font-size: 14px
+                display: flex
+                text-transform: none
+                align-items: center
+                padding-right: 40px
+                .list
+                    width: 100%
+                    border-radius: 0
 
-	.lang-slider
-		border: none
-		position: relative
-		-webkit-user-select: none
-		-moz-user-select: none
-		-ms-user-select: none
-		user-select: none
+    .lang-slider
+        border: none
+        position: relative
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
 
-	.lang-slider-checkbox
-		display: none
+    .lang-slider-checkbox
+        display: none
 
-	.lang-slider-label
-		border: 2px solid $colorGrayText
-		border-radius: 20px
-		cursor: pointer
-		display: block
-		overflow: hidden
-		width: 46px
-		height: 24px
-		background-image: url('/images/great-britain.png')
-		-webkit-background-size: cover
-		background-size: cover
-		background-position: center center
-		background-repeat: no-repeat
+    .lang-slider-label
+        border: 2px solid $colorGrayText
+        border-radius: 20px
+        cursor: pointer
+        display: block
+        overflow: hidden
+        width: 46px
+        height: 24px
+        background-image: url('/images/great-britain.png')
+        -webkit-background-size: cover
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
 
-	.lang-slider-circle
-		background-color: $colorWhite
-		border: 2px solid $colorGrayText
-		border-radius: 20px
-		bottom: 0
-		display: block
-		margin: 0
-		position: absolute
-		left: 0
-		top: 0
-		-webkit-transition: all 0.3s ease-in 0s
-		transition: all 0.3s ease-in 0s
+    .lang-slider-circle
+        background-color: $colorWhite
+        border: 2px solid $colorGrayText
+        border-radius: 20px
+        bottom: 0
+        display: block
+        margin: 0
+        position: absolute
+        left: 0
+        top: 0
+        -webkit-transition: all 0.3s ease-in 0s
+        transition: all 0.3s ease-in 0s
 
-	.lang-slider-checkbox:checked + .lang-slider-label
-		.lang-slider-circle
-			left: calc(100% - 24px)
+    .lang-slider-checkbox:checked + .lang-slider-label
+        .lang-slider-circle
+            left: calc(100% - 24px)
 
 // map
 .map-city-select
-	border: none
-	padding-left: 0
-	display: block
-	margin-bottom: 35px
-	padding-right: 40px
-	&:after
-		height: 8px
-		width: 8px
-		margin-top: -7px
-		border-color: $colorDarkText
-	.list
-		border: none
-		border-radius: 0
-		font-family: "MontserratRegular"
-		text-transform: none
-		width: 100%
-		font-size: 14px
-		box-shadow: 0 0 0px 0px rgba(68, 68, 68, 0.11)
-		max-height: 250px
-		overflow-y: auto
-		.mCSB_inside > .mCSB_container
-			margin-right: 0
-		.mCSB_scrollTools
-			width: 4px
-			.mCSB_draggerRail
-				background-color: transparent
-				margin: 0
-		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
-			background-color: $colorPaleYellow
-			border-radius: 0
+    border: none
+    padding-left: 0
+    display: block
+    margin-bottom: 35px
+    padding-right: 40px
+    &:after
+        height: 8px
+        width: 8px
+        margin-top: -7px
+        border-color: $colorDarkText
+    .list
+        border: none
+        border-radius: 0
+        font-family: "MontserratRegular"
+        text-transform: none
+        width: 100%
+        font-size: 14px
+        box-shadow: 0 0 0px 0px rgba(68, 68, 68, 0.11)
+        max-height: 250px
+        overflow-y: auto
+        .mCSB_inside > .mCSB_container
+            margin-right: 0
+        .mCSB_scrollTools
+            width: 4px
+            .mCSB_draggerRail
+                background-color: transparent
+                margin: 0
+        .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+            background-color: $colorPaleYellow
+            border-radius: 0
 
-		.option:hover, .nice-select .option.focus
-			background-color: #fdf7f2
-		.option.selected.focus
-			color: $colorPaleYellow
+        .option:hover, .nice-select .option.focus
+            background-color: #fdf7f2
+        .option.selected.focus
+            color: $colorPaleYellow
 
 // scroll button
 .scroll-top-button
-	position: fixed
-	right: 80px
-	bottom: 100px
-	z-index: 10
-	opacity: 0
-	visibility: hidden
-	transition: all 0.3s ease
+    position: fixed
+    right: 80px
+    bottom: 100px
+    z-index: 10
+    opacity: 0
+    visibility: hidden
+    transition: all 0.3s ease
 
-	&.visible
-		opacity: 1
-		visibility: visible
+    &.visible
+        opacity: 1
+        visibility: visible
 
 .first-screen-animated-image
-	background-size: cover
-	background-repeat: no-repeat
-	transform: scale(1.10) rotate(0.01deg)
-	transition: transform 8s ease-in
+    background-size: cover
+    background-repeat: no-repeat
+    transform: scale(1.10) rotate(0.01deg)
+    transition: transform 8s ease-in
 
-	&--active
-		transform: scale(1) rotate(0deg)
+    &--active
+        transform: scale(1) rotate(0deg)
 
-	&:after
-		padding-bottom: 48%
-		content: ''
-		display: block
+    &:after
+        padding-bottom: 48%
+        content: ''
+        display: block
 
 // ABOUT MAP SECTION ___________________________________________________________
 .geography-map
-	.map-navigation
-		&-item
-			display: block
-			position: relative
-			&:before
-				content: ''
-				transition: all .8s ease
-				position: absolute
-				left: 0
-				top: 50%
-				transform: translateY(-50%)
-				height: 1px
-				width: 0
-				background-color: $colorPaleYellow
-		&-item.active
-			&:before
-				transition: all .8s ease
-				width: 1000px
-				left: -1000px
-	.map-tab-wrap
-		transition: all 1s ease
-		opacity: 0
-		transform: scale(1)
-		//overflow: hidden
-		height: 0
-		max-height: 0
-		z-index: 0
-	.map-tab-wrap.active
-		transition: all 1s ease
-		opacity: 1
-		transform: scale(1)
-		height: 830px
-		max-height: 830px
-		z-index: 1
+    .map-navigation
+        &-item
+            display: block
+            position: relative
+            &:before
+                content: ''
+                transition: all .8s ease
+                position: absolute
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                height: 1px
+                width: 0
+                background-color: $colorPaleYellow
+        &-item.active
+            &:before
+                transition: all .8s ease
+                width: 1000px
+                left: -1000px
+    .map-tab-wrap
+        transition: all 1s ease
+        opacity: 0
+        transform: scale(1)
+        //overflow: hidden
+        height: 0
+        max-height: 0
+        z-index: 0
+    .map-tab-wrap.active
+        transition: all 1s ease
+        opacity: 1
+        transform: scale(1)
+        height: 830px
+        max-height: 830px
+        z-index: 1
 
-	.amcharts-export-menu
-		display: none
-	#map-tab1,#map-tab2
-		.amcharts-small-map
-			display: none
-		a
-			display: none !important
+    .amcharts-export-menu
+        display: none
+    #map-tab1, #map-tab2
+        .amcharts-small-map
+            display: none
+        a
+            display: none !important
 // _____________________________________________________________________________

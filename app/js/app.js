@@ -4,13 +4,26 @@ $(document).ready(function () {
 
     function init(){
         var myMap = new ymaps.Map("index-map", {
-            center: [55.76, 37.64],
-            zoom: 7,
-        });
+            center: [59.905782, 30.364647],
+            zoom: 10,
+            controls: ['zoomControl', 'fullscreenControl'],
 
-        var myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+        }).setMapStyle([
+            {
+                "featureType" : "string",
+                "stylers" : {
+                    "hue" : "double",
+                    "saturation" : "double",
+                    "lightness" : "double"
+                }
+            }
+        ]);
+
+        var myPlacemark = new ymaps.Placemark([59.905782, 30.364647], {
             hintContent: 'Содержимое всплывающей подсказки',
             balloonContent: 'Содержимое балуна'
+        }, {
+            iconColor: 'darkred'
         });
 
         myMap.geoObjects.add(myPlacemark);
@@ -32,10 +45,11 @@ $(document).ready(function () {
                 "rollOverColor": "#a61c35",
                 "rollOverOutlineColor": "#FFFFFF",
             },
-            "smallMap": {},
+            "smallMap": {
+                enabled: false
+            },
             "export": {
-                "enabled": true,
-                "position": "bottom-right"
+                enabled: false,
             }
         });
     };
