@@ -1,0 +1,80 @@
+<div class="popup-overlay fw-hidden fw-flex fw-flex-top fw-flex-center">
+
+    <div class="popup-blur"></div>
+    <div id="feedback-popup" class="popup fw-hidden feedback-popup fw-max-width-770 fw-width-1-1 fw-padding-50 fw-bg-color-white">
+        <div class="popup-header fw-flex fw-flex-space-between fw-flex-middle">
+            <span class="fw-fz-30 fw-font-mr fw-block fw-margin-0 fw-color-dark-text">Форма обратной связи</span>
+            <div data-target-close-popup="feedback-popup" class="js-close-popup close-popup fw-pointer">
+                <img src="images/close.png" alt="">
+            </div>
+        </div>
+
+        <div class="popup-content fw-pt-25">
+            <form id="popup-feedback-form" action="" class="theme-form fw-max-width-680 fw-width-1-1">
+                <div class="fw-flex fw-mb-40">
+                    <div class="fw-width-1-1">
+                        <input type="text" class="fw-reset form__text-input fw-width-1-1" placeholder="Как к вам обращаться">
+                    </div>
+                </div>
+
+                <div class="fw-flex fw-mb-40">
+                    <div class="fw-width-1-1">
+                        <input type="tel" class="fw-reset form__text-input fw-width-1-1" placeholder="+7">
+                    </div>
+                </div>
+
+                <div class="fw-flex fw-mb-40">
+                    <div class="fw-width-1-1">
+                        <input type="email" class="fw-reset form__text-input fw-width-1-1" placeholder="E-mail">
+                    </div>
+                </div>
+
+                <div class="fw-flex fw-mb-50">
+                    <select class="form__select fw-fz-14 fw-height-50 fw-text-uppercase fw-font-mr" name="">
+                        <option value="1">Выберите тему обращения</option>
+                        <option value="1">Выберите тему обращения1</option>
+                        <option value="1">Выберите тему обращения2</option>
+                        <option value="1">Выберите тему обращения3</option>
+                    </select>
+                </div>
+
+                <div class="fw-width-1-1 fw-mb-50">
+                    <textarea class="form__textarea fw-width-1-1 fw-height-138" placeholder="Сообщение"></textarea>
+                </div>
+
+                <div class="fw-width-1-1">
+                    <label class="form__input-file fw-flex fw-flex-center fw-flex-middle fw-height-100">
+                        <input type="file" class="fw-hidden">
+                        <span class="fw-flex fw-flex-middle">
+                        <i class="icon-attach"></i>
+                        <span class="fw-text-uppercase fw-ml-10">Прикрепить документы</span>
+                    </span>
+                    </label>
+                </div>
+
+                <div class="fw-width-1-1 fw-flex fw-mt-50 fw-flex-left fw-flex-column">
+                    <label class="fw-checkbox fw-flex">
+                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                        <i class="fw-checkbox__placeholder"></i>
+                        <span class="fw-color-dark-text fw-fz-16 ">Я соглашаюсь на обработку и хранение <a href="#" class="fw-reset fw-color-pale-yellow">персональных данных</a></span>
+                    </label>
+
+                    <button class="fw-reset fw-mt-30 fw-pointer fw-button-submit fw-color-dark-text fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
+                        <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">Отправить</span>
+                        <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="thanks-popup" class="popup fw-hidden feedback-popup fw-max-width-520 fw-width-1-1 fw-padding-50 fw-bg-color-white">
+        <div class="popup-header fw-pt-45 fw-pb-45 fw-flex fw-flex-space-between fw-flex-middle">
+            <span class="js-send-status fw-fz-30 fw-font-mr fw-block fw-margin-0 fw-color-dark-text"></span>
+            <div data-target-close-popup="thanks-popup" class="js-close-popup close-popup fw-pointer">
+                <img src="images/close.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>

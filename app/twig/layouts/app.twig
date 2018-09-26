@@ -9,11 +9,13 @@
     {% include "stylesheets.twig" %}
 </head>
 <body>
-    <div class="app-wrapper">
+    <div class="js-app-wrapper app-wrapper">
         <!-- Block content -->
         {% block content %}{% endblock %}
         <!-- Block content end -->
     </div>
+
+    {% include "popups.twig" %}
     <!-- Scripts -->
     {% include "scripts.twig" %}
 </body>

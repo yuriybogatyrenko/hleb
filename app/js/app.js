@@ -158,8 +158,35 @@ $(document).ready(function () {
         $('.select-theme-form').addClass('active');
     });
 
+    // popups
+    $(function () {
+        var popupOverlay = $('.popup-overlay');
+
+        function closePopup(popupId) {
+            $('.js-app-wrapper').removeClass('popup-blur');
+            $('#' + popupId).addClass('fw-hidden');
+            $('.popup-overlay').addClass('fw-hidden');
+        }
+
+        function openPopup(popupId) {
+            $('.js-app-wrapper').addClass('popup-blur');
+            $(popupOverlay).removeClass('fw-hidden');
+            $('#' + popupId).removeClass('fw-hidden');
+        }
+
+        $('.js-open-popup').on('click', function () {
+            var dataTargetPopup = $(this).attr('data-target-popup');
+            openPopup(dataTargetPopup);
+        });
+
+        $('.js-close-popup').on('click', function () {
+            var dataTargetClosePopup = $(this).attr('data-target-close-popup');
+            closePopup(dataTargetClosePopup);
+        });
+    });
+
     // send form
-    $("#footer-theme-form").submit(function () {
+    $("#popup-feedback-form").submit(function () {
         $.ajax({
             method: "POST",
             url: "",
@@ -168,24 +195,29 @@ $(document).ready(function () {
             success: function () {
                 $(this).hide();
                 $('.js-send-status').text('Спасибо! Ваше сообщение отправлено');
-                $('.js-send-status').addClass('success');
 
                 setTimeout(function () {
-                    $('.select-theme-form').removeClass('active');
-                }, 3000);
+                    $('.js-app-wrapper').removeClass('popup-blur');
+                    $('#thanks-popup').addClass('fw-hidden');
+                    $('.popup-overlay').addClass('fw-hidden');
+                }, 3500);
             },
             error: function () {
-                $('#footer-theme-form').fadeOut();
+                $("#feedback-popup").addClass('fw-hidden');
+                $("#thanks-popup").removeClass('fw-hidden');
+
                 $('.js-send-status').text('Произошла ошибка');
-                $('.js-send-status').addClass('error');
 
                 setTimeout(function () {
-                    $('.select-theme-form').removeClass('active');
-                }, 3000);
+                    $('.js-app-wrapper').removeClass('popup-blur');
+                    $('#thanks-popup').addClass('fw-hidden');
+                    $('.popup-overlay').addClass('fw-hidden');
+                }, 3500);
             }
         });
         return false;
     });
+
     // tabs
     $(function () {
         $('.js-map-navigation-item').on('click', function () {
