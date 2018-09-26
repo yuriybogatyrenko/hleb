@@ -2313,6 +2313,22 @@
   margin-right: -70px;
 }
 
+.fw-mt-inverse-207 {
+  margin-top: -207px;
+}
+
+.fw-mb-inverse-207 {
+  margin-bottom: -207px;
+}
+
+.fw-ml-inverse-207 {
+  margin-left: -207px;
+}
+
+.fw-mr-inverse-207 {
+  margin-right: -207px;
+}
+
 @media screen and (max-width: 767px) {
   .fw-mt-inverse-70\@xs {
     margin-top: -70px;
@@ -2328,6 +2344,23 @@
 
   .fw-mr-inverse-70\@xs {
     margin-right: -70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-mt-inverse-207\@xs {
+    margin-top: -207px;
+  }
+
+  .fw-mb-inverse-207\@xs {
+    margin-bottom: -207px;
+  }
+
+  .fw-ml-inverse-207\@xs {
+    margin-left: -207px;
+  }
+
+  .fw-mr-inverse-207\@xs {
+    margin-right: -207px;
   }
 }
 .fw-padding-0 {
@@ -2418,6 +2451,10 @@
   padding: 110px;
 }
 
+.fw-padding-115 {
+  padding: 115px;
+}
+
 .fw-padding-120 {
   padding: 120px;
 }
@@ -2446,12 +2483,20 @@
   padding: 220px;
 }
 
+.fw-padding-232 {
+  padding: 232px;
+}
+
 .fw-padding-270 {
   padding: 270px;
 }
 
 .fw-padding-290 {
   padding: 290px;
+}
+
+.fw-padding-300 {
+  padding: 300px;
 }
 
 .fw-pt-0 {
@@ -2806,6 +2851,22 @@
   padding-right: 110px;
 }
 
+.fw-pt-115 {
+  padding-top: 115px;
+}
+
+.fw-pb-115 {
+  padding-bottom: 115px;
+}
+
+.fw-pl-115 {
+  padding-left: 115px;
+}
+
+.fw-pr-115 {
+  padding-right: 115px;
+}
+
 .fw-pt-120 {
   padding-top: 120px;
 }
@@ -2918,6 +2979,22 @@
   padding-right: 220px;
 }
 
+.fw-pt-232 {
+  padding-top: 232px;
+}
+
+.fw-pb-232 {
+  padding-bottom: 232px;
+}
+
+.fw-pl-232 {
+  padding-left: 232px;
+}
+
+.fw-pr-232 {
+  padding-right: 232px;
+}
+
 .fw-pt-270 {
   padding-top: 270px;
 }
@@ -2948,6 +3025,22 @@
 
 .fw-pr-290 {
   padding-right: 290px;
+}
+
+.fw-pt-300 {
+  padding-top: 300px;
+}
+
+.fw-pb-300 {
+  padding-bottom: 300px;
+}
+
+.fw-pl-300 {
+  padding-left: 300px;
+}
+
+.fw-pr-300 {
+  padding-right: 300px;
 }
 
 @media screen and (max-width: 950px) {
@@ -3413,6 +3506,27 @@
   }
 }
 @media screen and (max-width: 950px) {
+  .fw-padding-115\@xl {
+    padding: 115px;
+  }
+
+  .fw-pt-115\@xl {
+    padding-top: 115px;
+  }
+
+  .fw-pb-115\@xl {
+    padding-bottom: 115px;
+  }
+
+  .fw-pl-115\@xl {
+    padding-left: 115px;
+  }
+
+  .fw-pr-115\@xl {
+    padding-right: 115px;
+  }
+}
+@media screen and (max-width: 950px) {
   .fw-padding-120\@xl {
     padding: 120px;
   }
@@ -3560,6 +3674,27 @@
   }
 }
 @media screen and (max-width: 950px) {
+  .fw-padding-232\@xl {
+    padding: 232px;
+  }
+
+  .fw-pt-232\@xl {
+    padding-top: 232px;
+  }
+
+  .fw-pb-232\@xl {
+    padding-bottom: 232px;
+  }
+
+  .fw-pl-232\@xl {
+    padding-left: 232px;
+  }
+
+  .fw-pr-232\@xl {
+    padding-right: 232px;
+  }
+}
+@media screen and (max-width: 950px) {
   .fw-padding-270\@xl {
     padding: 270px;
   }
@@ -3599,6 +3734,27 @@
 
   .fw-pr-290\@xl {
     padding-right: 290px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-padding-300\@xl {
+    padding: 300px;
+  }
+
+  .fw-pt-300\@xl {
+    padding-top: 300px;
+  }
+
+  .fw-pb-300\@xl {
+    padding-bottom: 300px;
+  }
+
+  .fw-pl-300\@xl {
+    padding-left: 300px;
+  }
+
+  .fw-pr-300\@xl {
+    padding-right: 300px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4064,6 +4220,27 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .fw-padding-115\@xs {
+    padding: 115px;
+  }
+
+  .fw-pt-115\@xs {
+    padding-top: 115px;
+  }
+
+  .fw-pb-115\@xs {
+    padding-bottom: 115px;
+  }
+
+  .fw-pl-115\@xs {
+    padding-left: 115px;
+  }
+
+  .fw-pr-115\@xs {
+    padding-right: 115px;
+  }
+}
+@media screen and (max-width: 767px) {
   .fw-padding-120\@xs {
     padding: 120px;
   }
@@ -4211,6 +4388,27 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .fw-padding-232\@xs {
+    padding: 232px;
+  }
+
+  .fw-pt-232\@xs {
+    padding-top: 232px;
+  }
+
+  .fw-pb-232\@xs {
+    padding-bottom: 232px;
+  }
+
+  .fw-pl-232\@xs {
+    padding-left: 232px;
+  }
+
+  .fw-pr-232\@xs {
+    padding-right: 232px;
+  }
+}
+@media screen and (max-width: 767px) {
   .fw-padding-270\@xs {
     padding: 270px;
   }
@@ -4250,6 +4448,27 @@
 
   .fw-pr-290\@xs {
     padding-right: 290px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-padding-300\@xs {
+    padding: 300px;
+  }
+
+  .fw-pt-300\@xs {
+    padding-top: 300px;
+  }
+
+  .fw-pb-300\@xs {
+    padding-bottom: 300px;
+  }
+
+  .fw-pl-300\@xs {
+    padding-left: 300px;
+  }
+
+  .fw-pr-300\@xs {
+    padding-right: 300px;
   }
 }
 .fw-flex-inline {
@@ -5541,6 +5760,10 @@
   left: 220px;
 }
 
+.fw-left-400 {
+  left: 400px;
+}
+
 .fw-left-100-percent {
   left: 100%;
 }
@@ -5551,6 +5774,10 @@
 
 .fw-right-80 {
   right: 80px;
+}
+
+.fw-right-143 {
+  right: 143px;
 }
 
 .fw-right-160 {
@@ -6476,32 +6703,43 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   left: -1000px;
 }
 .geography-map .map-tab-wrap {
-  -webkit-transition: all 1.4s ease;
-  -o-transition: all 1.4s ease;
-  -moz-transition: all 1.4s ease;
-  transition: all 1.4s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
   opacity: 0;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
   height: 0;
+  max-height: 0;
   z-index: 0;
 }
 .geography-map .map-tab-wrap.active {
-  -webkit-transition: all 1.4s ease;
-  -o-transition: all 1.4s ease;
-  -moz-transition: all 1.4s ease;
-  transition: all 1.4s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
-  height: auto;
+  height: 830px;
+  max-height: 830px;
   z-index: 1;
+}
+.geography-map .amcharts-export-menu {
+  display: none;
+}
+.geography-map #map-tab1 .amcharts-small-map, .geography-map #map-tab2 .amcharts-small-map {
+  display: none;
+}
+.geography-map #map-tab1 a, .geography-map #map-tab2 a {
+  display: none !important;
 }
 
 .main-menu {
@@ -6533,7 +6771,7 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   list-style: none;
-  padding-top: 45px;
+  padding-top: 36px;
   min-width: 100%;
   position: absolute;
   left: 0;
@@ -6631,7 +6869,6 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
 
 .main-menu-link {
   position: absolute;
-  right: 0;
 }
 .main-menu-link span {
   -webkit-transition: all 0.3s ease;
@@ -6754,9 +6991,6 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   -moz-transition-delay: 1.4s;
   -o-transition-delay: 1.4s;
   transition-delay: 1.4s;
-}
-.fixed-menu .main-menu-link {
-  right: 160px;
 }
 .fixed-menu .soc-menu {
   position: relative;

@@ -1,5 +1,4 @@
 @import "mixins/mixins"
-
 body
 	@extend .fw-reset
 	font-family: 'MontserratRegular', sans-serif, arial
@@ -506,16 +505,26 @@ footer
 				width: 1000px
 				left: -1000px
 	.map-tab-wrap
-		transition: all 1.4s ease
+		transition: all 1s ease
 		opacity: 0
-		transform: scale(.8)
+		transform: scale(1)
 		//overflow: hidden
 		height: 0
+		max-height: 0
 		z-index: 0
 	.map-tab-wrap.active
-		transition: all 1.4s ease
+		transition: all 1s ease
 		opacity: 1
 		transform: scale(1)
-		height: auto
+		height: 830px
+		max-height: 830px
 		z-index: 1
+
+	.amcharts-export-menu
+		display: none
+	#map-tab1,#map-tab2
+		.amcharts-small-map
+			display: none
+		a
+			display: none !important
 // _____________________________________________________________________________

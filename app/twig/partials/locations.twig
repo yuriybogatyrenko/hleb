@@ -3,7 +3,7 @@
     <div class="container">
         <p class="fw-margin-0 fw-mb-40 fw-color-dark-text fw-fz-60 fw-font-ml">Представительства</p>
 
-        <div id="map" class="fw-width-1-1 fw-min-height-500 fw-relative">
+        <div id="map" class="fw-width-1-1 fw-max-height-500 fw-relative">
 
             <div class="locations-info fw-z-index-1 fw-max-width-520 fw-width-1-1 fw-pt-50 fw-pl-50 fw-pb-70 fw-pr-70 fw-bg-color-white fw-absolute fw-right-80">
                 <select data-mcs-theme="dark" class="fw-width-1-1 map-city-select fw-font-ml fw-color-dark-text fw-fz-30 fw-font-ml fw-flex fw-flex-middle fw-flex-left fw-pointer" name="" id="">
@@ -24,7 +24,9 @@
                 </div>
             </div>
 
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55e843dbd5d869306c1c172b8d9b89c7969bc9b011b11b93aa11c57942b08606&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+            <div id="index-map" style="width: 100%; height: 500px"></div>
+
+            {#<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55e843dbd5d869306c1c172b8d9b89c7969bc9b011b11b93aa11c57942b08606&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>#}
         </div>
 
     </div>

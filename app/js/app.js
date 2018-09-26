@@ -1,6 +1,50 @@
 $(document).ready(function () {
 
-    $(window).on("load",function(){
+    ymaps.ready(init);
+
+    function init(){
+        var myMap = new ymaps.Map("index-map", {
+            center: [55.76, 37.64],
+            zoom: 7,
+        });
+
+        var myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+            hintContent: 'Содержимое всплывающей подсказки',
+            balloonContent: 'Содержимое балуна'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+    // about maps init
+    var aboutMapsInit = function (mapType, id) {
+        AmCharts.makeChart(id, {
+            "type": "map",
+            "theme": "none",
+            "projection": "mercator",
+            "dataProvider": {
+                "map": mapType,
+                "getAreasFromMap": true
+            },
+            "areasSettings": {
+                "color": "#e5cdb8",
+                "autoZoom": true,
+                "selectedColor": "#caa98b",
+                "rollOverColor": "#a61c35",
+                "rollOverOutlineColor": "#FFFFFF",
+            },
+            "smallMap": {},
+            "export": {
+                "enabled": true,
+                "position": "bottom-right"
+            }
+        });
+    };
+
+    aboutMapsInit('russiaLow', 'map-tab1');
+    aboutMapsInit('worldLow', 'map-tab2');
+
+    // ________________________________________
+    $(window).on("load", function () {
         $(".map-city-select .list").mCustomScrollbar();
     });
 
@@ -9,7 +53,7 @@ $(document).ready(function () {
 
     var $animatedImage = $('.js-first-screen-animated-image');
 
-    if($animatedImage.length) {
+    if ($animatedImage.length) {
         $animatedImage.each(function () {
             $(this).addClass('first-screen-animated-image--active')
         });
@@ -110,7 +154,7 @@ $(document).ready(function () {
     });
 
     // send form
-    $("#footer-theme-form").submit(function() {
+    $("#footer-theme-form").submit(function () {
         $.ajax({
             method: "POST",
             url: "",
