@@ -1,3 +1,20 @@
+@media (max-width: 1600px)
+	.lang-slider
+		margin: 15px
+	.after-footer-block-wrap,.after-footer-block-left
+		flex-direction: column
+		align-items: flex-start
+		justify-content: space-between
+		padding: 7px 0
+		ul
+			padding-left: 0
+			text-align: left
+
+			a
+				text-align: left
+				margin: 5px 0
+				border: none
+
 @media (max-width: 1510px)
 	.header-location-marker
 		padding-right: 150px
@@ -14,6 +31,13 @@
 		&-item
 			width: 33%
 
+	.header-slider
+		.header-slider-slide
+			h1
+				font-size: 50px
+			.fw-min-height-760
+				min-height: 600px
+				padding: 55px
 @media (max-width: 1350px)
 	.partnership-section-img
 		width: 55%
@@ -41,6 +65,16 @@
 					&:first-child
 						padding-left: 0
 @media (max-width: 1150px)
+	.section-history-in-numbers
+		padding-bottom: 0px
+	.header-slider
+		.header-slider-slide
+			h1
+				font-size: 40px
+			.fw-min-height-760
+				min-height: 470px
+				padding: 35px
+
 	.modern-production-subline
 		display: flex
 		align-items: center
@@ -59,3 +93,78 @@
 			position: relative
 			width: 100%
 			margin-top: -400px
+
+@media (max-width: 1000px)
+	.footer-content-line
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+	.footer-content-line-2
+		padding-top: 58px
+		padding-bottom: 10px
+	.partnership
+		margin-top: -50px
+		.container-small
+			padding-top: 60px
+
+	.modern-production
+		.container-small
+			padding-left: 0
+			padding-right: 0
+		span.fw-fz-60
+			padding-left: 0
+		.modern-production-line
+			.modern-production-item-img
+				margin-top: -200px
+	.brands-mobile
+		display: block
+	.brands
+		display: none
+
+	.history-in-numbers-item
+		padding-left: 45px
+		&--number
+			font-size: 75px
+
+	span.fw-fz-60, p.fw-fz-60
+		font-size: 40px
+	.recommedation-grid
+		.left,.right
+			margin: 0
+			width: 100%
+			.recommedation-item
+				margin: 0
+				padding-bottom: 70px
+				.recommedation-item-bottom-line
+					padding: 20px 0
+				img
+					max-height: 550px
+					object-fit: cover
+
+@media (max-width: 600px)
+	.slider-all-history
+		display: none
+
+	.header-slider
+		background-color: $colorWhite
+		&-slide
+			display: flex
+			flex-direction: column
+			.slider-all-history-mobile
+				display: block
+			&-scale
+				position: relative
+			.fw-min-height-760
+				padding: 20px 0 50px 0 !important
+				min-height: auto !important
+				color: $colorDarkText
+				p
+					font-size: 14px
+				span
+					max-width: 50%
+				h1
+					color: $colorPaleYellow
+					font-style: normal
+					font-weight: 400
+					font-size: 32px
+					margin: 18px 0
