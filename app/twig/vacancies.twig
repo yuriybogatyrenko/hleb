@@ -7,91 +7,128 @@
     {% include "layouts/header.twig" %}
     <!-- Header block end -->
     <div class="vacancy fw-pb-100">
-        <div class="container-small">
-            <div class="fw-pt-20 fw-pb-20">
-                {% include "partials/breadcrumbs.twig" %}
+        <div class="container">
+            <div class="fw-flex">
+                <div class="fw-width-210 fw-flex-shrink-no fw-mr-50">
+                </div>
+                <div class="fw-flex-grow-1">
+                    <div class="fw-pt-20 fw-pb-20">
+                        {% include "partials/breadcrumbs.twig" %}
+                    </div>
+                </div>
             </div>
+            <div class="fw-flex fw-mt-10">
+                <div class="fw-width-210 fw-flex-shrink-no fw-mr-50">
+                    <div class="fw-mb-25">
+                        <div class="fw-text-uppercase fw-color-dark-text fw-font-msb">
+                            Город
+                        </div>
+                        <ul class="vacancies__filter">
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Питер</a></li>
+                            <li><a href="#">Новосибирск</a></li>
+                            <li class="js-show-more-target fw-hidden"><a href="#">Новосибирск</a></li>
+                            <li class="js-show-more-target fw-hidden"><a href="#">Новосибирск</a></li>
+                            <li class="js-show-more-target fw-hidden"><a href="#">Новосибирск</a></li>
+                            <li class="js-show-more-target fw-hidden"><a href="#">Новосибирск</a></li>
+                            <li class="js-show-more-target fw-hidden"><a href="#">Новосибирск</a></li>
+                            <li class="js-show-more-target fw-hidden"><a href="#">Новосибирск</a></li>
+                            <li><a href="#" class="js-show-more">Еще 19</a></li>
+                        </ul>
+                    </div>
+                    <div class="fw-mb-25">
+                        <div class="fw-text-uppercase fw-color-dark-text fw-font-msb">
+                            Профобласть
+                        </div>
+                        <ul class="vacancies__filter">
+                            <li><a href="#">Производство</a></li>
+                            <li><a href="#">Продажи</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                            <li><a href="#">Менеджмент</a></li>
+                        </ul>
+                    </div>
+                    <div class="fw-mb-25">
+                        <div class="fw-text-uppercase fw-color-dark-text fw-font-msb">
+                            Зарплата
+                        </div>
+                        <ul class="vacancies__filter">
+                            <li><a href="#">от 45 000 руб</a></li>
+                            <li><a href="#">от 45 000 руб</a></li>
+                            <li><a href="#">от 45 000 руб</a></li>
+                            <li><a href="#">от 45 000 руб</a></li>
+                            <li><a href="#">от 45 000 руб</a></li>
+                            <li><a href="#">от 45 000 руб</a></li>
+                            <li><a href="#">от 45 000 руб</a></li>
+                            <li><a href="#">от 45 000 руб</a></li>
+                            <li><a href="#">от 45 000 руб</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fw-flex-grow-1">
+                    <h1 class="fw-reset fw-fz-60 fw-font-ml fw-line-height-1-0 fw-mb-25">Вакансии</h1>
+                    <div class="fw-line-height-1-7 fw-max-width-834 fw-fz-18">
+                        Мы обеспечиваем дружелюбную рабочую атмосферу каждому работнику. Если вы заинтересованы в
+                        приобретении профессионального опыта и воплощении в жизнь новаторских проектов, ознакомьтесь с
+                        открытыми вакансиями.
+                    </div>
 
-            <form class="fw-max-width-900">
-                <h1 class="fw-fz-60 fw-font-ml fw-font-normal fw-margin-0 fw-mb-20">Супервайзер</h1>
-                <div class="fw-color-gray-text fw-fz-20">
-                    <span class="fw-text-uppercase">Архангельск</span>
-                    <span class="fw-ml-5 fw-mr-5">&bull;</span>
-                    <span>от 65 000Р в месяц на руки</span>
+                    <div class="vacancies__list fw-grid fw-grid-20 fw-mt-40">
+                        {% for i in 1..8 %}
+                            <div class="fw-width-1-1">
+                                <div
+                                    class="vacancies__item fw-relative fw-bg-color-light-pale-yellow fw-padding-60 fw-flex fw-flex-middle">
+                                    <div class="vacancies__item-info fw-flex-grow-1">
+                                        <div class="fw-fz-30 fw-mb-25 fw-flex fw-flex-middle">
+                                            <a href="#" class="fw-reset">Менеджер по работе с ключевыми клиентами</a>
+                                            <div class="fw-fz-20 fw-ml-15">
+                                                <i class="icon-arrow"></i>
+                                            </div>
+                                        </div>
+                                        <div class="fw-text-uppercase fw-color-pale-yellow">новосибирск</div>
+                                    </div>
+                                    <div
+                                        class="vacancies__item-salary fw-flex-shrink-no fw-color-gray-text fw-fz-18 fw-line-height-1-7 fw-ml-40 fw-text-right">
+                                        <div>от 70 500₽</div>
+                                        <div>в месяц</div>
+                                    </div>
+                                    <div class="vacancies__item-more fw-flex fw-height-1-1 fw-absolute fw-right-0 fw-bottom-0">
+                                        <a href="#" class="fw-hover-bg-color-dark-text fw-bg-color-dark-red fw-transition-400 fw-reset fw-z-index-1 fw-width-255 fw-flex fw-flex-middle fw-flex-center">
+                                            <p class="fw-flex fw-flex-middle fw-flex-left fw-margin-0 fw-text-uppercase fw-font-msb fw-fz-14 fw-color-white">
+                                                Подробнее
+                                                <i class="icon-arrow fw-fz-18 fw-ml-15"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="vacancies__bottom fw-flex fw-flex-middle fw-flex-space-between fw-mt-50">
+                        <div>
+                            <a href="#" class="fw-reset fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
+                                <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">Показать еще</span>
+                                <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
+                            </a>
+                        </div>
+                        <div>
+                            {% include 'partials/pagination.twig' %}
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="vacancy__list fw-mt-60">
-                    <div class="vacancy__item">
-                        <div class="fw-fz-30 fw-font-ml">Обязанности:</div>
-                        <div class="fw-pl-50 fw-mt-10">
-                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt mollitia
-                                    nobis non similique sint soluta. Aliquam, aspernatur praesentium. Doloribus!
-                                </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="vacancy__item">
-                        <div class="fw-fz-30 fw-font-ml fw-pb-25">Требования:</div>
-                        <div class="fw-pl-50 fw-mt-10">
-                            <div class="fw-fz-14 fw-text-uppercase fw-font-mb">Опыт:</div>
-                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt mollitia
-                                    nobis non similique sint soluta. Aliquam, aspernatur praesentium. Doloribus!
-                                </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                            </ul>
-                            <div class="fw-fz-14 fw-text-uppercase fw-font-mb">Знания:</div>
-                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt mollitia
-                                    nobis non similique sint soluta. Aliquam, aspernatur praesentium. Doloribus!
-                                </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                            </ul>
-                            <div class="fw-fz-14 fw-text-uppercase fw-font-mb">Образование:</div>
-                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt</li>
-                            </ul>
-                            <div class="fw-fz-14 fw-text-uppercase fw-font-mb">Навыки:</div>
-                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="vacancy__item">
-                        <div class="fw-fz-30 fw-font-ml">Условия работы:</div>
-                        <div class="fw-pl-50 fw-mt-10">
-                            <ul class="vacancy__item-list fw-fz-18 fw-line-height-1-5">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt mollitia
-                                    nobis non similique sint soluta. Aliquam, aspernatur praesentium. Doloribus!
-                                </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laborum?</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="fw-pt-40">
-                    <button
-                       class="fw-reset fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
-                        <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">Отправить отклик</span>
-                        <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
-                    </button>
-                </div>
-            </form>
-            <div class="fw-mt-50 fw-pt-50">
-                <div class="fw-fz-30 fw-font-ml">Рекомендовать другу:</div>
-                <div class="fw-mt-15">
-                    {% include 'partials/recommend-friend-form.twig' %}
-                </div>
+        <div class="vacancies_not-found fw-pt-80 fw-pb-80">
+            <div class="fw-text-center fw-fz-42 fw-font-ml fw-max-width-770 fw-ml-auto fw-mr-auto">
+                Если Вы не нашли свою вакансию,
+                направьте нам резюме по адресу <a href="mailto:rabota@hlebprom.com" class="fw-color-pale-yellow fw-text-underline-hover">rabota@hlebprom.com</a>
             </div>
         </div>
     </div>

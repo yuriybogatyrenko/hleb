@@ -537,6 +537,17 @@ footer
             display: none
         a
             display: none !important
+
+.vacancies__item-more
+    opacity: 0
+    visibility: hidden
+    transition: all 0.3s ease
+
+.vacancies__item
+    &:hover
+        .vacancies__item-more
+            opacity: 1
+            visibility: visible
 // _____________________________________________________________________________
 
 // _________POPUP ____________________________
