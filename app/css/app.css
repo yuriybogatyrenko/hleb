@@ -950,6 +950,18 @@
   min-height: 500px;
 }
 
+.fw-height-740 {
+  height: 740px;
+}
+
+.fw-max-height-740 {
+  max-height: 740px;
+}
+
+.fw-min-height-740 {
+  min-height: 740px;
+}
+
 .fw-height-750 {
   height: 750px;
 }
