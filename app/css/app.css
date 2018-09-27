@@ -6194,15 +6194,40 @@
   list-style: none;
 }
 .ideas__menu-item {
-  margin: 0 0 13px;
+  margin: 0 0 14px;
+}
+.ideas__menu-item.active .ideas__menu-link {
+  color: #a9855b;
+}
+.ideas__menu-item.active .ideas__menu-link:before {
+  width: 300px;
 }
 .ideas__menu-link {
   padding: 5px 0;
   display: block;
   color: #caa98b;
+  position: relative;
+}
+.ideas__menu-link:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  margin-top: -1px;
+  right: 100%;
+  margin-right: 10px;
+  width: 0;
+  height: 1px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #a9855b;
 }
 .ideas__menu-count {
   opacity: 0.5;
+}
+.ideas__form {
+  margin-bottom: -40px;
 }
 .ideas__form > * {
   margin-bottom: 40px;

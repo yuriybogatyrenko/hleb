@@ -6,19 +6,40 @@
         padding: 0
         list-style: none
 
-
         &-item
-            margin: 0 0 13px
+            margin: 0 0 14px
+
+            &.active
+                .ideas__menu-link
+                    color: #a9855b
+                    &:before
+                        width: 300px
 
         &-link
             @extend .fw-reset
             padding: 5px 0
             display: block
             color: $colorPaleYellow
+            position: relative
+
+            &:before
+                position: absolute
+                content: ''
+                top: 50%
+                margin-top: -1px
+                right: 100%
+                margin-right: 10px
+                width: 0
+                height: 1px
+                transition: all 0.3s ease
+                background-color: #a9855b
+
 
         &-count
             opacity: 0.5
 
     &__form
+        margin-bottom: -40px
+
         & > *
             margin-bottom: 40px
