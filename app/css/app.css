@@ -26,7 +26,7 @@
   font-family: "MontserratSemiBold";
   src: url("../fonts/MontserratSemiBold/MontserratSemiBold.ttf");
 }
-.fw-reset, .recommended-friend-form__button, body {
+.fw-reset, .recommended-friend-form__button, .ideas__menu-link, body {
   margin: 0;
   font-weight: normal;
   padding: 0;
@@ -6024,6 +6024,8 @@
   padding-right: 0;
   text-transform: none;
   margin: 0;
+  height: 50px;
+  line-height: 50px;
 }
 .form__select--error {
   border-color: #a61c35;
@@ -6032,7 +6034,7 @@
   width: 100%;
 }
 
-.fw-checkbox {
+.fw-checkbox, .fw-radio {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -6044,7 +6046,7 @@
   -ms-flex-align: center;
   align-items: center;
 }
-.fw-checkbox__placeholder {
+.fw-checkbox__placeholder, .fw-radio__placeholder {
   -webkit-flex-basis: 20px;
   -ms-flex-preferred-size: 20px;
   flex-basis: 20px;
@@ -6060,7 +6062,7 @@
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.fw-checkbox__placeholder:after {
+.fw-checkbox__placeholder:after, .fw-radio__placeholder:after {
   content: "";
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -6081,11 +6083,31 @@
   -o-transform: translate(-50%, -70%) rotate(-45deg);
   transform: translate(-50%, -70%) rotate(-45deg);
 }
-.fw-checkbox__input:checked + .fw-checkbox__placeholder {
+.fw-checkbox__input:checked + .fw-checkbox__placeholder, .fw-checkbox__input:checked + .fw-radio__placeholder, .fw-radio__input:checked + .fw-checkbox__placeholder, .fw-radio__input:checked + .fw-radio__placeholder {
   background-color: #2d2d2d;
 }
-.fw-checkbox__input:checked + .fw-checkbox__placeholder:after {
+.fw-checkbox__input:checked + .fw-checkbox__placeholder:after, .fw-checkbox__input:checked + .fw-radio__placeholder:after, .fw-radio__input:checked + .fw-checkbox__placeholder:after, .fw-radio__input:checked + .fw-radio__placeholder:after {
   opacity: 1;
+}
+
+.fw-radio__placeholder {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.fw-radio__placeholder:after {
+  width: 6px;
+  height: 6px;
+  border: none;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
 }
 
 .recommended-friend-form {
@@ -6164,6 +6186,26 @@
   border-radius: 100%;
   content: "";
   display: block;
+}
+
+.ideas__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ideas__menu-item {
+  margin: 0 0 13px;
+}
+.ideas__menu-link {
+  padding: 5px 0;
+  display: block;
+  color: #caa98b;
+}
+.ideas__menu-count {
+  opacity: 0.5;
+}
+.ideas__form > * {
+  margin-bottom: 40px;
 }
 
 body {
