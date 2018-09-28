@@ -218,6 +218,10 @@ $(document).ready(function () {
         return false;
     });
 
+    // toggle
+    $('.js-mobile-toggle-menu').on('click', function () {
+       $('.js-toggle-footer-menu').slideToggle();
+    });
     // tabs
     $(function () {
         $('.js-map-navigation-item').on('click', function () {
