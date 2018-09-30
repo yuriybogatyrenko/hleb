@@ -8567,6 +8567,23 @@ ul.tabs li.active {
   }
 }
 @media (max-width: 450px) {
+  .fw-button span {
+    font-size: 10px;
+  }
+
+  .header-slider {
+    background-color: #fff;
+  }
+  .header-slider-slide .fw-min-height-760 span {
+    font-size: 10px;
+    text-transform: uppercase;
+    max-width: 70%;
+  }
+  .header-slider-slide-scale {
+    min-height: 165px;
+    height: 165px;
+  }
+
   .section-history-in-numbers .history-in-numbers {
     margin-left: -45px;
   }
