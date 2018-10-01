@@ -45,6 +45,9 @@
 		justify-content: center
 		&-item
 			width: 33%
+	.third-number
+		&:after
+			display: none
 
 	.header-slider
 		.header-slider-slide
@@ -53,6 +56,15 @@
 			.fw-min-height-760
 				min-height: 600px
 				padding: 55px
+	footer
+		.footer-content-wrapper
+			padding: 40px 35px
+			.left
+				ul
+					padding-left: 30px
+					&:first-child
+						padding-left: 0
+
 @media (max-width: 1350px)
 	.partnership-section-img
 		width: 55%
@@ -84,14 +96,46 @@
 			padding-left: 0
 	.main-menu
 		display: none
+
 	footer
+		.footer-soc-menu
+			padding-top: 40px
+		.container
+			padding: 0
 		.footer-content-wrapper
-			padding: 40px 35px
+			padding: 15px
+		.footer-menu-wrap
+			ul
+				font-size: 12px
+		.footer-content-line
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			padding-top: 35px
+		.footer-content-line-1
 			.left
-				ul
-					padding-left: 30px
-					&:first-child
-						padding-left: 0
+				padding-bottom: 40px
+			.right
+				padding-top: 40px
+				padding-bottom: 35px
+			.footer-appreciate-title
+				padding-top: 58px
+		.mobile-toggle-menu-button
+			padding-bottom: 50px
+			margin: 0
+		.footer-content-line-2
+			padding-top: 58px
+			padding-bottom: 20px
+		.footer-phone-number
+			font-size: 22px
+		.footer-appreciate-title
+			font-size: 30px
+		.hide-on-mobile
+			display: none
+		.show-on-mobile
+			display: block
+		.js-toggle-footer-menu
+			display: none
 @media (max-width: 1150px)
 	.section-history-in-numbers
 		padding-bottom: 0px
@@ -123,6 +167,10 @@
 			margin-top: -400px
 
 @media (max-width: 1000px)
+	#map
+		max-height: 630px
+		#index-map
+			height: 630px
 	.locations
 		padding-top: 60px
 		.container
@@ -132,39 +180,6 @@
 				padding-left: 15px
 				padding-bottom: 30px
 				margin: 0
-	footer
-		.footer-soc-menu
-			padding-top: 40px
-		.container
-			padding: 0
-		.footer-content-wrapper
-			padding: 15px
-		.footer-menu-wrap
-			ul
-				font-size: 12px
-		.footer-content-line
-			flex-direction: column
-			justify-content: flex-start
-			align-items: flex-start
-			padding-top: 35px
-		.footer-content-line-1
-			.right
-				padding-top: 40px
-		.mobile-toggle-menu-button
-			padding-bottom: 50px
-		.footer-content-line-2
-			padding-top: 58px
-			padding-bottom: 20px
-		.footer-phone-number
-			font-size: 22px
-		.footer-appreciate-title
-			font-size: 30px
-	.hide-on-mobile
-		display: none
-	.show-on-mobile
-		display: block
-	.js-toggle-footer-menu
-		display: none
 	.partnership
 		margin-top: -50px
 		.container-small
@@ -179,8 +194,6 @@
 		.modern-production-line
 			.modern-production-item-img
 				margin-top: -200px
-	.brands-mobile
-		display: block
 	.brands
 		display: none
 
@@ -204,8 +217,28 @@
 				img
 					max-height: 550px
 					object-fit: cover
-
+	.locations-info
+		padding-bottom: 35px
+		transform: translateY(0)
+		top: 26%
+		.map-city-select
+			margin-bottom: 4px
+		&--phones
+			a
+				&:last-child
+					display: block
+					margin-top: 5px
 @media (max-width: 800px)
+	p.fw-fz-16,p.fw-fz-14
+		line-height: 24px
+	.brands-mobile
+		display: block
+		padding-bottom: 60px
+		&-description
+			padding-bottom: 35px
+
+	.fw-button
+		height: 40px
 	.recommedation-grid .left .recommedation-item img, .recommedation-grid .right .recommedation-item img
 		max-height: 350px
 	.header-slider-navigation--link
@@ -220,6 +253,7 @@
 				p
 					font-size: 10px
 					padding-top: 10px
+					line-height: 12px
 				&--number
 					font-size: 48px
 					&:after
@@ -287,8 +321,39 @@
 					font-weight: 400
 					font-size: 32px
 					margin: 18px 0
-
+	.partnership
+		.container-small
+			padding-top: 50px
+		&--description
+			font-size: 14px
+		&--title
+			margin-bottom: 30px
 @media (max-width: 600px)
+	.brands-mobile
+		.brands-items-line-item
+			&-overlay
+				i
+					font-size: 14px
+				p
+					font-size: 12px
+					line-height: 15px
+				img
+					max-width: 80px
+					object-fit: cover
+	.scroll-top-button
+		right: 15px
+		bottom: 20px
+		width: 20px
+		img
+			width: 100%
+	.partnership
+		.container-small
+			padding-bottom: 40px
+		.partnership-section
+			&-img
+				display: none
+			&--mobile-img
+				display: block
 	.brands-mobile-description
 		width: 100%
 		p
@@ -306,10 +371,12 @@
 				p
 					padding-right: 0
 					max-width: 200px
+				.first
+					font-size: 14px
 				.last,.first
 					max-width: 100%
 				img
-					max-height: 300px
+					max-height: 200px
 		.recommedation-item-bottom-line
 			padding: 15px
 		.recommedation-item-description
@@ -339,7 +406,31 @@
 			ul
 				width: 50%
 				padding-left: 30px !important
+	.after-footer-block-right
+		padding-top: 45px
 @media (max-width: 450px)
+	.modern-production-item-img-box-image
+		.modern-production--main-img
+			display: none
+		.modern-production--mobile-img
+			display: block
+	.brands-mobile
+		.brands-items-line-item
+			&-overlay
+				i
+					font-size: 14px
+				p
+					font-size: 10px
+					line-height: 13px
+					margin-bottom: 5px
+					margin-top: 5px
+				img
+					max-width: 60px
+					object-fit: cover
+			.mobile-brands--main-img
+				display: none
+			.mobile-brands-img
+				display: block
 	.fw-button span
 		font-size: 10px
 	.header-slider
@@ -361,3 +452,28 @@
 					padding-top: 10px
 				&--number
 					font-size: 30px
+
+@media (max-width: 380px)
+	.locations-info
+		width: 91%
+		right: 15px
+
+
+@media (max-width: 340px)
+	.recommedation-grid
+		.right,.left
+			.recommedation-item
+				&-title
+					font-size: 14px
+					max-width: 135px !important
+				&-link
+					font-size: 16px
+	.brands-mobile
+		.brands-items-line-item
+			&-overlay
+				p
+					font-size: 8px
+					margin-bottom: 4px
+					margin-top: 5px
+				img
+					max-width: 50px
