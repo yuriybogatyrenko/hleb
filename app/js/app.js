@@ -25,6 +25,12 @@ $(document).ready(function () {
             "type": "map",
             "theme": "none",
             "projection": "mercator",
+            "zoomControl": {
+                homeButtonEnabled: false,
+                "zoomControlEnabled": false,
+                zoomFactor: 0,
+                maxZoomLevel: 1
+            },
             "dataProvider": {
                 "map": mapType,
                 "getAreasFromMap": true
