@@ -96,25 +96,132 @@
                 {# fixed menu #}
                 <div class="fixed-menu">
                     <div class="fw-absolute fw-z-index-6 main-menu-link fw-top-45 fw-right-143 fw-pointer">
-                        <i class="icon-close fw-color-white fw-fz-36"></i>
+                        <img src="images/menu-close.png" alt="">
                     </div>
                     <div class="fw-grid fixed-menu-relative fw-relative fw-flex-space-between fw-height-1-1">
                         {# fixed-menu-left-content #}
                         <div class="fixed-menu-left fw-relative fw-flex fw-flex-space-between fw-flex-bottom fw-width-1-2 fw-pl-160 fw-pt-50 fw-pb-100">
                             <p class="page-title fw-absolute fw-left-160 fw-top-45 fw-margin-0 fw-fz-14 fw-text-uppercase fw-color-white fw-font-msb">главная</p>
-                            <div class="fw-width-fit-content fw-flex fw-flex-space-between fw-flex-middle">
+
+                            <div class="hide-lang-title-mobile fw-width-fit-content fw-flex fw-flex-space-between fw-flex-middle">
                                 <span class="lang-title fw-block fw-fz-14 fw-text-uppercase fw-color-white fw-font-msb">english</span>
                             </div>
+
                             <div class="fw-pr-70">
                                 <ul class="fixed-menu-tabs-navigation fw-pl-0 fw-margin-0 fw-pt-130 fw-list-style-type fw-fz-20 fw-font-mr fw-color-white">
-                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab1">О компании <i class="icon-keyboard_arrow_right"></i></li>
-                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab2">Бренды <i class="icon-keyboard_arrow_right"></i></li>
-                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab3">Партнерам</li>
-                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Карьера<i class="icon-keyboard_arrow_right"></i></li>
-                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Интернет-магазин</li>
-                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Где купить</li>
-                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Банк идей</li>
-                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer" rel="tab4">Контакты</li>
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer fw-flex fw-flex-column" rel="tab1">
+                                        <div class="head-mobile-menu fw-flex fw-flex-center">
+                                            О компании
+                                            <i class="icon-keyboard_arrow_right"></i>
+                                        </div>
+                                        <ul class="mobile-sub-menu fw-hidden fw-fz-14 fw-pl-0 fw-margin-0 fw-list-style-type fw-font-mr fw-color-white">
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-20 fw-pb-20">{{i}}Хлебпром</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Производство</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Политика компании</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Наша история</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Новости</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer fw-flex fw-flex-column" rel="tab2">
+                                        <div class="head-mobile-menu fw-flex fw-flex-center">
+                                            Бренды
+                                            <i class="icon-keyboard_arrow_right"></i>
+                                        </div>
+                                        <ul class="mobile-sub-menu fw-hidden fw-fz-14 fw-pl-0 fw-margin-0 fw-list-style-type fw-font-mr fw-color-white">
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-20 fw-pb-20">{{i}}Хлебпром</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Производство</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Политика компании</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Наша история</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Новости</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer fw-flex fw-flex-column" rel="tab3">
+                                        <div class="head-mobile-menu fw-flex fw-flex-center">
+                                            Партнерам
+                                        </div>
+                                    </li>
+
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer fw-flex fw-flex-column" rel="tab4">
+                                        <div class="head-mobile-menu fw-flex fw-flex-center">
+                                            Карьера
+                                            <i class="icon-keyboard_arrow_right"></i>
+                                        </div>
+                                        <ul class="mobile-sub-menu fw-hidden fw-fz-14 fw-pl-0 fw-margin-0 fw-list-style-type fw-font-mr fw-color-white">
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-20 fw-pb-20">{{i}}Хлебпром</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Производство</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Политика компании</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Наша история</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="fw-reset fw-block fw-border-style-solid-bottom fw-border-width-1 fw-border-color-light-pale-yellow fw-pt-25 fw-pb-25">Новости</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer fw-flex fw-flex-column" rel="tab4">
+                                        <div class="head-mobile-menu fw-flex fw-flex-center">
+                                            Интернет-магазин
+                                        </div>
+                                    </li>
+
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer fw-flex fw-flex-column" rel="tab4">
+                                        <div class="head-mobile-menu fw-flex fw-flex-center">
+                                            Где купить
+                                        </div>
+                                    </li>
+
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer fw-flex fw-flex-column" rel="tab4">
+                                        <div class="head-mobile-menu fw-flex fw-flex-center">
+                                            Банк идей
+                                        </div>
+                                    </li>
+
+                                    <li class="fw-width-fit-content fw-mb-50 fw-pointer fw-flex fw-flex-column" rel="tab4">
+                                        <div class="head-mobile-menu fw-flex fw-flex-center">
+                                            Контакты
+                                        </div>
+                                    </li>
                                 </ul>
 
                                 <div class="serch-input-wrap fw-pb-80">
@@ -122,15 +229,21 @@
                                     <input placeholder="поиск" class="menu-search-input fw-fz-14 fw-color-white" type="search">
                                 </div>
 
-                                <div class="soc-menu fw-flex fw-flex-left fw-fz-20 fw-flex-middle fw-color-white">
-                                    <a class="fw-reset fw-transition-300 fw-ml-0 fw-mr-10 fw-hover-color-pale-yellow"
-                                       href="#"><i class="icon-vk"></i></a>
-                                    <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
-                                       href="#"><i class="icon-facebook"></i></a>
-                                    <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
-                                       href="#"><i class="icon-twitter"></i></a>
-                                    <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
-                                       href="#"><i class="icon-instagram"></i></a>
+                                <div class="soc-menu">
+                                    <div class="fw-flex fw-flex-left fw-fz-20 fw-flex-middle fw-color-white">
+                                        <a class="fw-reset fw-transition-300 fw-ml-0 fw-mr-10 fw-hover-color-pale-yellow"
+                                           href="#"><i class="icon-vk"></i></a>
+                                        <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
+                                           href="#"><i class="icon-facebook"></i></a>
+                                        <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
+                                           href="#"><i class="icon-twitter"></i></a>
+                                        <a class="fw-reset fw-transition-300 fw-ml-10 fw-mr-10 fw-hover-color-pale-yellow"
+                                           href="#"><i class="icon-instagram"></i></a>
+                                    </div>
+
+                                    <div class="show-lang-title-mobile fw-hidden fw-width-fit-content fw-flex fw-flex-space-between fw-flex-middle">
+                                        <span class="lang-title fw-block fw-fz-14 fw-text-uppercase fw-color-white fw-font-msb">english</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -379,3 +379,171 @@ ul.tabs li.active
 
 .tab_content
     display: none
+
+@media (max-width: 1350px)
+    .fixed-menu
+        .serch-input-wrap
+            padding-bottom: 40px
+        .main-menu-link
+            right: 20px
+            top: 20px
+            i
+                font-size: 25px
+
+@media (max-width: 1100px)
+    $leftPadding: 80px
+    .fixed-menu
+        &-left
+            padding-left: $leftPadding
+            .page-title
+                left: $leftPadding
+                top: 30px
+
+@media (max-width: 950px)
+    $leftPadding: 30px
+    .fixed-menu
+        &-left
+            padding-left: $leftPadding
+            .page-title
+                left: $leftPadding
+                top: 30px
+@media (max-width: 870px)
+    .fixed-menu
+        &-left
+            .fw-pr-70
+                padding-right: 30px
+@media (max-width: 770px)
+    .fixed-menu-open
+        &-right
+            right: -100%
+            width: 40%
+    .fixed-menu
+        &-tabs-container
+            height: 100%
+        &-right
+            .fixed-menu-tab-content
+                padding-left: 20px
+        &-right.active
+            width: 40% !important
+            .fixed-menu-tab-content
+                padding-left: 20px
+        &-left
+            width: 60%
+            flex-direction: row-reverse
+            .lang-title
+                padding-right: 30px
+            .fw-pr-70
+                width: 100%
+                padding-right: 0
+
+@media (max-width: 600px)
+    .fixed-menu
+        .main-menu-link
+            right: 45px !important
+            top: 30px !important
+        &-right
+            display: none
+        .serch-input-wrap
+            display: none
+        &-left
+            max-height: 100vh
+            height: 100vh
+            overflow: auto
+            width: 100%
+            align-items: stretch
+            padding-left: 0
+            .page-title
+                left: 40px
+                top: 35px
+            .soc-menu
+                padding-bottom: 50px
+                padding-left: 40px
+                padding-top: 35px
+                display: flex
+                justify-content: space-between
+                .show-lang-title-mobile
+                    display: block
+                    .lang-title
+                        padding-right: 45px
+            .hide-lang-title-mobile
+                display: none
+            .fixed-menu-tabs-navigation
+                padding-top: 40px
+                li
+                    width: 100%
+                    padding-right: 0
+                    margin-bottom: 0
+                    padding-bottom: 18px
+                    padding-top: 18px
+                    display: flex
+                    align-items: flex-start
+                    justify-content: flex-start
+
+                    .head-mobile-menu
+                        padding-left: 40px
+                    .mobile-sub-menu
+                        transition: all .5s ease
+                        display: block
+                        background-color: #b4203b
+                        width: 100%
+                        height: 0
+                        overflow: hidden
+                        margin: 0
+                        li
+                            padding: 0
+                            &:last-child a
+                                border-bottom: 0
+                            a
+                                padding-left: 40px
+                                display: block
+                                width: 100%
+                                border-color: #bc374f
+                    .icon-keyboard_arrow_right
+                        position: relative
+                        margin-left: 5px
+                        top: auto
+                        transform: translateY(0)
+                    &:after
+                        display: none
+                li.active
+                    .mobile-sub-menu
+                        height: auto
+                        margin-top: 20px
+                    .icon-keyboard_arrow_right
+                        transition: all .6s ease
+                        right: 0
+
+                        transform-origin: center
+                        transform: rotate(90deg)
+                    &:after
+                        transition: all .5s ease
+                        right: 0
+                        display: none
+                        width: 0
+@media (max-height: 900px)
+    .fixed-menu
+        &-left
+            padding-bottom: 30px
+            padding-top: 30px
+        .serch-input-wrap
+            padding-bottom: 40px
+
+        .main-menu-link
+            right: 20px
+            top: 20px
+            i
+                font-size: 25px
+
+@media (max-height: 800px)
+    .fixed-menu
+        &-tabs-navigation
+            padding-top: 60px
+            li
+                margin-bottom: 35px
+
+@media (max-height: 700px)
+    .fixed-menu
+        &-tabs-navigation
+            padding-top: 60px
+            li
+                margin-bottom: 25px
