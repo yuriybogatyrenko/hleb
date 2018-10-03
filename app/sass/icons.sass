@@ -3,16 +3,34 @@
 @import "mixins/retina_sprites"
 
 .icon
-  display: inline-block
-  vertical-align: middle
+    display: inline-block
+    vertical-align: middle
 
 @each $icon in create-vacancy, create-resume, blue-double-arrow, white-double-arrow, white-apply, blue-hamburger, trash, white-profile, register
-  .icon-#{$icon}
-    +sprite(icon-#{$icon})
+    .icon-#{$icon}
+        +sprite(icon-#{$icon})
 
 .icon-chevron-right
-  width: 8px
-  height: 8px
-  border-top: 2px solid #000000
-  border-right: 2px solid #000000
-  transform: rotate(45deg)
+    width: 8px
+    height: 8px
+    border-top: 2px solid #000000
+    border-right: 2px solid #000000
+    transform: rotate(45deg)
+
+.icon-custom-arrow-down
+    border-bottom: 2px solid #a6a6a6
+    border-right: 2px solid #a6a6a6
+    content: ''
+    height: 10px
+    margin-top: -4px
+    pointer-events: none
+    transform-origin: 66% 66%
+    transform: rotate(45deg)
+    transition: all 0.15s ease-in-out
+    width: 10px
+    display: inline-block
+    vertical-align: middle
+
+.shops-map__item.active
+    .icon-custom-arrow-down
+        transform: rotate(-135deg)

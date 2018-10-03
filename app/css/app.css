@@ -6171,21 +6171,33 @@
 }
 .form__text-input::-webkit-input-placeholder, .recommended-friend-form__input::-webkit-input-placeholder {
   color: rgba(166, 166, 166, 0.69);
+  font: inherit;
+  font-size: 14px;
 }
 .form__text-input:-moz-placeholder, .recommended-friend-form__input:-moz-placeholder {
   color: rgba(166, 166, 166, 0.69);
+  font: inherit;
+  font-size: 14px;
 }
 .form__text-input::-moz-placeholder, .recommended-friend-form__input::-moz-placeholder {
   color: rgba(166, 166, 166, 0.69);
+  font: inherit;
+  font-size: 14px;
 }
 .form__text-input:-ms-input-placeholder, .recommended-friend-form__input:-ms-input-placeholder {
   color: rgba(166, 166, 166, 0.69);
+  font: inherit;
+  font-size: 14px;
 }
 .form__text-input::-ms-input-placeholder, .recommended-friend-form__input::-ms-input-placeholder {
   color: rgba(166, 166, 166, 0.69);
+  font: inherit;
+  font-size: 14px;
 }
 .form__text-input::placeholder, .recommended-friend-form__input::placeholder {
   color: rgba(166, 166, 166, 0.69);
+  font: inherit;
+  font-size: 14px;
 }
 
 .form__textarea {
@@ -7041,20 +7053,20 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   left: calc(100% - 24px);
 }
 
-.map-city-select {
+.map-city-select, .custom-scrollbar {
   border: none;
   padding-left: 0;
   display: block;
   margin-bottom: 35px;
   padding-right: 40px;
 }
-.map-city-select:after {
+.map-city-select:after, .custom-scrollbar:after {
   height: 8px;
   width: 8px;
   margin-top: -7px;
   border-color: #070707;
 }
-.map-city-select .list {
+.map-city-select .list, .custom-scrollbar .list {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -7073,27 +7085,27 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
   max-height: 250px;
   overflow-y: auto;
 }
-.map-city-select .list .mCSB_inside > .mCSB_container {
+.map-city-select .list .option:hover, .map-city-select .list .nice-select .option.focus, .custom-scrollbar .list .option:hover, .custom-scrollbar .list .nice-select .option.focus {
+  background-color: #fdf7f2;
+}
+.map-city-select .list .option.selected.focus, .custom-scrollbar .list .option.selected.focus {
+  color: #caa98b;
+}
+.map-city-select .mCSB_inside > .mCSB_container, .custom-scrollbar .mCSB_inside > .mCSB_container {
   margin-right: 0;
 }
-.map-city-select .list .mCSB_scrollTools {
+.map-city-select .mCSB_scrollTools, .custom-scrollbar .mCSB_scrollTools {
   width: 4px;
 }
-.map-city-select .list .mCSB_scrollTools .mCSB_draggerRail {
+.map-city-select .mCSB_scrollTools .mCSB_draggerRail, .custom-scrollbar .mCSB_scrollTools .mCSB_draggerRail {
   background-color: transparent;
   margin: 0;
 }
-.map-city-select .list .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+.map-city-select .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .custom-scrollbar .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #caa98b;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-}
-.map-city-select .list .option:hover, .map-city-select .list .nice-select .option.focus {
-  background-color: #fdf7f2;
-}
-.map-city-select .list .option.selected.focus {
-  color: #caa98b;
 }
 
 .scroll-top-button {
@@ -7282,6 +7294,10 @@ footer .lang-slider-checkbox:checked + .lang-slider-label .lang-slider-circle {
 
 .corporate-life-slider.command-slider .owl-nav {
   right: 0;
+}
+
+.shops-map {
+  height: 750px;
 }
 
 .main-menu {

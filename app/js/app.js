@@ -2,23 +2,44 @@ $(document).ready(function () {
 
     ymaps.ready(init);
 
-    function init(){
-        var myMap = new ymaps.Map("index-map", {
-            center: [59.905782, 30.364647],
-            zoom: 10,
-            controls: ['zoomControl', 'fullscreenControl'],
+    function init() {
+        // index map
+        if ($('#index-map').length) {
+            var myMap = new ymaps.Map("index-map", {
+                center: [59.905782, 30.364647],
+                zoom: 10,
+                controls: ['zoomControl', 'fullscreenControl'],
+            });
 
-        });
+            var myPlacemark = new ymaps.Placemark([59.905782, 30.364647], {
+                hintContent: 'Содержимое всплывающей подсказки',
+                balloonContent: 'Содержимое балуна'
+            }, {
+                iconColor: 'darkred'
+            });
 
-        var myPlacemark = new ymaps.Placemark([59.905782, 30.364647], {
-            hintContent: 'Содержимое всплывающей подсказки',
-            balloonContent: 'Содержимое балуна'
-        }, {
-            iconColor: 'darkred'
-        });
+            myMap.geoObjects.add(myPlacemark);
+        }
 
-        myMap.geoObjects.add(myPlacemark);
+        // shops map
+        if ($("#shops-map").length) {
+            var shopsMap = new ymaps.Map("shops-map", {
+                center: [59.905782, 30.364647],
+                zoom: 10,
+                controls: ['zoomControl', 'fullscreenControl'],
+            });
+
+            var shopsPlacemark = new ymaps.Placemark([59.905782, 30.364647], {
+                hintContent: 'Содержимое всплывающей подсказки',
+                balloonContent: 'Содержимое балуна'
+            }, {
+                iconColor: 'darkred'
+            });
+
+            shopsMap.geoObjects.add(shopsPlacemark);
+        }
     }
+
     // about maps init
     var aboutMapsInit = function (mapType, id) {
         AmCharts.makeChart(id, {
@@ -53,11 +74,6 @@ $(document).ready(function () {
 
     aboutMapsInit('russiaLow', 'map-tab1');
     aboutMapsInit('worldLow', 'map-tab2');
-
-    // ________________________________________
-    $(window).on("load", function () {
-        $(".map-city-select .list").mCustomScrollbar();
-    });
 
     // select
     $('select').niceSelect();
@@ -237,7 +253,7 @@ $(document).ready(function () {
 
     // toggle
     $('.js-mobile-toggle-menu').on('click', function () {
-       $('.js-toggle-footer-menu').slideToggle();
+        $('.js-toggle-footer-menu').slideToggle();
     });
     // tabs
     $(function () {
@@ -282,4 +298,24 @@ $(document).ready(function () {
 
     });
 
+    $('.js-toggle-item').on('click', function (e) {
+        e.preventDefault();
+
+        $(this)
+            .toggleClass('active')
+            .closest('.js-toggle-item')
+            .toggleClass('fw-bg-color-light-pale-yellow')
+            .find('.js-toggle-body')
+            .toggleClass('fw-hidden');
+    });
+});
+
+// ________________________________________
+$(window).on("load", function () {
+    $(".map-city-select .list").mCustomScrollbar();
+    console.log('h2')
+    setTimeout(function () {
+        console.log('hi')
+        $('.custom-scrollbar').mCustomScrollbar();
+    }, 1000);
 });
