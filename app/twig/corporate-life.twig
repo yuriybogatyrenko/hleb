@@ -1,0 +1,144 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}ХлебПром{% endblock %}
+
+{% block content %}
+    <!-- Header block -->
+    {% include "layouts/header.twig" %}
+    <!-- Header block end -->
+    <div class="corporate-life">
+        {# section modern  #}
+        <div class="modern-production fw-width-1-1">
+            <div class="container fw-pt-50 fw-pb-100 fw-bg-color-light-pale-yellow">
+                <div class="container-small fw-mb-30">
+                    {% include 'partials/breadcrumbs.twig' %}
+                </div>
+                <div class="container-small">
+                    <span class="fw-block fw-color-dark-text fw-fz-60 fw-font-ml fw-mb-60 wow fadeInUp"
+                          data-wow-offset="100" data-wow-duration="2s"
+                          data-wow-delay=".25s">Как мы отдыхаем</span>
+
+                    <div
+                        class="modern-production-line fw-width-1-1 fw-flex fw-flex-space-between fw-relative fw-pb-170 fw-mb-100 wow fadeInUp"
+                        data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
+                        <div
+                            class="modern-production-item-right modern-production-item-text fw-ml-auto fw-width-1-2 fw-bg-color-white fw-relative fw-height-fit-content fw-pl-85 fw-pr-90 fw-pt-70 fw-pb-70">
+                            <p class="item-text--title fw-margin-0 fw-mb-50 fw-color-dark-text fw-fz-40 fw-font-ml">
+                                Корпоративная жизнь</p>
+                            <p class="fw-fz-16 fw-font-mr fw-color-text fw-line-height-30 fw-margin-0 fw-mb-30">
+                                Каждый день в компании проходит ярко и не похож
+                                на предыдущий. Мы умеем не только эффективно работать,
+                                но и интересно отдыхать. Мы знаем, что компания будет успешной, если сотрудники
+                                разделяют ее ценности
+                                и с радостью приходят на работу.
+                            </p>
+                        </div>
+
+                        <div
+                            class="modern-production-item-left fw-absolute fw-left-0 fw-top-0 modern-production-item-img fw-width-3-5 fw-height-1-1 fw-ml-auto fw-flex fw-flex-right fw-flex-bottom">
+                            <div class="modern-production-item-img-box">
+                                <div class="modern-production-item-img-box-image">
+                                    <img class="modern-production--main-img fw-block fw-object-fit-cover"
+                                         src="images/main/section3-modern-production/1.jpg" alt="">
+                                    <img class="modern-production--mobile-img fw-hidden fw-block fw-object-fit-cover"
+                                         src="images/main/mobile-mod-production/1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fw-pt-130 fw-pb-60 wow fadeInUp"
+             data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
+            <div class="container-small">
+                <div class="fw-grid fw-grid-90">
+                    <div class="fw-width-1-2">
+                        <div class="fw-fz-42 fw-font-ml fw-line-height-1-3">
+                            У наших сотрудников есть
+                            возможность участвовать в:
+                        </div>
+                    </div>
+                    <div class="fw-width-1-2">
+                        <div class="fw-mt-inverse-20">
+                            <ul class="bullet-list fw-fz-18">
+                                <li>Спортивных мероприятиях и тренировках</li>
+                                <li>Захватывающих переговорах на кино-дебатах</li>
+                                <li>Экскурсиях и выставках в России и по всему миру</li>
+                                <li>Встречах с интересными спикерами и талантливыми людьми</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fw-pt-70 fw-pb-70 wow fadeInUp"
+             data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
+            <div class="container-small">
+                <div class="js-corporate-life-slider corporate-life-slider owl-carousel owl-theme command-slider">
+                    {% for i in 1..4 %}
+                        <div>
+                            <img src="images/main/section3-modern-production/3.png"
+                                 class="fw-block fw-width-1-1 fw-margin-auto" alt="">
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="container-small fw-pt-60 wow fadeInUp"
+             data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
+            <div class="fw-ml-auto fw-mr-auto fw-max-width-800">
+                <div class="fw-fz-36 fw-font-ml fw-text-center fw-line-height-1-5">
+                    &laquo;Организуйте трудовой процесс так,
+                    чтобы люди были довольны вами, своими
+                    коллегами, взаимодействием с&nbsp;клиентами
+                    и&nbsp;поставщиками, а&nbsp;также всем тем, что
+                    они делают и&nbsp;что оказывает влияние
+                    на&nbsp;вашу компанию&raquo;
+                </div>
+                <div
+                    class="fw-mt-40 fw-max-width-450 fw-ml-auto fw-mr-auto fw-text-center fw-color-pale-yellow fw-line-height-1-5 fw-fz-16 fw-pb-60">
+                    Брайан Трейси, <br>
+                    «Полная вовлеченность. Вдохновляйте, мотивируйте
+                    и раскрывайте все лучшее в своей команде»
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div
+                class="fw-grid fw-grid-110 fw-pb-100 wow fadeInUp"
+                data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
+                <div class="fw-width-1-2">
+                    <a href="#" class="fw-relative">
+                        <div
+                            class="fw-transition-400 fw-hover-bg-color-opacity-dark fw-absolute fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-padding-50 fw-flex-center">
+                            <span class="fw-block fw-fz-60 fw-font-ml fw-color-white">Вакансии</span>
+                        </div>
+                        <img src="images/about/8.png" class="fw-width-1-1 fw-block" alt="">
+                    </a>
+                </div>
+
+                <div class="fw-width-1-2">
+                    <a href="#" class="fw-relative">
+                        <div
+                            class="fw-transition-400 fw-hover-bg-color-opacity-dark fw-absolute fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-padding-50 fw-flex-center">
+                            <span class="fw-block fw-fz-60 fw-font-ml fw-color-white">Студентам</span>
+                        </div>
+                        <img src="images/about/7.png" class="fw-width-1-1 fw-block" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        {% include 'partials/scroll-top.twig' %}
+    </div>
+
+    <!-- footer block -->
+    {% include "layouts/footer.twig" %}
+    <!-- footer block end -->
+{% endblock %}

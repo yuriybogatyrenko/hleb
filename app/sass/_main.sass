@@ -56,7 +56,7 @@ body
 //__________________________________________________________________________________
 
 .container
-    max-width: 1760px
+    max-width: 1790px
     width: 100%
     margin: auto
     padding-left: 15px
@@ -65,7 +65,8 @@ body
 .container-small
     max-width: 1342px
     width: 100%
-    margin: auto
+    margin-left: auto
+    margin-right: auto
 
 .app-wrapper
     max-width: 1920px
@@ -572,3 +573,31 @@ footer
 
     .popup
         z-index: 102
+
+.bullet-list
+    padding: 0
+    margin: 15px 0
+    list-style: none
+
+    li
+        padding: 13px 0 13px 25px
+        margin: 0
+        position: relative
+
+        &:before
+            position: absolute
+            top: 21px
+            left: 0
+            width: 8px
+            height: 8px
+            border: 3px solid $colorDarkRed
+            box-sizing: border-box
+            border-radius: 100%
+            content: ''
+            display: block
+
+.corporate-life-slider
+    &.command-slider
+        .owl-nav
+            right: 0
+

@@ -50,8 +50,8 @@ const sources = {
         dist: 'app/'
     },
     sass: {
-        src: 'app/sass/*.sass',
-        watch: 'app/sass/**/*.sass',
+        src: 'app/sass/*.+(sass|scss)',
+        watch: 'app/sass/**/*.+(sass|scss)',
         dist: 'app/sass'
     },
     bower: {src: 'app/bower_components'},

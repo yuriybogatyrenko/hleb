@@ -1,0 +1,53 @@
+.corporate-life-slider {
+    &.command-slider {
+        .owl-nav {
+            z-index: 10;
+            button {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    .owl-dots {
+        counter-reset: slides-num; /* Initialize counter. */
+        background-color: #fff;
+        @extend .fw-font-msb;
+        @extend .fw-color-pale-yellow;
+        @extend .fw-fz-14;
+        position: absolute;
+        width: 220px;
+        text-align: center;
+        right: 0;
+        bottom: 0;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+            content: counter(slides-num);
+            margin-left: 3px;
+        }
+
+        .owl-dot {
+            counter-increment: slides-num;
+            //opacity: 0;
+            display: block;
+            width: auto;
+            height: auto;
+
+            span {
+                display: none !important;
+            }
+
+            &.active {
+                &:before {
+                    content:  counter(slides-num) " / " ; /* Use the same counter to get current item. */
+                    //position: absolute;
+                    //left: 0;
+                    //top: 0;
+                }
+            }
+        }
+    }
+}
