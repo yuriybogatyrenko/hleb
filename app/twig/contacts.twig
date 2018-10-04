@@ -15,7 +15,7 @@
                     </div>
 
                     <div class="fw-pt-10 fw-mb-50">
-                        <div class="fw-block fw-color-dark-text fw-fz-60 fw-font-ml wow fadeInUp"
+                        <div class="contacts__main-title fw-block fw-color-dark-text fw-fz-60 fw-font-ml wow fadeInUp"
                              data-wow-offset="200" data-wow-duration="2s"
                              data-wow-delay=".25s">Контакты
                         </div>
@@ -101,12 +101,12 @@
 
             <div class="contacts__questions fw-pt-90 fw-pb-90">
                 <div class="container-small">
-                    <div class="fw-grid fw-grid-90">
-                        <div class="fw-width-1-2">
-                            <div class="fw-mb-170 wow fadeInUp"
+                    <div class="questions-items fw-grid fw-grid-90">
+                        <div class="questions-items__column fw-width-1-2">
+                            <div class="questions-item fw-mb-170 wow fadeInUp"
                                  data-wow-offset="200" data-wow-duration="2s" data-wow-delay=".25s">
-                                <div class="fw-font-ml fw-fz-42 fw-mb-35">По всем вопросам</div>
-                                <div class="fw-max-width-300">
+                                <div class="questions-item__title fw-font-ml fw-fz-42 fw-mb-35">По всем вопросам</div>
+                                <div class="questions-item__description fw-max-width-300">
                                     <p class="fw-mb-5 fw-mt-0">Круглосуточная горячая линия:</p>
                                     <p class="fw-fz-24 fw-mb-10 fw-mt-0">8-800-333-65-66</p>
                                     <p class="fw-margin-0">звонок по России бесплатный</p>
@@ -137,10 +137,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="wow fadeInUp"
-                                 data-wow-offset="200" data-wow-duration="2s" data-wow-delay=".25s">
-                                <div class="fw-font-ml fw-fz-42 fw-mb-35">Отдел продаж</div>
-                                <div class="fw-max-width-300">
+
+                            <div class="questions-item wow fadeInUp" data-wow-offset="200" data-wow-duration="2s" data-wow-delay=".25s">
+                                <div class="questions-item__title fw-font-ml fw-fz-42 fw-mb-35">Отдел продаж</div>
+                                <div class="questions-item__description fw-max-width-300">
                                     <p class="fw-mt-0 fw-mb-20">Пн-Пт 9:00—18:00</p>
                                     <p class="fw-mt-0 fw-mb-20">Телефон: +7 (495) 789-46-23</p>
                                     <p class="fw-mt-0 fw-mb-20">Факс: +7 (495) 789-45-61</p>
@@ -159,11 +159,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fw-width-1-2 fw-mt-170">
-                            <div class="fw-mb-170 wow fadeInUp"
-                                 data-wow-offset="200" data-wow-duration="2s" data-wow-delay=".25s">
-                                <div class="fw-font-ml fw-fz-42 fw-mb-35">Предложения <br>по сотрудничеству</div>
-                                <div class="fw-max-width-300">
+
+                        <div class="questions-items__column fw-width-1-2 fw-mt-170">
+                            <div class="questions-item fw-mb-170 wow fadeInUp" data-wow-offset="200" data-wow-duration="2s" data-wow-delay=".25s">
+                                <div class="questions-item__title fw-font-ml fw-fz-42 fw-mb-35">Предложения <br>по сотрудничеству</div>
+                                <div class="questions-item__description fw-max-width-300">
                                     <p class="fw-mt-0 fw-mb-20">Пн-Пт 9:00—18:00</p>
                                     <p class="fw-mt-0 fw-mb-20">Телефон: +7 (495) 789-46-23</p>
                                     <p class="fw-mt-0 fw-mb-20">Факс: +7 (495) 789-45-61</p>
@@ -181,10 +181,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="wow fadeInUp"
-                                 data-wow-offset="200" data-wow-duration="2s" data-wow-delay=".25s">
-                                <div class="fw-font-ml fw-fz-42 fw-mb-35">Отдел закупок</div>
-                                <div class="fw-max-width-300">
+                            <div class="questions-item wow fadeInUp" data-wow-offset="200" data-wow-duration="2s" data-wow-delay=".25s">
+                                <div class="questions-item__title fw-font-ml fw-fz-42 fw-mb-35">Отдел закупок</div>
+                                <div class="questions-item__description fw-max-width-300">
                                     <p class="fw-mt-0 fw-mb-20">Пн-Пт 9:00—18:00</p>
                                     <p class="fw-mt-0 fw-mb-20">Телефон: +7 (495) 789-46-07/08</p>
                                     <p class="fw-mt-0 fw-mb-20">Факс: +7 (495) 789-45-61</p>
@@ -206,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-small fw-mt-50 wow fadeInUp"
+            <div class="feedback-container container-small fw-mt-50 wow fadeInUp"
                  data-wow-offset="200" data-wow-duration="2s" data-wow-delay=".25s">
                 {% include 'partials/feedback-form.twig' %}
             </div>

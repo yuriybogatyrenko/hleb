@@ -1,0 +1,131 @@
+@media (max-width: 1500px)
+	.contacts
+		.modern-production-line
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			.modern-production-item-text
+				position: relative
+				order: 1
+			.modern-production-item-img
+				margin-top: -400px
+				width: 100%
+				order: 2
+
+		&__questions
+			padding-top: 30px
+			padding-bottom: 0
+			.questions-item
+				margin-bottom: 80px
+
+		.form__input-wrap
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+			.error-wrap
+				padding-top: 15px
+				padding-left: 0
+				width: 100%
+				font-size: 12px
+
+@media (max-width: 900px)
+	.contacts
+		.form__line
+			flex-direction: column
+			.fw-flex-grow-1
+				display: block
+			.fw-width-2-3
+				width: 100%
+			.form__input-wrap
+				.fw-width-2-3
+					width: 100%
+
+@media (max-width: 800px)
+	.contacts
+		.modern-production-line
+			.modern-production-item-text
+				padding: 35px 20px
+				max-width: 400px
+			.modern-production-item-img
+				margin-top: -300px
+		.questions-items
+			flex-direction: column
+			margin-left: 0
+			margin-bottom: 0
+			&__column
+				padding-left: 0
+				padding-bottom: 0px
+				margin-bottom: 0
+				width: 100%
+				margin-top: 0
+			.questions-item
+				padding-left: 0
+				margin-bottom: 60px
+
+@media (max-width: 700px)
+	.contacts
+		.modern-production-line
+			.modern-production-item-text
+				padding: 35px 25px
+				max-width: 400px
+			.modern-production-item-img
+				margin-top: -200px !important
+
+@media (max-width: 500px)
+	.contacts
+		.feedback-container
+			margin-top: 25px
+		p.fw-fz-60
+			font-size: 28px
+		&__main-title
+			padding-left: 13px
+			font-size: 30px
+		.b-breadcrumbs
+			padding-left: 15px
+		.container
+			padding-left: 0
+			padding-right: 0
+			.fw-bg-color-light-pale-yellow
+				background-color: #fff
+				.container-small
+					padding-left: 0
+					padding-right: 0
+
+		.questions-item
+			&__title
+				font-size: 24px
+			&__description
+				p
+					font-size: 14px
+					margin-bottom: 15px
+
+		.form__main-title
+			font-size: 32px
+			margin-bottom: 30px
+
+		form
+			position: relative
+			overflow: hidden
+			.form__line
+				margin-bottom: 40px
+				padding-top: 0
+			.form__label,.fw-checkbox__content
+				font-size: 12px
+				padding-top: 0
+			.fw-checkbox__placeholder, .fw-radio__placeholder
+				min-width: 20px
+			.textarea-field
+				padding-bottom: 15px
+
+		.modern-production-line
+			.modern-production-item-img
+				margin-top: -40px !important
+			.modern-production-item-text
+				display: flex
+				justify-content: flex-start
+				p
+					font-size: 14px
+					&:first-child
+						font-size: 24px
+						margin-bottom: 34px
