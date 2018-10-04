@@ -2481,6 +2481,22 @@
   margin-right: -70px;
 }
 
+.fw-mt-inverse-120 {
+  margin-top: -120px;
+}
+
+.fw-mb-inverse-120 {
+  margin-bottom: -120px;
+}
+
+.fw-ml-inverse-120 {
+  margin-left: -120px;
+}
+
+.fw-mr-inverse-120 {
+  margin-right: -120px;
+}
+
 .fw-mt-inverse-170 {
   margin-top: -170px;
 }
@@ -2529,6 +2545,23 @@
 
   .fw-mr-inverse-70\@xs {
     margin-right: -70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-mt-inverse-120\@xs {
+    margin-top: -120px;
+  }
+
+  .fw-mb-inverse-120\@xs {
+    margin-bottom: -120px;
+  }
+
+  .fw-ml-inverse-120\@xs {
+    margin-left: -120px;
+  }
+
+  .fw-mr-inverse-120\@xs {
+    margin-right: -120px;
   }
 }
 @media screen and (max-width: 767px) {
