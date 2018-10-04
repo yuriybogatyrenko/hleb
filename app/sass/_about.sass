@@ -91,6 +91,17 @@
 			border-radius: 0 !important
 			opacity: 1 !important
 			outline: none
+			&:first-child
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					width: 1px
+					height: 15px
+					background-color: #f0e3da
+					top: 50%
+					transform: translateY(-50%)
+					right: 0
 			&:hover
 				color: $colorDarkRed !important
 		.owl-prev

@@ -134,7 +134,26 @@ $(document).ready(function () {
         nav: true,
         margin: 160,
         smartSpeed: 350,
-        navText: ['<i class="icon-arrow fw-fz-16"></i>', '<i class="icon-arrow fw-fz-16"></i>']
+        navText: ['<i class="icon-arrow fw-fz-16"></i>', '<i class="icon-arrow fw-fz-16"></i>'],
+        responsive : {
+            0: {
+              items: 1
+            },
+            500: {
+                items: 2
+            },
+            900: {
+                items: 3
+            }
+        }
+    });
+
+    $('.priorities .js-priorities-slider').owlCarousel({
+        items: 1,
+        dots: false,
+        nav: false,
+        margin: 0,
+        smartSpeed: 350,
     });
 
     //owl

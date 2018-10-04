@@ -8439,6 +8439,23 @@ ul.tabs li.active {
   opacity: 1 !important;
   outline: none;
 }
+.command-slider .owl-nav button:first-child {
+  position: relative;
+}
+.command-slider .owl-nav button:first-child:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background-color: #f0e3da;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+}
 .command-slider .owl-nav button:hover {
   color: #a61c35 !important;
 }
@@ -8451,6 +8468,446 @@ ul.tabs li.active {
   transform: rotate(180deg) !important;
 }
 
+@media (max-width: 1500px) {
+  .about .priorities {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about .priorities-desktop .priorities-wrap {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1300px) {
+  .about .command-slider .owl-nav {
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .about .command-slider .owl-nav button {
+    height: 68px;
+    width: 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .about .mission {
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+  .about .priorities {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about .priorities-desktop .priorities-wrap-tabs-tab {
+    padding: 55px 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .about .command {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about .command--description {
+    padding-bottom: 30px;
+    margin-top: 0;
+  }
+  .about .command .command-slider .owl-nav {
+    right: -30px;
+  }
+  .about .mission {
+    padding-left: 100px;
+    padding-right: 0;
+  }
+  .about .mission img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .about .video--text {
+    max-height: -webkit-calc(100% - 40px);
+    max-height: -moz-calc(100% - 40px);
+    max-height: calc(100% - 40px);
+  }
+  .about .video--text h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .about .geography {
+    padding-top: 70px;
+    padding-right: 0;
+  }
+  .about .geography .map-navigation {
+    z-index: 10;
+  }
+  .about .geography-map-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about .geography-map-wrapper .map-alert {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .about .geography--content {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+  .about .priorities {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about .priorities--title {
+    padding-left: 20px;
+  }
+  .about .mission {
+    padding-left: 0;
+  }
+}
+@media (max-width: 900px) {
+  .about .command {
+    padding-top: 50px;
+  }
+  .about .command-slider-slide p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .about .command-slider-slide span {
+    font-size: 12px;
+    padding-bottom: 35px;
+  }
+  .about .command--description {
+    font-size: 14px;
+  }
+  .about .priorities-desktop .priorities-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about .priorities-desktop .priorities-wrap-tabs-tab {
+    padding-bottom: 0;
+  }
+  .about .priorities-desktop .priorities-wrap-tabs-tab ul {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .about .priorities-desktop .priorities-wrap-tabs-tab ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .about .priorities-desktop .priorities-wrap-list-item {
+    font-size: 27px;
+  }
+  .about .priorities-desktop .priorities-wrap-list-item.active {
+    font-size: 32px;
+  }
+  .about .mission {
+    padding-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .about .mission-img {
+    text-align: right;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .about .mission-img img {
+    width: auto;
+    display: block;
+  }
+  .about .mission p.fw-fz-28 {
+    font-size: 20px;
+  }
+  .about .video--btn {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .about .video--btn a {
+    width: auto;
+    padding: 33px 20px;
+  }
+  .about .video--text {
+    padding-left: 0;
+    padding-top: 20px;
+    position: relative;
+    color: #caa98b;
+  }
+  .about .video--text h1 {
+    font-size: 32px;
+  }
+  .about .careers {
+    padding-bottom: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .about .careers-wrap {
+    padding-left: 0;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .about .geography {
+    padding-top: 70px;
+    padding-right: 0;
+  }
+  .about .geography .map-info p {
+    font-size: 14px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .geography--content p {
+    width: auto;
+  }
+}
+@media (max-width: 650px) {
+  .about .container {
+    padding: 0;
+  }
+  .about .priorities {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .about .priorities--title {
+    margin-bottom: 38px;
+    padding-left: 15px;
+  }
+  .about .b-breadcrumbs {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .video {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .video .first-screen-animated-image {
+    min-height: 170px;
+    background-position: center center;
+  }
+  .about .video--btn a p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .about .video--btn a p i {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  .about .video--text h1 {
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+  .about .careers {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .section-history-in-numbers {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .command {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .command-slider .owl-nav {
+    right: -15px !important;
+  }
+  .about .mission {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .mission p.fw-fz-28 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .about .mission p.fw-fz-16 {
+    font-size: 14px;
+  }
+  .about .mission-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .about .mission-img img {
+    width: 90%;
+  }
+  .about .geography {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-right: 0;
+  }
+  .about .geography .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .geography .map-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .about .geography--content {
+    padding-left: 0;
+  }
+  .about .geography--content span.fw-fz-60 {
+    margin-bottom: 20px;
+  }
+  .about .geography--content p {
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+  .about .geography .map-navigation {
+    z-index: 10;
+    padding-left: 30px;
+  }
+  .about .geography-map-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about .geography-map-wrapper .map-alert {
+    max-width: 330px;
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 70px;
+    padding-bottom: 45px;
+  }
+  .about .geography-map-wrapper .map-alert-content {
+    padding-top: 15px;
+  }
+  .about .geography-map-wrapper .map-alert .toggle-contacts-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-bottom: 4px;
+  }
+  .about .geography-map-wrapper .map-alert--phones a:last-child {
+    display: block;
+    margin-top: 5px;
+  }
+  .about .geography-map-wrapper .map-alert p {
+    font-size: 14px;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+  .about .geography-map-wrapper .map-tab-wrap.active {
+    height: 630px;
+    max-height: 630px;
+  }
+}
+@media (max-width: 600px) {
+  .about .priorities-desktop {
+    display: none;
+  }
+  .about .priorities-mobile {
+    display: block;
+  }
+  .about .priorities-mobile .priorities-slider .priorities-slide {
+    overflow: hidden;
+  }
+  .about .priorities-mobile .priorities-slider .priorities-slide--list li {
+    position: relative;
+  }
+  .about .priorities-mobile .priorities-slider .priorities-slide--list li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 5px;
+    height: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #a61c35;
+  }
+  .about .priorities-mobile .priorities-slider .priorities-slide--title {
+    position: relative;
+    padding-right: 10px;
+  }
+  .about .priorities-mobile .priorities-slider .priorities-slide--title:after {
+    content: "";
+    position: absolute;
+    right: -1000px;
+    width: 1000px;
+    height: 1px;
+    background-color: #a61c35;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
 @media (max-width: 1600px) {
   .lang-slider {
     margin: 15px 0;
