@@ -156,6 +156,16 @@ $(document).ready(function () {
         smartSpeed: 350,
     });
 
+
+    $('.js-mirel-mobile__slider').owlCarousel({
+        items: 1,
+        dots: false,
+        nav: true,
+        margin: 0,
+        smartSpeed: 350,
+        navText: ['<i class="icon-arrow fw-fz-16"></i>', '<i class="icon-arrow fw-fz-16"></i>']
+    });
+
     //owl
     $('.js-corporate-life-slider').owlCarousel({
         items: 1,

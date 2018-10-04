@@ -6,7 +6,7 @@
     <!-- Header block -->
     {% include "layouts/header.twig" %}
     <!-- Header block end -->
-    <div class="contacts">
+    <div class="brand">
         <div class="container">
             <div class="fw-bg-color-light-pale-yellow">
                 <div class="container-small">
@@ -15,21 +15,21 @@
                     </div>
 
                     <div class="fw-pt-10 fw-pb-100">
-                        <div class="fw-block fw-color-dark-text fw-fz-60 fw-font-ml wow fadeInUp"
+                        <div class="brand__main-title fw-block fw-color-dark-text fw-fz-60 fw-font-ml wow fadeInUp"
                              data-wow-offset="200" data-wow-duration="2s"
                              data-wow-delay=".25s">
                             Mirel
                         </div>
-                        <div class="fw-flex">
+                        <div class="brand__top-block fw-flex">
                             <div class="fw-flex-grow-1 fw-flex fw-flex-column wow fadeInLeft"
                                  data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
                                 <div class="fw-fz-0 fw-mt-auto fw-mb-auto fw-ml-inverse-120">
-                                    <img src="http://placehold.it/1000x600" alt="" class="fw-max-height-percent-100">
+                                    <img src="images/brand/main1.png" alt="" class="fw-max-height-percent-100">
                                 </div>
                                 <div class="fw-flex fw-flex-middle fw-flex-center fw-fz-0 fw-mt-auto">
-                                    {% for i in 0..2 %}
+                                    {% for i in 1..3 %}
                                         <div class="fw-ml-40 fw-mr-40">
-                                            <img src="http://placehold.it/110" alt="">
+                                            <img src="images/brand/iso-web.png" alt="">
                                         </div>
                                     {% endfor %}
                                 </div>
@@ -66,14 +66,14 @@
                     </div>
                 </div>
             </div>
-            <div class="fw-pt-100 fw-pr-160">
+            <div class="production-mirel fw-pt-100 fw-pr-160">
                 <div class="fw-flex wow fadeInUp"
                      data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
-                    <div class="fw-width-210 fw-flex-shrink-no">
-                    </div>
+                    <div class="fw-width-210 fw-flex-shrink-no"></div>
+
                     <div class="fw-flex-grow-1">
-                        <div class="fw-flex fw-flex-space-between fw-flex-middle fw-mb-130">
-                            <div class="fw-fz-60 fw-font-ml">
+                        <div class="production-mirel__header fw-flex fw-flex-space-between fw-flex-middle fw-mb-130">
+                            <div class="production-mirel__title fw-fz-60 fw-font-ml">
                                 Продукция Mirel
                             </div>
                             <div>
@@ -88,8 +88,8 @@
                     </div>
                 </div>
 
-                <div class="fw-flex">
-                    <div class="fw-width-210 fw-flex-shrink-no">
+                <div class="production-mirel__content fw-flex">
+                    <div class="production-mirel__list-wrap fw-width-210 fw-flex-shrink-no">
                         <ul class="ideas__menu fw-font-msb fw-text-uppercase fw-fz-14 wow fadeInLeft"
                             data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
                             <li class="ideas__menu-item active">
@@ -121,14 +121,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="fw-flex-grow-1">
+
+                    <div class="production-mirel__items-desktop fw-flex-grow-1">
                         <div class="fw-grid fw-grid-50 wow fadeInRight"
                              data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
                             {% for i in 1..8 %}
                                 <div class="fw-width-1-4">
                                     <div class="fw-text-center">
-                                        <div class="fw-mb-25"><img src="http://placehold.it/300" alt=""
-                                                                   class="fw-max-width-percent-100"></div>
+                                        <div class="fw-mb-25"><img src="images/brand/mirel/{{ i }}.png" alt="" class="fw-max-height-202 fw-object-fit-cover fw-max-width-percent-100"></div>
                                         <div class="fw-color-gray-text fw-text-uppercase fw-font-msb">пирожные</div>
                                         <div
                                             class="fw-font-ml fw-fz-24 fw-max-width-255 fw-mt-15 fw-ml-auto fw-mr-auto">
@@ -138,8 +138,7 @@
                                 </div>
                             {% endfor %}
                         </div>
-                        <div
-                            class="fw-flex fw-flex-middle fw-flex-space-between fw-pt-100 wow fadeInUp fw-mb-100"
+                        <div class="production-mirel__items-footer fw-flex fw-flex-middle fw-flex-space-between fw-pt-100 wow fadeInUp fw-mb-100"
                             data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
                             <div>
                                 <a href="#"
@@ -156,7 +155,54 @@
                     </div>
                 </div>
             </div>
-            <div class="fw-flex wow fadeInUp"
+
+             {# mirel mobile #}
+            <div class="production-mirel__mobile fw-pt-50 fw-pb-50 fw-pl-15 fw-pr-15">
+                <div class="mirel-mobile__title fw-fz-30 fw-color-dark-text fw-font-ml fw-pb-50">Продукция Mirel</div>
+
+                <div class="production-mirel__list-wrap fw-width-1-1 fw-flex-shrink-no fw-pb-50">
+                    <ul class="ideas__menu fw-relative fw-left-70 fw-font-msb fw-text-uppercase fw-fz-12 wow fadeInLeft"
+                        data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
+                        <li class="ideas__menu-item active">
+                            <a href="#" class="ideas__menu-link">Все</a>
+                        </li>
+                        <li class="ideas__menu-item">
+                            <a href="#" class="ideas__menu-link">торты</a>
+                        </li>
+                        <li class="ideas__menu-item">
+                            <a href="#" class="ideas__menu-link">пироги, кексы</a>
+                        </li>
+                        <li class="ideas__menu-item">
+                            <a href="#" class="ideas__menu-link">пирожные</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="js-mirel-mobile__slider mirel-mobile__slider owl-theme owl-carousel">
+                    {% for i in 1..8  %}
+                        <div class="mirel-mobile__slide">
+                            <div class="fw-text-center">
+                                <div class="fw-mb-15 fw-flex fw-flex-center fw-flex-middle"><img src="images/brand/mirel/{{ i }}.png" alt="" class="fw-max-height-138 fw-object-fit-cover fw-max-width-140"></div>
+                                <div class="fw-color-gray-text fw-fz-12 fw-mb-15 fw-text-uppercase fw-font-msb">торты</div>
+                                <div class="fw-font-ml fw-mb-15 fw-fz-18 fw-max-width-255 fw-ml-auto fw-mr-auto">
+                                    Торт «Бельгийский
+                                    шоколад»
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div class="fw-flex fw-flex-center fw-flex-middle fw-pt-50 fw-pb-50">
+                    <a href="#"
+                       class="fw-reset fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
+                        <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">В интернет магазин</span>
+                        <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
+                    </a>
+                </div>
+            </div>
+            {# / #}
+            <div class="instagram-profile fw-flex wow fadeInUp"
                  data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
                 <div class="fw-width-210 fw-flex-shrink-no"></div>
                 <div class="fw-fz-42 fw-font-ml">
@@ -164,11 +210,11 @@
                     в инстаграм
                 </div>
             </div>
-            <div class="fw-flex fw-flex-middle fw-mt-50 fw-mb-100 fw-fz-0 wow fadeInUp"
+            <div class="brand-bottom-section fw-flex fw-flex-middle fw-mt-50 fw-mb-100 fw-fz-0 wow fadeInUp"
                  data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
-                {% for i in 0..8 %}
+                {% for i in 1..9 %}
                     <div class="fw-flex-grow">
-                        <img src="http://placehold.it/200" alt="" class="fw-width-1-1">
+                        <img src="images/brand/{{ i }}.png" alt="" class="fw-block fw-width-1-1">
                     </div>
                 {% endfor %}
             </div>
