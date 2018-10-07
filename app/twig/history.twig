@@ -1,0 +1,310 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}ХлебПром{% endblock %}
+
+{% block content %}
+    <!-- Header block -->
+    {% include "layouts/header.twig" %}
+    <!-- Header block end -->
+    <div class="history fw-overflow-hidden">
+        <div class="container">
+            <div class="fw-flex">
+                <div class="fw-width-240"></div>
+
+                <div class="history__items fw-flex-column fw-flex-grow-1">
+                    <div class="fw-pt-20 fw-pb-20">
+                        {% include "partials/breadcrumbs.twig" %}
+                    </div>
+
+                    <span class="fw-fz-60 fw-color-dark-text fw-font-ml fw-margin-0 fw-mb-40 fw-block">История успеха</span>
+
+                    <div class="history-item fw-flex fw-mb-180">
+                        <div class="history-item__content item__order-1 fw-z-index-1 fw-width-3-5">
+                            <div class="history-item__img order-1__img fw-width-1-1 fw-relative">
+                                <img src="images/history/1.png" class="fw-block" alt="">
+                                <span class="history__year-label fw-fz-150 fw-color-pale-yellow">1982</span>
+                            </div>
+
+                            <div class="history-item__text fw-width-1-1 fw-pl-50 fw-pr-50 fw-pt-40">
+                                <span class="fw-fz-44 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Открытие «Хлебпром №7»</span>
+                                <p class="fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-max-width-520">
+                                    История компании берет свое начало с 1982 года. Именно тогда
+                                    в Челябинске была запущена площадка «Хлебпром №7»
+                                    по производству кремовой и хлебобулочной продукции,
+                                    и именно здесь была заложена основа развития всей
+                                    дальнейшей судьбы компании.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item__order-2 history__item-bg history-item__sub-img fw-relative fw-width-2-5 fw-flex">
+                            <img src="images/history/1-1.png" class="fw-absolute fw-left-0 fw-top-0 fw-z-index-1" alt="">
+                        </div>
+                    </div>
+
+                    <div class="history-item fw-flex fw-mb-85 fw-mt-inverse-95">
+                        <div class="history-item__content item__order-2 fw-z-index-1 fw-width-3-5">
+                            <div class="history-item__img order-1__img fw-width-1-1 fw-relative">
+                                <img src="images/history/2.png" class="fw-block" alt="">
+                                <span class="history__year-label fw-fz-150 fw-color-pale-yellow">1987</span>
+                            </div>
+
+                            <div class="history-item__text fw-width-1-1 fw-pl-50 fw-pr-50 fw-pt-40">
+                                <span class="fw-fz-44 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">«Унисервис» в Москве</span>
+                                <p class="fw-margin-0 fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-max-width-520">
+                                    Начало деятельности компании «Унисервис», в Москве
+                                    открыта сеть ресторанов.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vertical-middle item__order-1 history-item__sub-img fw-relative fw-width-2-5 fw-flex">
+                            <img src="images/history/2-2.png" class="fw-absolute fw-left-0 fw-top-0 fw-z-index-1" alt="">
+                        </div>
+                    </div>
+
+                    {% for i in 3..5 %}
+                        <div class="history-item fw-flex fw-mb-85">
+                            <div class="history-item__content item__order-2 fw-z-index-1 fw-width-3-5">
+                                <div class="history-item__img order-1__img fw-width-1-1 fw-relative">
+                                    <img src="images/history/{{ i }}.png" class="fw-block" alt="">
+                                    {% if i == 3 %}
+                                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">1993</span>
+                                    {% endif %}
+
+                                    {% if i == 4 %}
+                                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">1994</span>
+                                    {% endif %}
+
+                                    {% if i == 5 %}
+                                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">1995</span>
+                                    {% endif %}
+                                </div>
+
+                                <div class="history-item__text fw-width-1-1 fw-pl-50 fw-pr-50 fw-pt-40">
+                                    {% if i == 3 %}
+                                        <span class="fw-fz-44 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Импортные поставки</span>
+                                        <p class="fw-fz-16 fw-margin-0 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-max-width-520">
+                                            Создана торговая компания: поставки продукции из Польши, Болгарии, Дании, Норвегии, Германии, Швеции, Испании
+                                            и Таиланда. Компания занимает лидирующие позиции
+                                            в поставках крабовых палочек из Таиланда.
+                                        </p>
+                                    {% endif %}
+
+                                    {% if i == 4 %}
+                                        <span class="fw-fz-44 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Новая марка тортов</span>
+                                        <p class="fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-max-width-520 fw-margin-0 fw-mb-30">
+                                            Компания начинает производить торты под маркой «Русская Нива», которая существует до сих пор.
+                                        </p>
+
+                                        <button class="fw-reset fw-button-no-translate-arrow fw-pointer fw-button-submit fw-color-dark-text fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
+                                            <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">о бренде русская нива</span>
+                                            <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
+                                        </button>
+                                    {% endif %}
+
+                                    {% if i == 5 %}
+                                        <span class="fw-fz-44 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Производство за границей</span>
+                                        <p class="fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-max-width-520 fw-margin-0">
+                                            Начало производства под маркой «Унисервис» за границей замороженной и консервированной морской и овощной продукции.
+                                        </p>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="vertical-middle item__order-1 history-item__sub-img fw-relative fw-width-2-5 fw-flex">
+                                <img src="images/history/{{ i }}-{{ i }}.png" class="fw-absolute fw-left-0 fw-top-0 fw-z-index-1" alt="">
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                    {% for i in 6..8 %}
+                        <div class="history-item fw-flex fw-mb-85">
+                            <div class="history-item__content item__order-1 fw-z-index-1 fw-width-3-5">
+                                <div class="history-item__img fw-width-1-1 fw-relative">
+                                    <img src="images/history/{{ i }}.png" class="fw-block" alt="">
+                                    {% if i == 6 %}
+                                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">1996</span>
+                                    {% endif %}
+
+                                    {% if i == 7 %}
+                                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">2001</span>
+                                    {% endif %}
+
+                                    {% if i == 8 %}
+                                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">2002</span>
+                                    {% endif %}
+                                </div>
+
+                                <div class="history-item__text fw-width-1-1 fw-pl-50 fw-pr-50 fw-pt-40">
+                                    {% if i == 6 %}
+                                        <span class="fw-fz-42 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Объединение в Челябинске</span>
+                                        <p class="fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-margin-0 fw-line-height-30 fw-max-width-520">
+                                            А уже в 1996 году произошло объединение четырех челябинских хлебобулочных производств,  которые позже, в 2000 году, будут реструктуризированы в ОАО «Хлебпром».
+                                        </p>
+                                    {% endif %}
+
+                                    {% if i == 7 %}
+                                        <span class="fw-fz-42 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Сотрудничество с коллегами из Голландии и Германии</span>
+                                        <p class="fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-margin-0 fw-line-height-30 fw-max-width-520">
+                                            Компания выиграла грант правительства Голландии на поставку оборудования, и на предприятии была запущена уникальная высокотехнологичная голландская линия по производству бисквитов. По приглашению руководства на фабрике работали специалисты
+                                            из Голландии и Германии, они помогали установить оборудование
+                                            и обучить персонал.
+                                            Был значительно расширен ассортимент производимой продукции, учитывающий как российские традиции питания, так и европейские тенденции.
+                                            Вскоре после этого, производство кремово-кондитерской продукции стало основным направлением деятельности компании.
+                                        </p>
+                                    {% endif %}
+
+                                    {% if i == 8 %}
+                                        <span class="fw-fz-42 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Появился любимый «Mirel»</span>
+                                        <p class="fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-margin-0 fw-mb-30 fw-max-width-520">
+                                            На рынке появился новый бренд «Mirel», который очень быстро завоевал любовь потребителей.
+                                            Появление бренда связано с другим важным моментом в истории компании – внедрение технологии глубокой заморозки продукции. Благодаря уникальной технологии, которая позволяет сохранить
+                                            вкус и качество продукции без использования консервантов, торты под брендом «Mirel» стали доступны покупателям по всей стране.
+                                            Позже на предприятии были запущены линии по производству взбитых сливок и заварных пирожных.
+                                        </p>
+
+                                        <button class="fw-reset fw-button-no-translate-arrow fw-pointer fw-button-submit fw-color-dark-text fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
+                                            <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">подробнее о бренде mirel</span>
+                                            <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
+                                        </button>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="vertical-middle item__order-2 history-item__sub-img fw-relative fw-width-2-5 fw-flex">
+                                <img src="images/history/{{ i }}-{{ i }}.png" class="fw-absolute fw-left-0 fw-top-0 fw-z-index-1" alt="">
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                    <div class="history-item fw-bg-color-light-pale-yellow fw-pt-100 fw-pb-170 fw-pl-250 pale-before">
+                        <div class="history-item__content item__order-1 fw-z-index-1">
+                            <div class="history-item__img order-1__img fw-width-1-1 fw-relative">
+                                <img src="images/history/9.png" class="fw-block fw-z-index-1 fw-relative" alt="">
+                                <img src="images/history/9-9.png" class="fw-block map-img" alt="">
+                                <span class="history__year-label fw-fz-150 fw-color-pale-yellow">2007</span>
+                            </div>
+
+                            <div class="history-item__text fw-width-1-1 fw-pl-50 fw-pr-50 fw-pt-40">
+                                <span class="fw-fz-42 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Большое объединение</span>
+                                <p class="fw-margin-0 fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-max-width-520 fw-mb-30">
+                                    Предприятие объединило свои усилия с  московской компанией «Унисервис» – крупным игроком кондитерского рынка. Под общим названием ОАО «Хлебпром» слились производственная площадка
+                                    в Челябинске, производственная площадка в Красногорске и бренд «Русская Нива», производство хлебцев в Ярцево под брендом
+                                    «Dr. Korner», а также бренды «Частная галерея» и «Uniservis».
+                                    С этого момента предприятие начинает свое активное развитие, расширяя географию продаж и территориальное присутствие, открывая обособленные подразделения в крупнейших городах на территории нашей страны.
+                                </p>
+
+                                <button class="fw-reset fw-button-no-translate-arrow fw-pointer fw-button-submit fw-color-dark-text fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
+                                    <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">о бренде DR. KORNER</span>
+                                    <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container fw-flex fw-flex-column">
+            <div class="history-item v2-item fw-flex fw-mb-85 fw-mt-inverse-95 fw-pl-210 fw-pr-210">
+                <div class="history-item__content item__order-2 fw-z-index-1 fw-width-3-5">
+                    <div class="history-item__img order-1__img fw-width-1-1 fw-relative">
+                        <img src="images/history/10.png" class="fw-block" alt="">
+                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">2014</span>
+                    </div>
+
+                    <div class="history-item__text fw-width-1-1 fw-pr-50 fw-pt-40">
+                        <span class="fw-fz-42 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Новый завод в Ногинске</span>
+                        <p class="fw-margin-0 fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-max-width-520">
+                            Стремясь удовлетворить растущую потребность рынка и запрос потребителей, в  2012 году было запущено строительство  уникального высокотехнологичного  завода по производству кондитерской продукции в Ногинске.
+                            Амбициозный проект, не имеющий аналогов в стране, был реализован в кратчайшие сроки и уже в 2014 годуна полках магазинов появились первые торты под брендом «Усладов»,  выпущенные на новой производственной площадке.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vertical-middle item__order-1 history-item__sub-img fw-relative fw-width-2-5 fw-flex">
+                    <img src="images/history/10-10.png" class="fw-absolute fw-left-0 fw-top-0 fw-z-index-1" alt="">
+                </div>
+            </div>
+
+            <div class="history-item v2-item fw-flex fw-mb-85 fw-pl-210 fw-pr-210">
+                <div class="history-item__content item__order-1 fw-z-index-1 fw-width-3-5">
+                    <div class="history-item__img order-1__img fw-width-1-1 fw-relative">
+                        <img src="images/history/11.png" class="fw-block" alt="">
+                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">2015</span>
+                    </div>
+
+                    <div class="history-item__text fw-width-1-1 fw-pr-50 fw-pt-40">
+                        <span class="fw-fz-42 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Запуск линейки тортов «Мой»</span>
+                        <p class="fw-margin-0 fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-mb-30 fw-max-width-520">
+                            В ответ на последствия негативной экономической ситуации
+                            в нашей стране была выпущена линейка тортов под брендом «Мой». Основная цель новой линейки – предложить регионам с низкой покупательской способностью свежие торты хорошего качества
+                            по низкой цене.
+                            Новая линейка тортов была выпущена на Ногинской площадке на автоматизированном заводе, благодаря чему удалось снизить издержки.
+                        </p>
+                        <button class="fw-reset fw-button-no-translate-arrow fw-pointer fw-button-submit fw-color-dark-text fw-flex fw-flex-left fw-flex-middle fw-width-fit-content fw-button">
+                            <span class="fw-text-uppercase fw-font-msb fw-fz-14 fw-mr-15 fw-z-index-1 fw-relative fw-block">о бренде мой</span>
+                            <i class="icon-arrow fw-fz-18 fw-relative fw-z-index-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vertical-middle item__order-2 history-item__sub-img fw-relative fw-width-2-5 fw-flex">
+                    <img src="images/history/11-11.png" class="fw-absolute fw-left-0 fw-top-0 fw-z-index-1" alt="">
+                </div>
+            </div>
+
+            <div class="history-item v2-item fw-flex fw-mb-85 fw-pl-210 fw-pr-210">
+                <div class="history-item__content item__order-2 fw-z-index-1 fw-width-3-5">
+                    <div class="history-item__img order-1__img fw-width-1-1 fw-relative">
+                        <img src="images/history/12.png" class="fw-block" alt="">
+                        <span class="history__year-label fw-fz-150 fw-color-pale-yellow">2016 <span class="fw-fz-30">по настоящее время</span></span>
+                    </div>
+
+                    <div class="history-item__text fw-width-1-1 fw-pr-50 fw-pt-40">
+                        <span class="fw-fz-42 fw-block fw-color-pale-yellow fw-font-mr fw-mb-25">Рост бизнеса в России и за рубежом</span>
+                        <p class="fw-margin-0 fw-fz-16 fw-color-dark-text fw-font-mr fw-text-left fw-line-height-30 fw-max-width-520">
+                            Был расширен портфель премиальных брендов: начались
+                            продажи английских крекеров под брендом Carr`s.
+                            Сегодня компания продолжает свое стремительное развитие,
+                            расширяя присутствие не только на отечественном,
+                            но и на зарубежных рынках.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vertical-middle item__order-1 history-item__sub-img fw-relative fw-width-2-5 fw-flex">
+                    <img src="images/history/12-12.png" class="fw-absolute fw-left-0 fw-top-0 fw-z-index-1" alt="">
+                </div>
+            </div>
+
+            <div class="careers fw-grid fw-grid-110 fw-pb-100 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
+                <div class="careers-wrap fw-width-1-2">
+                    <a href="#" class="careers-wrap--item fw-relative">
+                        <div class="fw-transition-400 fw-hover-bg-color-opacity-dark fw-absolute fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-padding-50 fw-flex-center">
+                            <span class="item-title fw-block fw-fz-60 fw-font-ml fw-color-white">Вакансии</span>
+                        </div>
+                        <img src="images/about/8.png" class="fw-width-1-1 fw-block" alt="">
+                    </a>
+                </div>
+
+                <div class="careers-wrap fw-width-1-2">
+                    <a href="#" class="careers-wrap--item fw-relative">
+                        <div class="fw-transition-400 fw-hover-bg-color-opacity-dark fw-absolute fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-padding-50 fw-flex-center">
+                            <span class="item-title fw-block fw-fz-60 fw-font-ml fw-color-white">Бренды</span>
+                        </div>
+                        <img src="images/history/history-drand.png" class="fw-width-1-1 fw-block" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {% include 'partials/scroll-top.twig' %}
+    </div>
+
+    <!-- footer block -->
+    {% include "layouts/footer.twig" %}
+    <!-- footer block end -->
+{% endblock %}

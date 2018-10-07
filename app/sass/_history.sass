@@ -1,0 +1,95 @@
+@import "mixins/mixins"
+
+.history
+	.pale-before
+		position: relative
+		.history-item__content
+			width: fit-content
+			.map-img
+				position: absolute
+				right: -47%
+				top: -58%
+			.history__year-label
+				position: absolute
+				bottom: 0
+				left: -183px
+				right: auto
+				z-index: 1
+		&:before
+			content: ''
+			position: absolute
+			left: -250px
+			width: 250px
+			top: 0
+			height: 100%
+			background-color: $colorLightPaleYellow
+	&__item-bg
+		&:after
+			content: ''
+			position: absolute
+			width: 223%
+			height: calc(100% + 95px)
+			right: 0
+			top: 85px
+			background-color: $colorLightPaleYellow
+
+	.history-item.v2-item
+		.history-item__content.item__order-2
+			.history-item__text
+				padding-left: 0
+			.history__year-label
+				left: -197px
+				right: auto
+		.history-item__content.item__order-1
+			.history-item__text
+				padding-left: 50px
+			.history__year-label
+				right: -206px
+				left: auto
+
+		.history-item__sub-img.item__order-2
+			img
+				left: -200px
+
+	.history-item__content.item__order-1
+		display: flex
+		align-items: flex-start
+		justify-content: flex-start
+		flex-direction: column
+		order: 1
+		.history__year-label
+			position: absolute
+			bottom: 0
+			right: -100px
+			z-index: 10
+
+	.history-item__content.item__order-2
+		display: flex
+		flex-direction: column
+		order: 2
+		.history-item__img
+			display: flex
+			align-items: flex-end
+			justify-content: flex-end
+		.history-item__text
+			padding-left: 120px
+		.history__year-label
+			position: absolute
+			bottom: 0
+			left: -90px
+			z-index: 10
+
+	.history-item__sub-img.item__order-2
+		order: 2
+		img
+			left: 0
+	.history-item__sub-img.item__order-1
+		order: 1
+		img
+			left: auto
+			right: -100px
+	.history-item__sub-img.vertical-middle
+		img
+			z-index: 0
+			top: 50%
+			transform: translateY(-50%)
