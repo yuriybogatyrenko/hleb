@@ -8909,6 +8909,12 @@ ul.tabs li.active {
   transform: rotate(180deg) !important;
 }
 
+.history .history-nav {
+  z-index: 2;
+  position: fixed;
+  left: 8px;
+  top: 251px;
+}
 .history .pale-before {
   position: relative;
 }
@@ -10001,6 +10007,160 @@ ul.tabs li.active {
   }
   .brand .production-mirel__items-footer {
     display: none;
+  }
+}
+@media (max-width: 1830px) {
+  .history .history-nav {
+    left: -31px;
+  }
+}
+@media (max-width: 1550px) {
+  .history .history-item__text span.fw-fz-42, .history .history-item__text span.fw-fz-44 {
+    font-size: 39px;
+  }
+  .history .history-item .history-item__content.item__order-2 .history-item__text {
+    padding-left: 50px;
+  }
+  .history .history-item .history-item__content.item__order-2 .history__year-label {
+    left: -150px;
+  }
+  .history .history-item .history-item__content.item__order-1 .history__year-label {
+    right: -183px;
+  }
+  .history .history-item .history-item__sub-img.item__order-1 img {
+    right: 0;
+  }
+  .history .history-item .history-item__sub-img img {
+    width: 100%;
+  }
+  .history .history-item .history-item__img img {
+    width: 100%;
+  }
+  .history .history-item.v2-item {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .history .history-item.fw-bg-color-light-pale-yellow {
+    padding-left: 80px;
+  }
+}
+@media (max-width: 1250px) {
+  .history .careers {
+    padding-right: 0;
+  }
+  .history .history-item.v2-item {
+    padding-right: 0;
+  }
+  .history .history-item.v2-item .history-item__content.item__order-2 .history-item__text {
+    padding-left: 50px;
+  }
+  .history .fw-width-240 {
+    width: 100px;
+  }
+  .history .history-item.fw-bg-color-light-pale-yellow {
+    padding-left: 0;
+  }
+  .history .history-item.fw-bg-color-light-pale-yellow .history-item__content {
+    width: 100%;
+  }
+  .history .history-item .map-img {
+    display: none;
+  }
+  .history .history-item .history-item__content.item__order-2 .history-item__img {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .history .history-item__sub-img {
+    display: none;
+  }
+  .history .history-item__content {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .history .history-item__content .history-item__text {
+    padding-left: 50px;
+  }
+  .history .history-item__content .history-item__text p {
+    max-width: 900px !important;
+  }
+  .history .history-item__content .history__year-label {
+    left: 50px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .history .careers {
+    padding-left: 0;
+  }
+  .history .careers-wrap {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .history .fw-width-240 {
+    display: none;
+  }
+  .history-nav {
+    display: none;
+  }
+  .history-item {
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 750px) {
+  .history .careers {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+  }
+  .history .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .history span.fw-fz-60, .history .b-breadcrumbs {
+    padding-left: 15px;
+  }
+  .history .fw-mt-inverse-95 {
+    margin-top: 0;
+  }
+  .history-item {
+    margin-bottom: 50px;
+  }
+  .history-item__content .history-item__text {
+    padding-left: 15px !important;
+    padding-right: 15px;
+  }
+  .history-item__content .history-item__text span.fw-fz-42, .history-item__content .history-item__text span.fw-fz-44 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .history-item__content .history-item__text p {
+    max-width: 100% !important;
+    font-size: 14px;
+  }
+  .history .history-item__content .history__year-label {
+    left: 15px !important;
+    top: auto;
+    bottom: -41px !important;
+    font-size: 72px;
+  }
+  .history .history-item__content .history__year-label .fw-fz-30 {
+    font-size: 16px;
+  }
+  .history .history-item.fw-bg-color-light-pale-yellow {
+    padding: 0;
+    background-color: #fff;
   }
 }
 @media (max-width: 1600px) {
