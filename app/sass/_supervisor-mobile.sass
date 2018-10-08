@@ -1,0 +1,58 @@
+@import "mixins/mixins"
+
+@media (max-width: 950px)
+	.supervisor
+		h1
+			font-size: 32px
+			margin-bottom: 20px
+		.fw-color-gray-text
+			span
+				font-size: 12px
+		.vacancy__list
+			margin-top: 33px
+			.vacancy__item
+				.fw-fz-30
+					font-size: 24px
+				.fw-pl-50
+					margin-top: 0
+				.bullet-list
+					li
+						font-size: 16px
+
+@media (max-width: 450px)
+	.supervisor
+		padding-bottom: 50px
+		&__recommendation-form-wrap
+			padding-top: 0
+			margin-top: 55px
+		.fw-fz-30
+			font-size: 20px
+		.recommended-friend-form
+			padding: 0
+			input
+				height: 40px
+				font-size: 12px
+			&__button
+				display: flex
+				align-items: center
+				i
+					font-size: 15px
+		&__button-wrap
+			padding-top: 10px
+		.vacancy__list
+			.vacancy__item
+				.fw-pl-50
+					padding-left: 0
+					.fw-fz-14
+						font-size: 11px
+						color: #a6a6a6
+				.bullet-list
+					margin-top: 0
+					margin-bottom: 0
+					li
+						padding-left: 16px
+						font-size: 14px
+						padding-top: 21px
+						padding-bottom: 21px
+						&:before
+							top: 27px
