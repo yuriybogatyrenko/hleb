@@ -1,0 +1,96 @@
+@import "mixins/mixins"
+
+@media (max-width: 1360px)
+	.ideas
+		&__form
+			.fw-width-1-2
+				width: 100%
+		&__page-description
+			padding-right: 50px
+
+@media (max-width: 1000px)
+	.ideas
+		.fw-width-210
+			display: none
+		&__page-description-wrap
+			flex-direction: column
+			.fw-flex-space-between
+				flex-direction: column
+			.ideas__page-description
+				padding-bottom: 30px
+				padding-right: 0
+		&__content-wrap
+			flex-direction: column
+		&__menu-wrap
+			order: 2
+			display: block !important
+			position: relative
+		&__content
+			order: 1
+		&__menu-and-descriotion-wrap
+			flex-direction: column
+
+@media (max-width: 768px)
+	.ideas
+		padding-bottom: 50px
+		.pagination
+			display: none
+		.fw-button
+			padding-left: 30px
+			padding-right: 30px
+			span
+				font-size: 12px !important
+		.container
+			padding-left: 0
+			padding-right: 0
+		&__bottom
+			padding-left: 15px
+		&__item
+			padding-top: 34px
+			padding-left: 15px
+			padding-right: 15px
+			padding-bottom: 40px
+			.fw-color-pale-yellow.fw-font-ml
+				i.icon-heart,span.fw-fz-24
+					font-size: 18px
+			.fw-fz-30
+				font-size: 18px
+				margin-bottom: 16px
+			.fw-color-gray-text
+				span
+					font-size: 11px
+			.fw-fz-18.fw-line-height-1-5.fw-mb-35
+				margin-bottom: 28px
+				padding-right: 40px
+			.fw-pl-100
+				padding-left: 68px
+				padding-right: 0
+
+		&__menu
+			padding-bottom: 30px
+		&__header
+			padding-left: 15px
+			padding-right: 15px
+		div.fw-mt-100.fw-pt-80
+			display: none
+		&__menu-link
+			font-size: 12px
+		&__menu-wrap
+			left: 80px
+
+		&__send-idea
+			display: none
+		&__page-description-wrap
+			margin-bottom: 40px
+		&__page-description
+			padding-bottom: 0 !important
+			padding-left: 15px
+			padding-right: 15px
+
+		h1
+			font-size: 32px
+			margin-top: 5px
+		.fw-fz-18
+			font-size: 14px
+		div.fw-fz-60
+			display: none
