@@ -17,6 +17,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="fw-flex fw-mt-10">
                 <div class="fw-width-210 fw-flex-shrink-no fw-mr-50 wow fadeInLeft" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
                     <div class="fw-mb-25 fw-pt-5">
@@ -71,27 +72,34 @@
                         </ul>
                     </div>
                 </div>
-                <div class="fw-flex-grow-1 fw-pr-160">
-                    <h1 class="fw-reset fw-fz-60 fw-font-ml fw-line-height-1-0 fw-mb-25 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">Вакансии</h1>
-                    <div class="fw-line-height-1-7 fw-max-width-834 fw-fz-18 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
+
+                <div class="vacancy-content fw-flex-grow-1 fw-pr-160">
+                    <h1 class="vacancy-title fw-reset fw-fz-60 fw-font-ml fw-line-height-1-0 fw-mb-25 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">Вакансии</h1>
+                    <div class="vacancy-description fw-line-height-1-7 fw-max-width-834 fw-fz-18 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
                         Мы обеспечиваем дружелюбную рабочую атмосферу каждому работнику. Если вы заинтересованы в
                         приобретении профессионального опыта и воплощении в жизнь новаторских проектов, ознакомьтесь с
                         открытыми вакансиями.
                     </div>
-
+                    
+                    {# filter on mobile #}
+                    <div class="vacancy__filter-mobile fw-pointer fw-pt-70 fw-pl-15 fw-pr-15 fw-flex fw-flex-middle">
+                        <img src="images/filter.png" alt="">
+                        <span class="fw-text-uppercase fw-block fw-font-mb fw-color-pale-yellow fw-fz-14 fw-ml-10">фильтр вакансий</span>
+                    </div>
+                    {# / #}
                     <div class="vacancies__list fw-grid fw-grid-20 fw-mt-40">
                         {% for i in 1..8 %}
                             <div class="fw-width-1-1 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">
                                 <div
                                     class="vacancies__item fw-relative fw-bg-color-light-pale-yellow fw-padding-60 fw-flex fw-flex-middle">
                                     <div class="vacancies__item-info fw-flex-grow-1">
-                                        <div class="fw-fz-30 fw-mb-25 fw-flex fw-flex-middle">
-                                            <a href="#" class="fw-reset">Менеджер по работе с ключевыми клиентами</a>
-                                            <div class="fw-fz-20 fw-ml-15">
+                                        <div class="item-info__title fw-fz-30 fw-mb-25 fw-flex fw-flex-middle">
+                                            <a href="#" class="fw-reset">Менеджер по работе с ключевыми клиентами <i class="fw-ml-10 fw-hidden icon-arrow mobile-item-arrow fw-fz-18"></i></a>
+                                            <div class="desktop-item-arrow fw-fz-20 fw-ml-15">
                                                 <i class="icon-arrow"></i>
                                             </div>
                                         </div>
-                                        <div class="fw-text-uppercase fw-color-pale-yellow">новосибирск</div>
+                                        <div class="vacancy-city fw-text-uppercase fw-color-pale-yellow">новосибирск</div>
                                     </div>
                                     <div
                                         class="vacancies__item-salary fw-flex-shrink-no fw-color-gray-text fw-fz-18 fw-line-height-1-7 fw-ml-40 fw-text-right">

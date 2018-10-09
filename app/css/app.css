@@ -10905,6 +10905,102 @@ ul.tabs li.active {
   }
 }
 @media (max-width: 1600px) {
+  .vacancy-content {
+    padding-right: 50px;
+  }
+  .vacancy .fw-width-210 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 900px) {
+  .vacancy .vacancies__item {
+    padding: 33px;
+  }
+  .vacancy .vacancies__item .item-info__title {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .vacancy .vacancies__item .item-info__title a {
+    max-width: 80%;
+    font-size: 24px;
+  }
+  .vacancy-content {
+    padding-right: 0;
+  }
+  .vacancy .fw-width-210 {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .vacancy {
+    padding-bottom: 0;
+  }
+  .vacancy .vacancies__bottom {
+    padding-left: 15px;
+  }
+  .vacancy .b-breadcrumbs {
+    padding-left: 15px;
+  }
+  .vacancy .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .vacancy-description {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .vacancy h1.fw-fz-60 {
+    padding-left: 15px;
+    font-size: 32px;
+  }
+  .vacancy .vacancies_not-found {
+    padding-bottom: 66px;
+    padding-top: 60px;
+  }
+  .vacancy .vacancies_not-found .fw-fz-42 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .vacancy .pagination {
+    display: none;
+  }
+  .vacancy .vacancies__item {
+    padding: 32px 15px;
+  }
+  .vacancy .vacancies__item .desktop-item-arrow {
+    display: none;
+  }
+  .vacancy .vacancies__item .mobile-item-arrow {
+    display: inline-block;
+  }
+  .vacancy .vacancies__item .vacancy-city {
+    font-size: 12px;
+  }
+  .vacancy .vacancies__item .item-info__title {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .vacancy .vacancies__item .item-info__title a {
+    max-width: 85%;
+    font-size: 18px;
+  }
+  .vacancy .vacancies__item-salary {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .vacancy .vacancies__item-more {
+    display: none;
+  }
+}
+@media (max-width: 1600px) {
   .lang-slider {
     margin: 15px 0;
   }

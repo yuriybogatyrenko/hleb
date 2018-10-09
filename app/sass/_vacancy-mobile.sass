@@ -1,0 +1,69 @@
+@import "mixins/mixins"
+
+@media (max-width: 1600px)
+	.vacancy
+		&-content
+			padding-right: 50px
+		.fw-width-210
+			margin-right: 0
+
+@media (max-width: 900px)
+	.vacancy
+		.vacancies__item
+			padding: 33px
+			.item-info__title
+				align-items: flex-end
+				a
+					max-width: 80%
+					font-size: 24px
+
+		&-content
+			padding-right: 0
+		.fw-width-210
+			display: none
+
+@media (max-width: 650px)
+	.vacancy
+		padding-bottom: 0
+		.vacancies__bottom
+			padding-left: 15px
+		.b-breadcrumbs
+			padding-left: 15px
+		.container
+			padding-left: 0
+			padding-right: 0
+		&-description
+			padding-left: 15px
+			padding-right: 15px
+			font-size: 14px
+			line-height: 24px
+		h1.fw-fz-60
+			padding-left: 15px
+			font-size: 32px
+		.vacancies_not-found
+			padding-bottom: 66px
+			padding-top: 60px
+			.fw-fz-42
+				font-size: 20px
+				line-height: 28px
+
+		.pagination
+			display: none
+		.vacancies__item
+			padding: 32px 15px
+			.desktop-item-arrow
+				display: none
+			.mobile-item-arrow
+				display: inline-block
+			.vacancy-city
+				font-size: 12px
+			.item-info__title
+				align-items: flex-end
+				a
+					max-width: 85%
+					font-size: 18px
+			&-salary
+				font-size: 16px
+				line-height: 24px
+			&-more
+				display: none
