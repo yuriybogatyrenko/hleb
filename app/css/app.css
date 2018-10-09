@@ -9403,6 +9403,197 @@ ul.tabs li.active {
     height: 300px;
   }
 }
+.corporate-life-slider {
+  display: block !important;
+}
+.corporate-life-slider .owl-nav button:after {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .corporate-life .modern-production .container {
+    padding-bottom: 50px;
+  }
+  .corporate-life .modern-production .container .container-small {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .corporate-life .modern-production-line .item-text--title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .corporate-life .modern-production-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .corporate-life .modern-production-line .modern-production-item-img {
+    margin-top: -315px;
+    width: 100%;
+    position: relative;
+  }
+  .corporate-life .modern-production-line .modern-production-item-text {
+    position: relative;
+    margin: auto;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .corporate-life__text .fw-fz-36 {
+    font-size: 28px;
+  }
+  .corporate-life__bottom-section {
+    margin-bottom: 34px;
+    padding-bottom: 0;
+  }
+  .corporate-life__bottom-section .fw-width-1-2 {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+  .corporate-life__employees {
+    padding: 60px;
+  }
+  .corporate-life__employees .container-small .fw-width-1-2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .corporate-life__text {
+    padding-top: 60px;
+  }
+  .corporate-life__text .fw-fz-36 {
+    text-align: left;
+    font-size: 24px;
+  }
+  .corporate-life__text .fw-fz-16 {
+    color: #a6a6a6;
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 0;
+  }
+  .corporate-life__slider-wrap {
+    padding-bottom: 0;
+  }
+  .corporate-life-slider .owl-dots {
+    display: none;
+  }
+  .corporate-life-slider .owl-nav {
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  .corporate-life-slider .owl-nav button {
+    height: 68px;
+    width: 70px;
+    padding-top: 6px !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .corporate-life-slider .owl-nav button:after {
+    display: block;
+  }
+  .corporate-life .modern-production .container {
+    padding-bottom: 0;
+  }
+  .corporate-life .modern-production .container-line {
+    padding-bottom: 0;
+  }
+  .corporate-life__employees {
+    padding: 70px 0 15px 0;
+  }
+  .corporate-life__employees .container-small .fw-width-1-2 {
+    margin-bottom: 0;
+  }
+  .corporate-life__employees .container-small .fw-width-1-2 .fw-fz-42 {
+    font-size: 24px;
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 700px) {
+  .corporate-life .corporate-life-slider.command-slider .owl-nav button {
+    padding-top: 6px !important;
+  }
+  .corporate-life .breadcrumbs-wrap {
+    margin: 0;
+  }
+  .corporate-life__main-title {
+    padding-top: 0 !important;
+  }
+  .corporate-life .b-breadcrumbs {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .corporate-life__text .fw-fz-36 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .corporate-life__employees {
+    padding: 70px 0 15px 0;
+  }
+  .corporate-life__employees .container-small .fw-width-1-2 {
+    margin-bottom: 0;
+  }
+  .corporate-life__employees .container-small .fw-width-1-2 .fw-fz-42 {
+    padding-right: 20px;
+  }
+  .corporate-life .modern-production-line {
+    margin-bottom: 0;
+  }
+  .corporate-life .modern-production-line .modern-production-item-text {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .corporate-life .modern-production-line .modern-production-item-text .item-text--title {
+    margin-bottom: 30px;
+  }
+  .corporate-life .modern-production-line .modern-production-item-text p {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 1500px) {
   .about .priorities {
     padding-left: 50px;

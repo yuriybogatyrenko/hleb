@@ -1,0 +1,138 @@
+@import "mixins/mixins"
+
+.corporate-life-slider
+	display: block !important
+	.owl-nav
+		button
+			&:after
+				display: none
+@media (max-width: 1400px)
+	.corporate-life
+		.modern-production
+			.container
+				padding-bottom: 50px
+				.container-small
+					padding-left: 0
+					padding-right: 0
+			&-line
+				.item-text--title
+					font-size: 35px
+@media (max-width: 1200px)
+	.corporate-life
+		.modern-production
+			&-line
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				.modern-production-item-img
+					margin-top: -315px
+					width: 100%
+					position: relative
+				.modern-production-item-text
+					position: relative
+					margin: auto
+					padding-right: 60px
+					padding-left: 60px
+@media (max-width: 1100px)
+	.corporate-life
+		&__text
+			.fw-fz-36
+				font-size: 28px
+		&__bottom-section
+			margin-bottom: 34px
+			padding-bottom: 0
+			.fw-width-1-2
+				width: 100%
+				margin-bottom: 26px
+		&__employees
+			padding: 60px
+			.container-small
+				.fw-width-1-2
+					width: 100%
+					margin-bottom: 30px
+@media (max-width: 850px)
+	.corporate-life
+		&__text
+			padding-top: 60px
+			.fw-fz-36
+				text-align: left
+				font-size: 24px
+			.fw-fz-16
+				color: #a6a6a6
+				margin-top: 25px
+				text-align: left
+				margin-left: 0
+		&__slider-wrap
+			padding-bottom: 0
+		&-slider
+			.owl-dots
+				display: none
+			.owl-nav
+				margin: 0
+				display: flex
+				align-items: center
+				background-color: $colorWhite
+				button
+					height: 68px
+					width: 70px
+					padding-top: 6px !important
+
+					display: flex
+					align-items: center
+					justify-content: center
+					&:after
+						display: block
+		.modern-production
+			.container
+				padding-bottom: 0
+				&-line
+					padding-bottom: 0
+		&__employees
+			padding: 70px 0 15px 0
+			.container-small
+				.fw-width-1-2
+					margin-bottom: 0
+					.fw-fz-42
+						font-size: 24px
+						margin-bottom: 37px
+
+@media (max-width: 700px)
+	.corporate-life
+		.corporate-life-slider.command-slider .owl-nav button
+			padding-top: 6px !important
+		.breadcrumbs-wrap
+			margin: 0
+		&__main-title
+			padding-top: 0 !important
+		.b-breadcrumbs
+			padding-left: 15px
+			padding-top: 15px
+			padding-bottom: 30px
+
+
+@media (max-width: 600px)
+	.corporate-life
+		&__text
+			.fw-fz-36
+				font-size: 18px
+				line-height: 32px
+		&__employees
+			padding: 70px 0 15px 0
+			.container-small
+				.fw-width-1-2
+					margin-bottom: 0
+					.fw-fz-42
+						padding-right: 20px
+		.modern-production
+			&-line
+				margin-bottom: 0
+				.modern-production-item-img
+				.modern-production-item-text
+					padding-left: 25px
+					padding-right: 25px
+					padding-top: 35px
+					padding-bottom: 30px
+					.item-text--title
+						margin-bottom: 30px
+					p
+						margin-bottom: 0
