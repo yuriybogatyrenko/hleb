@@ -1,0 +1,73 @@
+@import "mixins/mixins"
+
+@media (max-width: 1550px)
+	.shops
+		&-map__item
+			padding-left: 20px
+		&__items-wrap
+			div.fw-flex-grow-1.fw-relative
+				min-width: 380px
+
+
+@media (max-width: 1400px)
+	.shops
+		&__search-buy
+			.fw-width-1-4
+				&:first-child
+					width: 50%
+@media (max-width: 1325px)
+	.shops
+		&-content
+			.fw-width-3-4
+				width: 100%
+				.shops-map
+					height: 450px
+		&-map__item
+			padding-left: 20px
+		&__items-wrap
+			display: none
+
+@media (max-width: 800px)
+	.shops
+		&__filter
+			.fw-checkbox__content
+				text-transform: none
+		.container
+			padding-left: 0
+			padding-right: 0
+		&-content
+			.fw-width-3-4
+				width: 100%
+				margin-bottom: 0
+				.shops-map
+					height: 400px
+		.breadcrumbs-wrap
+			padding-top: 5px
+			padding-left: 15px
+		&__search-buy
+			margin-top: 0
+			padding-left: 15px
+			padding-right: 15px
+			.desktop-shops-index-input
+				display: none
+			.mobile-shops-index-input
+				display: flex
+				position: relative
+				&:after
+					font-family: "icomoon"
+					content: "\e90e"
+					position: absolute
+					right: 3px
+					top: 53%
+					transform: translateY(-50%)
+					width: 20px
+					height: 20px
+			.fw-width-1-4
+				width: 100%
+				margin-bottom: 30px
+				&:first-child
+					width: 100%
+
+		h1.fw-fz-60
+			font-size: 32px
+			padding-left: 15px

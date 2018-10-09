@@ -6,25 +6,30 @@
     <!-- Header block -->
     {% include "layouts/header.twig" %}
     <!-- Header block end -->
-    <div class="contacts">
+    <div class="shops">
         <div class="container">
             <div class="">
                 <div class="">
-                    <div class="fw-pt-20 fw-pb-20">
+                    <div class="breadcrumbs-wrap fw-pt-20 fw-pb-20">
                         {% include "partials/breadcrumbs.twig" %}
                     </div>
 
                     <div class="fw-pt-10 fw-pb-100">
-                        <div class="fw-block fw-color-dark-text fw-fz-60 fw-font-ml wow fadeInUp"
+                        <h1 class="fw-block fw-color-dark-text fw-margin-0 fw-fz-60 fw-font-ml wow fadeInUp"
                              data-wow-offset="200" data-wow-duration="2s"
                              data-wow-delay=".25s">
                             Где купить
-                        </div>
+                        </h1>
 
-                        <div class="fw-grid fw-grid-50 fw-flex fw-flex-middle fw-mt-35">
-                            <div class="fw-width-1-4">
+                        <div class="shops__search-buy fw-grid fw-grid-50 fw-flex fw-flex-middle fw-mt-35">
+                            <div class="fw-width-1-4 desktop-shops-index-input">
                                 <input type="text" placeholder="поиск по почтовому индексу или городу" class="form__text-input fw-text-uppercase">
                             </div>
+
+                            <div class="fw-mt-15 fw-width-1-4 mobile-shops-index-input fw-hidden fw-flex">
+                                <input type="text" placeholder="поиск по городу" class="fw-pr-20 form__text-input fw-text-uppercase">
+                            </div>
+
                             <div class="fw-width-1-4">
                                 <select class="nice-select form__select">
                                     <option value="">СТАНЦИЯ МЕТРО</option>
@@ -34,9 +39,151 @@
                                 <a href="#" class="fw-font-msb fw-text-uppercase fw-reset fw-color-pale-yellow fw-text-underline-hover">Показать все</a>
                             </div>
                         </div>
+                        {# filter on mobile #}
+                        <div class="shops__filter-mobile fw-width-1-1 fw-pointer fw-pt-70 fw-pl-15 fw-pr-15 fw-flex fw-flex-middle fw-flex-space-between">
+                            <div class="js-shops__filter-open shops__filter-open fw-flex fw-pointer fw-flex-middle fw-width-3-5">
+                                <img src="images/filter.png" alt="">
+                                <span class="fw-text-uppercase fw-block fw-font-mb fw-color-pale-yellow fw-fz-14 fw-ml-10">фильтр вакансий</span>
+                            </div>
 
-                        <div class="fw-grid fw-grid-50 fw-flex fw-mt-50">
-                            <div class="fw-width-1-4 fw-flex">
+                            <div class="fw-pointer shops__filter-reset">
+                                <span class="fw-width-2-5 fw-text-uppercase fw-block fw-font-mb fw-color-pale-yellow fw-fz-14 fw-ml-10">сбросить</span>
+                            </div>
+                        </div>
+
+                        <div class="shops__filter fw-hidden fw-pl-15 fw-pr-25 fw-pt-35 fw-pb-0">
+                            <div class="js-close-shops-filter fw-flex fw-flex-right">
+                                <img src="images/close.png" class="fw-pointer" alt="">
+                            </div>
+
+                            <form action="">
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Все</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Carr's</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">ELMARINO</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">HAMLE</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Jr. Körner</span>
+                                    </label>
+                                </div>
+
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Jules Destrooper</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">La Kukuruza</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Merba</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Mirel</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Tago</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">ULKER</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Мой</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Русская нива</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Усладов</span>
+                                    </label>
+                                </div>
+
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">Частная галерея</span>
+                                    </label>
+                                </div>
+                            </form>
+
+                        </div>
+                        {# / #}
+
+                        <div class="shops-content fw-grid fw-grid-50 fw-flex fw-mt-50">
+                            <div class="shops__items-wrap fw-width-1-4 fw-flex">
                                 <div class="fw-relative fw-flex-grow-1">
                                     <div class="custom-scrollbar fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1">
                                         {% for i in 1..50 %}

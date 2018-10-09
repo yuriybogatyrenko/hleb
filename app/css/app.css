@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "MontserratRegular";
   src: url("../fonts/MontserratRegular/MontserratRegular.ttf");
@@ -10998,6 +10999,94 @@ ul.tabs li.active {
   }
   .vacancy .vacancies__item-more {
     display: none;
+  }
+}
+@media (max-width: 1550px) {
+  .shops-map__item {
+    padding-left: 20px;
+  }
+  .shops__items-wrap div.fw-flex-grow-1.fw-relative {
+    min-width: 380px;
+  }
+}
+@media (max-width: 1400px) {
+  .shops__search-buy .fw-width-1-4:first-child {
+    width: 50%;
+  }
+}
+@media (max-width: 1325px) {
+  .shops-content .fw-width-3-4 {
+    width: 100%;
+  }
+  .shops-content .fw-width-3-4 .shops-map {
+    height: 450px;
+  }
+  .shops-map__item {
+    padding-left: 20px;
+  }
+  .shops__items-wrap {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .shops__filter .fw-checkbox__content {
+    text-transform: none;
+  }
+  .shops .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .shops-content .fw-width-3-4 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .shops-content .fw-width-3-4 .shops-map {
+    height: 400px;
+  }
+  .shops .breadcrumbs-wrap {
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+  .shops__search-buy {
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .shops__search-buy .desktop-shops-index-input {
+    display: none;
+  }
+  .shops__search-buy .mobile-shops-index-input {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .shops__search-buy .mobile-shops-index-input:after {
+    font-family: "icomoon";
+    content: "";
+    position: absolute;
+    right: 3px;
+    top: 53%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  .shops__search-buy .fw-width-1-4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .shops__search-buy .fw-width-1-4:first-child {
+    width: 100%;
+  }
+  .shops h1.fw-fz-60 {
+    font-size: 32px;
+    padding-left: 15px;
   }
 }
 @media (max-width: 1600px) {

@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    $('.js-shops__filter-open').on('click', function () {
+       $('.shops__filter').slideToggle();
+    });
+
+    $('.js-close-shops-filter').on('click', function () {
+        $('.shops__filter').slideToggle();
+    });
 
     ymaps.ready(init);
 
