@@ -21,7 +21,7 @@
                             Где купить
                         </h1>
 
-                        <div class="shops__search-buy fw-grid fw-grid-50 fw-flex fw-flex-middle fw-mt-35">
+                        <div class="shops__search-buy fw-grid fw-grid-50 fw-flex fw-flex-middle fw-mt-35 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".35s">
                             <div class="fw-width-1-4 desktop-shops-index-input">
                                 <input type="text" placeholder="поиск по почтовому индексу или городу" class="form__text-input fw-text-uppercase">
                             </div>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         {# filter on mobile #}
-                        <div class="shops__filter-mobile fw-width-1-1 fw-pointer fw-pt-70 fw-pl-15 fw-pr-15 fw-flex fw-flex-middle fw-flex-space-between">
+                        <div class="shops__filter-mobile fw-hidden fw-width-1-1 fw-pointer fw-pt-70 fw-pl-15 fw-pr-15 fw-flex fw-flex-middle fw-flex-space-between">
                             <div class="js-shops__filter-open shops__filter-open fw-flex fw-pointer fw-flex-middle fw-width-3-5">
                                 <img src="images/filter.png" alt="">
                                 <span class="fw-text-uppercase fw-block fw-font-mb fw-color-pale-yellow fw-fz-14 fw-ml-10">фильтр вакансий</span>
@@ -185,7 +185,7 @@
                         <div class="shops-content fw-grid fw-grid-50 fw-flex fw-mt-50">
                             <div class="shops__items-wrap fw-width-1-4 fw-flex">
                                 <div class="fw-relative fw-flex-grow-1">
-                                    <div class="custom-scrollbar fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1">
+                                    <div class="custom-scrollbar fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1  wow fadeIn" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".45s">
                                         {% for i in 1..50 %}
                                             <div class="shops-map__item fw-padding-30 fw-pl-40 fw-pr-40 fw-hover-bg-color-light-pale-yellow js-toggle-item">
                                                 <div class="fw-fz-30 fw-font-ml fw-flex fw-flex-middle fw-flex-space-between js-toggle-header">
@@ -207,7 +207,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="fw-width-3-4">
+                            <div class="fw-width-3-4  wow fadeInUp" data-wow-offset="100" data-wow-duration="3s" data-wow-delay=".45s">
                                 <div id="shops-map" class="shops-map"></div>
                             </div>
                         </div>

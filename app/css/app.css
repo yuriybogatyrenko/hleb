@@ -10640,7 +10640,10 @@ ul.tabs li.active {
     padding-left: 0;
     padding-right: 0;
   }
-  .history span.fw-fz-60, .history .b-breadcrumbs {
+  .history h1 {
+    font-size: 32px;
+  }
+  .history h1.fw-fz-60, .history .b-breadcrumbs {
     padding-left: 15px;
   }
   .history .fw-mt-inverse-95 {
@@ -11026,6 +11029,13 @@ ul.tabs li.active {
   }
   .shops__items-wrap {
     display: none;
+  }
+  .shops__filter-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (max-width: 800px) {
