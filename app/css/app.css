@@ -9412,6 +9412,9 @@ ul.tabs li.active {
 }
 
 @media (max-width: 1400px) {
+  .corporate-life h1.fw-fz-60 {
+    padding-left: 0;
+  }
   .corporate-life .modern-production .container {
     padding-bottom: 50px;
   }
