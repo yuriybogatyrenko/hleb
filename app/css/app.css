@@ -9456,6 +9456,9 @@ ul.tabs li.active {
   }
 }
 @media (max-width: 1100px) {
+  .corporate-life h1.fw-fz-60 {
+    font-size: 40px;
+  }
   .corporate-life__text .fw-fz-36 {
     font-size: 28px;
   }
@@ -9550,6 +9553,12 @@ ul.tabs li.active {
   }
 }
 @media (max-width: 700px) {
+  .corporate-life h1.fw-fz-60 {
+    font-size: 32px;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
   .corporate-life .corporate-life-slider.command-slider .owl-nav button {
     padding-top: 6px !important;
   }
