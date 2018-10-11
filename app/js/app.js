@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('.shops__filter').slideToggle();
     });
 
-    ymaps.ready(init);
+    // ymaps.ready(init);
 
     function init() {
         // index map
@@ -368,9 +368,7 @@ $('.js-toggle-item').on('click', function (e) {
 // ________________________________________
 $(window).on("load", function () {
     $(".map-city-select .list").mCustomScrollbar();
-    console.log('h2')
     setTimeout(function () {
-        console.log('hi')
         $('.custom-scrollbar').mCustomScrollbar();
     }, 1000);
 });
