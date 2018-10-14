@@ -1061,6 +1061,18 @@
   min-height: 50px;
 }
 
+.fw-height-80 {
+  height: 80px;
+}
+
+.fw-max-height-80 {
+  max-height: 80px;
+}
+
+.fw-min-height-80 {
+  min-height: 80px;
+}
+
 .fw-height-138 {
   height: 138px;
 }
@@ -6711,6 +6723,24 @@
   clear: both;
 }
 
+.fw-text-overflow-5 {
+  overflow: hidden;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.fw-text-overflow-10 {
+  overflow: hidden;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
 .fw-float-left {
   float: left;
 }
@@ -7543,6 +7573,10 @@ h1 {
   background-color: #a61c35;
   z-index: 0;
   opacity: 0;
+}
+
+.modern-production-item-img-box-image {
+  background-color: #caa98b;
 }
 
 .modern-production-line:hover .modern-production-item-img-box-image {
@@ -9088,6 +9122,7 @@ ul.tabs li.active {
   border-radius: 100%;
 }
 .priorities-wrap-tabs-tab.active {
+  position: relative;
   -webkit-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -10059,6 +10094,12 @@ ul.tabs li.active {
     transform: translateY(-50%);
   }
 }
+.contacts .modern-production-item-img-box-image {
+  min-width: 800px;
+  height: 600px;
+  max-height: 600px;
+}
+
 @media (max-width: 1500px) {
   .contacts .modern-production-line {
     display: -webkit-box;
@@ -10132,6 +10173,23 @@ ul.tabs li.active {
     padding-left: 0;
     width: 100%;
     font-size: 12px;
+  }
+}
+@media (max-width: 1350px) {
+  .contacts .container .feedback-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contacts__questions {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contacts .fw-bg-color-light-pale-yellow {
+    background-color: #fff;
+  }
+  .contacts .container-small {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (max-width: 900px) {
@@ -10416,6 +10474,50 @@ ul.tabs li.active {
   .brand {
     overflow: hidden;
   }
+  .brand .fw-width-680 {
+    padding-bottom: 0;
+  }
+  .brand__description {
+    display: none;
+  }
+  .brand__description-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .brand__description-title i {
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-left: 15px;
+    font-size: 30px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  .brand__description-title.active i {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
   .brand .fw-bg-color-light-pale-yellow .fw-pb-100 {
     padding-bottom: 0;
   }
@@ -10543,6 +10645,11 @@ ul.tabs li.active {
   }
   .brand .production-mirel__items-footer {
     display: none;
+  }
+}
+@media (min-width: 550px) {
+  .brand__description {
+    display: block !important;
   }
 }
 @media (max-width: 1830px) {
@@ -11665,6 +11772,19 @@ ul.tabs li.active {
   }
 }
 @media (max-width: 600px) {
+  .popup {
+    padding: 15px;
+  }
+  .popup span.fw-fz-38 {
+    font-size: 23px;
+  }
+  .popup .fw-mb-40 {
+    margin-bottom: 15px;
+  }
+  .popup .fw-checkbox__placeholder {
+    min-width: 20px;
+  }
+
   .brands-mobile .brands-items-line-item-overlay i {
     font-size: 14px;
   }
@@ -11794,8 +11914,8 @@ ul.tabs li.active {
   }
   .brands-mobile .brands-items-line-item-overlay p {
     font-size: 10px;
-    line-height: 13px;
-    margin-bottom: 5px;
+    line-height: 12px;
+    margin-bottom: 0;
     margin-top: 5px;
   }
   .brands-mobile .brands-items-line-item-overlay img {
@@ -11855,7 +11975,7 @@ ul.tabs li.active {
 
   .brands-mobile .brands-items-line-item-overlay p {
     font-size: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
     margin-top: 5px;
   }
   .brands-mobile .brands-items-line-item-overlay img {

@@ -87,6 +87,23 @@
 @media (max-width: 550px)
 	.brand
 		overflow: hidden
+		.fw-width-680
+			padding-bottom: 0
+		&__description
+			display: none
+		&__description-title
+			display: flex
+			align-items: center
+			justify-content: space-between
+			i
+				display: block
+				transition: all .5s ease
+				margin-left: 15px
+				font-size: 30px
+				transform: rotate(-90deg)
+		&__description-title.active
+			i
+				transform: rotate(0deg)
 		.fw-bg-color-light-pale-yellow
 			.fw-pb-100
 				padding-bottom: 0
@@ -160,3 +177,8 @@
 				display: none
 			&__items-footer
 				display: none
+
+@media (min-width: 550px)
+	.brand
+		&__description
+			display: block !important

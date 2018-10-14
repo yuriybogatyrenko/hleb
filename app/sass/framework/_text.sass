@@ -4,6 +4,14 @@
     content: ''
     clear: both
 
+@each $value in 5,10
+  .fw-text-overflow-#{$value}
+    overflow: hidden
+    text-overflow: clip
+    display: -webkit-box
+    -webkit-line-clamp: #{$value}
+    -webkit-box-orient: vertical
+
 @each $value in left, right
   .fw-float-#{$value}
     float: $value
