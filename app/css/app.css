@@ -7554,8 +7554,13 @@ h1 {
   z-index: 1;
 }
 
+.brands .brands-items-line-item.fw-width-1-1.fw-pb-70 {
+  background-color: #fff;
+}
 .brands-items-line-item {
   position: relative;
+  min-height: 335px;
+  background-color: #fdf7f2;
 }
 .brands-items-line-item:hover .brands-items-line-item-overlay {
   opacity: 1;
@@ -11365,6 +11370,11 @@ ul.tabs li.active {
     padding-left: 0;
   }
 }
+@media (max-width: 1380px) {
+  .brands-items-line-item {
+    min-height: auto;
+  }
+}
 @media (max-width: 1350px) {
   .partnership-section-img {
     width: 55%;
@@ -11575,6 +11585,10 @@ ul.tabs li.active {
 
   .brands {
     display: none;
+  }
+
+  .brands-mobile {
+    display: block;
   }
 
   .history-in-numbers-item {
