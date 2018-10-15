@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
 
     $('.js-brand__description-title').on('click', function () {
-       if($(document).width() <= 550){
+       if($(document).width() <= 750){
            $(this).toggleClass('active');
            $('.js-brand__description').slideToggle();
        }
@@ -181,10 +181,13 @@ $('.js-command-slider').owlCarousel({
 });
 
 $('.priorities .js-priorities-slider').owlCarousel({
+    center: true,
     items: 1,
+    loop: false,
     dots: false,
-    nav: false,
     margin: 0,
+    stagePadding:20,
+    nav: false,
     smartSpeed: 350,
 });
 

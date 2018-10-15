@@ -141,39 +141,41 @@
 
                 <div class="priorities-mobile fw-hidden fw-pl-15 fw-pr-15">
                     <div class="js-priorities-slider owl-carousel owl-theme priorities-slider">
-                        <div class="priorities-slide">
-                            <span class="fw-block fw-width-fit-content priorities-slide--title fw-fz-24 fw-font-ml fw-text-left fw-color-dark-red fw-mb-30">Безопасность</span>
-                            <p  class="priorities-slide--description fw-font-mr fw-fz-12 fw-color-dark-text fw-pb-10 fw-margin-0">
-                                Мы ставим цель уменьшения
-                                травматизма, аварий и укрепления
-                                здоровья путем:
-                            </p>
+                        {% for i in 1..3  %}
+                            <div class="priorities-slide">
+                                <span class="fw-block fw-width-fit-content priorities-slide--title fw-fz-24 fw-font-ml fw-text-left fw-color-dark-red fw-mb-30">Безопасность</span>
+                                <p  class="priorities-slide--description fw-font-mr fw-fz-12 fw-color-dark-text fw-pb-10 fw-margin-0">
+                                    Мы ставим цель уменьшения
+                                    травматизма, аварий и укрепления
+                                    здоровья путем:
+                                </p>
 
-                            <ul class="priorities-slide--list fw-fz-12 fw-font-mr fw-color-dark-text fw-list-style-type fw-pl-0">
-                                <li class="fw-mt-10 fw-mb-10 fw-pl-15 fw-relative">
-                                    управления рисками
-                                    возможного травматизма
-                                    и аварий
-                                </li>
+                                <ul class="priorities-slide--list fw-fz-12 fw-font-mr fw-color-dark-text fw-list-style-type fw-pl-0">
+                                    <li class="fw-mt-10 fw-mb-10 fw-pl-15 fw-relative">
+                                        управления рисками
+                                        возможного травматизма
+                                        и аварий
+                                    </li>
 
-                                <li class="fw-mt-10 fw-mb-10 fw-pl-15 fw-relative">
-                                    обучения безопасным методам
-                                    производства работ
-                                </li>
+                                    <li class="fw-mt-10 fw-mb-10 fw-pl-15 fw-relative">
+                                        обучения безопасным методам
+                                        производства работ
+                                    </li>
 
-                                <li class="fw-mt-10 fw-mb-10 fw-pl-15 fw-relative">
-                                    вовлеченности коллег в культуру
-                                    безопасности труда здоровья
-                                </li>
+                                    <li class="fw-mt-10 fw-mb-10 fw-pl-15 fw-relative">
+                                        вовлеченности коллег в культуру
+                                        безопасности труда здоровья
+                                    </li>
 
-                                <li class="fw-mt-10 fw-mb-10 fw-pl-15 fw-relative">
-                                    приверженности ценностям
-                                    и принципам компании,
-                                    служащим основой
-                                    для безопасности труда.
-                                </li>
-                            </ul>
-                        </div>
+                                    <li class="fw-mt-10 fw-mb-10 fw-pl-15 fw-relative">
+                                        приверженности ценностям
+                                        и принципам компании,
+                                        служащим основой
+                                        для безопасности труда.
+                                    </li>
+                                </ul>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

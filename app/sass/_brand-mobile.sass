@@ -8,6 +8,8 @@
 			padding-right: 0
 			.fw-width-210
 				display: none
+			&__list-wrap
+				display: block !important
 			&__items-desktop
 				.fw-width-1-4
 					img
@@ -38,6 +40,10 @@
 
 @media (max-width: 1000px)
 	.brand
+		&-bottom-section
+			.fw-flex-grow
+				&:nth-child(n+6)
+					display: none
 		.brand-bottom-section
 			margin-top: 25px
 			margin-bottom: 50px
@@ -73,19 +79,17 @@
 			&__items-desktop
 				.fw-width-1-4
 					width: 33.3%
-
-@media (max-width: 700px)
+@media (max-width: 900px)
 	.brand
 		.production-mirel
 			&__items-desktop
 				.fw-width-1-4
 					width: 50%
+@media (max-width: 750px)
+	.brand
 		.fw-width-680
 			width: 100%
 			padding: 50px 30px
-
-@media (max-width: 550px)
-	.brand
 		overflow: hidden
 		.fw-width-680
 			padding-bottom: 0
@@ -177,8 +181,13 @@
 				display: none
 			&__items-footer
 				display: none
-
-@media (min-width: 550px)
+@media (max-width: 460px)
+	.brand
+		&-bottom-section
+			.fw-flex-grow
+				&:nth-child(n+4)
+					display: none
+@media (min-width: 750px)
 	.brand
 		&__description
 			display: block !important

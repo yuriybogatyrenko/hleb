@@ -310,8 +310,14 @@
 			flex-direction: column
 			.slider-all-history-mobile
 				display: block
+				bottom: -40px
+				padding-top: 30px
+				padding-bottom: 25px
+			.fw-mobile-ovh
+				overflow: hidden
 			&-scale
 				position: relative
+				overflow: unset
 			.fw-min-height-760
 				padding: 20px 0 50px 0 !important
 				min-height: auto !important
@@ -319,7 +325,8 @@
 				p
 					font-size: 14px
 				span
-					max-width: 50%
+					max-width: 70%
+					padding-right: 35px
 				h1
 					color: $colorPaleYellow
 					font-style: normal
@@ -471,6 +478,11 @@
 		width: 91%
 		right: 15px
 
+	.history-in-numbers-item
+		&:first-child
+			.history-in-numbers-item--number
+				&:after
+					right: -20px
 
 @media (max-width: 340px)
 	.recommedation-grid
