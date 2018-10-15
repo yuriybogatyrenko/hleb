@@ -8928,7 +8928,7 @@ ul.tabs li.active {
   }
   .fixed-menu-left .soc-menu {
     padding-bottom: 50px;
-    padding-left: 40px;
+    padding-left: 44px;
     padding-top: 35px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -9029,6 +9029,7 @@ ul.tabs li.active {
   .fixed-menu-left .fixed-menu-tabs-navigation li.active .mobile-sub-menu {
     height: auto;
     margin-top: 20px;
+    padding-bottom: 12px;
   }
   .fixed-menu-left .fixed-menu-tabs-navigation li.active .icon-keyboard_arrow_right {
     -webkit-transition: all 0.6s ease;
@@ -9119,7 +9120,7 @@ ul.tabs li.active {
   }
   .fixed-menu-left .soc-menu {
     padding-bottom: 50px;
-    padding-left: 40px;
+    padding-left: 44px;
     padding-top: 35px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -9220,6 +9221,7 @@ ul.tabs li.active {
   .fixed-menu-left .fixed-menu-tabs-navigation li.active .mobile-sub-menu {
     height: auto;
     margin-top: 20px;
+    padding-bottom: 20px;
   }
   .fixed-menu-left .fixed-menu-tabs-navigation li.active .icon-keyboard_arrow_right {
     -webkit-transition: all 0.6s ease;
