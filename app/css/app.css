@@ -9026,10 +9026,13 @@ ul.tabs li.active {
   .fixed-menu-left .fixed-menu-tabs-navigation li:after {
     display: none;
   }
+  .fixed-menu-left .fixed-menu-tabs-navigation li.active {
+    padding-bottom: 23px;
+  }
   .fixed-menu-left .fixed-menu-tabs-navigation li.active .mobile-sub-menu {
     height: auto;
     margin-top: 20px;
-    padding-bottom: 12px;
+    padding-bottom: 0px;
   }
   .fixed-menu-left .fixed-menu-tabs-navigation li.active .icon-keyboard_arrow_right {
     -webkit-transition: all 0.6s ease;
@@ -9218,10 +9221,13 @@ ul.tabs li.active {
   .fixed-menu-left .fixed-menu-tabs-navigation li:after {
     display: none;
   }
+  .fixed-menu-left .fixed-menu-tabs-navigation li.active {
+    padding-bottom: 23px;
+  }
   .fixed-menu-left .fixed-menu-tabs-navigation li.active .mobile-sub-menu {
     height: auto;
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
   .fixed-menu-left .fixed-menu-tabs-navigation li.active .icon-keyboard_arrow_right {
     -webkit-transition: all 0.6s ease;
