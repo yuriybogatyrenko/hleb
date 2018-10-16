@@ -8961,8 +8961,7 @@ ul.tabs li.active {
     right: 45px;
     width: 29px;
     height: 30px;
-    background-image: url("/images/menu-close.png");
-    background-repeat: no-repeat;
+    background: url("../images/menu-close.png") no-repeat;
   }
   .fixed-menu-left .fixed-menu-tabs-navigation li {
     width: 100%;
@@ -9156,8 +9155,7 @@ ul.tabs li.active {
     right: 45px;
     width: 29px;
     height: 30px;
-    background-image: url("/images/menu-close.png");
-    background-repeat: no-repeat;
+    background: url("../images/menu-close.png") no-repeat;
   }
   .fixed-menu-left .fixed-menu-tabs-navigation li {
     width: 100%;
