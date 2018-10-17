@@ -11285,7 +11285,8 @@ ul.tabs li.active {
     left: 80px;
   }
   .ideas__send-idea {
-    display: none;
+    padding-left: 15px;
+    margin-top: 20px;
   }
   .ideas__page-description-wrap {
     margin-bottom: 40px;
