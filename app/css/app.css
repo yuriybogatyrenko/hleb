@@ -10697,6 +10697,9 @@ ul.tabs li.active {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .brand__description p {
+    margin-bottom: 0;
+  }
   .brand__description .hide-description-on-mobile {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -10712,6 +10715,9 @@ ul.tabs li.active {
     -moz-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+  }
+  .brand__description .hide-description-on-mobile p {
+    margin-top: 20px;
   }
   .brand__description .hide-description-on-mobile p:last-child {
     margin-bottom: 0;
