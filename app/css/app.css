@@ -11399,7 +11399,7 @@ ul.tabs li.active {
     align-items: flex-end;
   }
   .vacancy .vacancies__item .item-info__title a {
-    max-width: 85%;
+    max-width: 95%;
     font-size: 18px;
   }
   .vacancy .vacancies__item-salary {
@@ -11407,7 +11407,28 @@ ul.tabs li.active {
     line-height: 24px;
   }
   .vacancy .vacancies__item-more {
-    display: none;
+    width: 170px;
+  }
+}
+@media (max-width: 400px) {
+  .vacancy .vacancies__item .item-info__title {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .vacancy .vacancies__item .item-info__title a {
+    max-width: 100%;
+  }
+  .vacancy .vacancies__item-more {
+    width: 140px;
+  }
+  .vacancy .vacancies__item-more p {
+    font-size: 10px;
+  }
+  .vacancy .vacancies__item-more p i {
+    font-size: 12px;
   }
 }
 @media (max-width: 1550px) {
