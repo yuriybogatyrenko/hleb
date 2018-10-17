@@ -94,7 +94,28 @@
 		.fw-width-680
 			padding-bottom: 0
 		&__description
-			display: none
+			display: flex
+			flex-direction: column
+			.hide-description-on-mobile
+				transition: all .5s ease
+				opacity: 0
+				margin-bottom: 0
+				visibility: visible
+				height: 0
+				overflow: hidden
+				order: 1
+				p:last-child
+					margin-bottom: 0
+			label
+				display: block
+			label,input
+				order: 2
+			input[type="checkbox"]:checked + .hide-description-on-mobile
+				transition: all .5s ease
+				height: auto
+				opacity: 1
+				margin-bottom: 10px
+				visibility: visible
 		&__description-title
 			display: flex
 			align-items: center

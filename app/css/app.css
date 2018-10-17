@@ -10684,7 +10684,57 @@ ul.tabs li.active {
     padding-bottom: 0;
   }
   .brand__description {
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .brand__description .hide-description-on-mobile {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+    margin-bottom: 0;
+    visibility: visible;
+    height: 0;
+    overflow: hidden;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .brand__description .hide-description-on-mobile p:last-child {
+    margin-bottom: 0;
+  }
+  .brand__description label {
+    display: block;
+  }
+  .brand__description label, .brand__description input {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .brand__description input[type="checkbox"]:checked + .hide-description-on-mobile {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: auto;
+    opacity: 1;
+    margin-bottom: 10px;
+    visibility: visible;
   }
   .brand__description-title {
     display: -webkit-box;
@@ -12099,15 +12149,55 @@ ul.tabs li.active {
     padding-bottom: 30px;
     padding-right: 10px;
     max-width: 130px;
-  }
-  .recommedation-grid .recommedation-item-link .recommedation-hide-on-mobile {
-    display: none;
-  }
-  .recommedation-grid .recommedation-item-link .fw-hidden {
-    display: block;
+    height: 130px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .recommedation-grid .recommedation-item-link p {
     font-size: 12px;
+  }
+  .recommedation-grid .recommedation-item-link .recommedation-hide-on-mobile {
+    font-size: 9px;
+    line-height: 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .recommedation-grid .recommedation-item-link .recommedation-hide-on-mobile i {
+    display: none;
+    margin-top: 8px;
   }
   .recommedation-grid .recommedation-item-subtitle {
     font-size: 10px;

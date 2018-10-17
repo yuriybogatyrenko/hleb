@@ -7,13 +7,6 @@ $(document).ready(function () {
         $('.shops__filter').slideToggle();
     });
 
-    $('.js-brand__description-title').on('click', function () {
-       if($(document).width() <= 750){
-           $(this).toggleClass('active');
-           $('.js-brand__description').slideToggle();
-       }
-    });
-
     // ymaps.ready(init);
 
     function init() {
