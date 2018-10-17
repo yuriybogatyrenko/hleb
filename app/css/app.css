@@ -413,6 +413,14 @@
   max-width: 900px;
 }
 
+.fw-width-950 {
+  width: 950px;
+}
+
+.fw-max-width-950 {
+  max-width: 950px;
+}
+
 .fw-width-1-1 {
   width: 100%;
 }
@@ -655,6 +663,15 @@
 
   .fw-max-width-900\@xl {
     max-width: 900px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fw-width-950\@xl {
+    width: 950px;
+  }
+
+  .fw-max-width-950\@xl {
+    max-width: 950px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -920,6 +937,15 @@
 
   .fw-max-width-900\@xs {
     max-width: 900px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fw-width-950\@xs {
+    width: 950px;
+  }
+
+  .fw-max-width-950\@xs {
+    max-width: 950px;
   }
 }
 @media screen and (max-width: 767px) {

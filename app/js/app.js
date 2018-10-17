@@ -191,7 +191,15 @@ $('.js-mirel-mobile__slider').owlCarousel({
     nav: true,
     margin: 0,
     smartSpeed: 350,
-    navText: ['<i class="icon-arrow fw-fz-16"></i>', '<i class="icon-arrow fw-fz-16"></i>']
+    navText: ['<i class="icon-arrow fw-fz-16"></i>', '<i class="icon-arrow fw-fz-16"></i>'],
+    responsive: {
+        0: {
+            items: 1
+        },
+        450: {
+            items: 2
+        }
+    }
 });
 
 //owl
