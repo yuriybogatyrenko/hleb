@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('.shops__filter').slideToggle();
     });
 
-    // ymaps.ready(init);
+    ymaps.ready(init);
 
     function init() {
         // index map
