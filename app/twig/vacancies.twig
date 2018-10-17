@@ -80,13 +80,91 @@
                         приобретении профессионального опыта и воплощении в жизнь новаторских проектов, ознакомьтесь с
                         открытыми вакансиями.
                     </div>
-                    
+
                     {# filter on mobile #}
-                    <div class="vacancy__filter-mobile fw-hidden fw-pointer fw-pt-70 fw-pl-15 fw-pr-15 fw-flex fw-flex-middle">
-                        <img src="images/filter.png" alt="">
-                        <span class="fw-text-uppercase fw-block fw-font-mb fw-color-pale-yellow fw-fz-14 fw-ml-10">фильтр вакансий</span>
+                    <div class="shops__filter-mobile fw-hidden fw-width-1-1 fw-pointer fw-pt-70 fw-pl-15 fw-pr-15 fw-flex fw-flex-middle fw-flex-space-between">
+                        <div class="js-shops__filter-open shops__filter-open fw-flex fw-pointer fw-flex-middle fw-width-3-5">
+                            <img src="images/filter.png" alt="">
+                            <span class="fw-text-uppercase fw-block fw-font-mb fw-color-pale-yellow fw-fz-14 fw-ml-10">фильтр вакансий</span>
+                        </div>
+                    </div>
+
+                    <div class="shops__filter fw-hidden fw-pl-15 fw-pr-25 fw-pt-35 fw-pb-0">
+                        <div class="js-close-shops-filter fw-flex fw-flex-right">
+                            <img src="images/close.png" class="fw-pointer" alt="">
+                        </div>
+
+                        <form action="">
+                            <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                <label class="fw-checkbox fw-text-uppercase">
+                                    <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                    <i class="fw-checkbox__placeholder"></i>
+                                    <span class="fw-checkbox__content fw-fz-14">Все</span>
+                                </label>
+                            </div>
+
+                            <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                <label class="fw-checkbox fw-text-uppercase">
+                                    <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                    <i class="fw-checkbox__placeholder"></i>
+                                    <span class="fw-checkbox__content fw-fz-14">Москва</span>
+                                </label>
+                            </div>
+
+                            <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                <label class="fw-checkbox fw-text-uppercase">
+                                    <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                    <i class="fw-checkbox__placeholder"></i>
+                                    <span class="fw-checkbox__content fw-fz-14">Питер</span>
+                                </label>
+                            </div>
+
+                            <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                <label class="fw-checkbox fw-text-uppercase">
+                                    <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                    <i class="fw-checkbox__placeholder"></i>
+                                    <span class="fw-checkbox__content fw-fz-14">Новосибирск</span>
+                                </label>
+                            </div>
+
+                            <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                <label class="fw-checkbox fw-text-uppercase">
+                                    <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                    <i class="fw-checkbox__placeholder"></i>
+                                    <span class="fw-checkbox__content fw-fz-14">Производство</span>
+                                </label>
+                            </div>
+
+
+                            <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                <label class="fw-checkbox fw-text-uppercase">
+                                    <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                    <i class="fw-checkbox__placeholder"></i>
+                                    <span class="fw-checkbox__content fw-fz-14">Продажи</span>
+                                </label>
+                            </div>
+
+                            <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                <label class="fw-checkbox fw-text-uppercase">
+                                    <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                    <i class="fw-checkbox__placeholder"></i>
+                                    <span class="fw-checkbox__content fw-fz-14">Менеджмент</span>
+                                </label>
+                            </div>
+
+                            {% for i in 1..5 %}
+                                <div class="fw-mb-20 fw-flex-grow-1 fw-flex fw-flex-middle">
+                                    <label class="fw-checkbox fw-text-uppercase">
+                                        <input type="checkbox" class="fw-checkbox__input fw-hidden">
+                                        <i class="fw-checkbox__placeholder"></i>
+                                        <span class="fw-checkbox__content fw-fz-14">от 45 000 руб</span>
+                                    </label>
+                                </div>
+                            {% endfor %}
+                        </form>
                     </div>
                     {# / #}
+
                     <div class="vacancies__list fw-grid fw-grid-20 fw-mt-40">
                         {% for i in 1..8 %}
                             <div class="fw-width-1-1 wow fadeInUp" data-wow-offset="100" data-wow-duration="2s" data-wow-delay=".25s">

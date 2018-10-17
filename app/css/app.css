@@ -11315,8 +11315,8 @@ ul.tabs li.active {
     margin-right: 0;
   }
 }
-@media (max-width: 900px) {
-  .vacancy__filter-mobile {
+@media (max-width: 950px) {
+  .vacancy .shops__filter-mobile {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -11429,6 +11429,11 @@ ul.tabs li.active {
   }
   .vacancy .vacancies__item-more p i {
     font-size: 12px;
+  }
+}
+@media (min-width: 950px) {
+  .vacancy .shops__filter-mobile {
+    display: none;
   }
 }
 @media (max-width: 1550px) {
