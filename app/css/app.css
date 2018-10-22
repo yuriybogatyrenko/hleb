@@ -9752,6 +9752,20 @@ ul.tabs li.active {
 @media (max-width: 850px) {
   .corporate-life__text {
     padding-top: 60px;
+    position: relative;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .corporate-life__text .fw-width-4-5 {
+    width: 100%;
+    z-index: 1;
+  }
+  .corporate-life__text .quotes {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 0;
   }
   .corporate-life__text .fw-fz-36 {
     text-align: left;
@@ -9846,6 +9860,9 @@ ul.tabs li.active {
   }
 }
 @media (max-width: 600px) {
+  .corporate-life__text .fw-fz-16 {
+    font-size: 12px;
+  }
   .corporate-life__text .fw-fz-36 {
     font-size: 18px;
     line-height: 32px;

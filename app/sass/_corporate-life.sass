@@ -58,6 +58,16 @@
 	.corporate-life
 		&__text
 			padding-top: 60px
+			position: relative
+			flex-wrap: wrap
+			.fw-width-4-5
+				width: 100%
+				z-index: 1
+			.quotes
+				position: absolute
+				bottom: 15px
+				right: 15px
+				z-index: 0
 			.fw-fz-36
 				text-align: left
 				font-size: 24px
@@ -122,6 +132,8 @@
 @media (max-width: 600px)
 	.corporate-life
 		&__text
+			.fw-fz-16
+				font-size: 12px
 			.fw-fz-36
 				font-size: 18px
 				line-height: 32px
