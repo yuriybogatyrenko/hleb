@@ -36,9 +36,36 @@
                                 </select>
                             </div>
                             <div class="fw-width-1-4">
-                                <a href="#" class="fw-font-msb fw-text-uppercase fw-reset fw-color-pale-yellow fw-text-underline-hover">Показать все</a>
+                                <a class="js-show-mobile-shops-items fw-font-msb fw-text-uppercase fw-reset fw-color-pale-yellow fw-text-underline-hover">Показать все</a>
                             </div>
                         </div>
+                        {# all items on mobile #}
+                        <div class="js-mobile-shops-items mobile-shops-items fw-hidden fw-width-1-1 fw-height-400 fw-mt-30 fw-flex">
+                            <div class="fw-relative fw-width-1-1 fw-height-1-1">
+                                <div class="custom-scrollbar fw-absolute fw-pr-0 fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1">
+                                    {% for i in 1..50 %}
+                                        <div class="shops-map__item fw-padding-15 fw-pl-15 fw-pr-15 fw-hover-bg-color-light-pale-yellow js-toggle-item">
+                                            <div class="fw-fz-16 fw-text-600 fw-font-ml fw-flex fw-flex-middle fw-flex-space-between js-toggle-header">
+                                                <div>Перекресток</div>
+                                                <div class="fw-flex-shrink-no fw-ml-20">
+                                                    <i class="icon-custom-arrow-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="fw-fz-14 fw-line-height-1-7 fw-mt-15">
+                                                <div>Думская ул., 4</div>
+                                                <div>Санкт-Петербург 191011</div>
+                                            </div>
+                                            <div class="fw-color-pale-yellow fw-mt-15 fw-line-height-2 fw-fz-14 fw-hidden js-toggle-body">
+                                                <div>Время работы: Круглосуточно</div>
+                                                <div>Телефон: <a href="tel:84955043478" class="fw-reset fw-color-pale-yellow fw-text-underline-hover">8 (495) 504-34-78</a></div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        {# / #}
+
                         {# filter on mobile #}
                         <div class="shops__filter-mobile fw-hidden fw-width-1-1 fw-pointer fw-pt-70 fw-pl-15 fw-pr-15 fw-flex fw-flex-middle fw-flex-space-between">
                             <div class="js-shops__filter-open shops__filter-open fw-flex fw-pointer fw-flex-middle fw-width-3-5">

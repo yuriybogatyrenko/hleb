@@ -1123,6 +1123,18 @@
   min-height: 202px;
 }
 
+.fw-height-400 {
+  height: 400px;
+}
+
+.fw-max-height-400 {
+  max-height: 400px;
+}
+
+.fw-min-height-400 {
+  min-height: 400px;
+}
+
 .fw-height-470 {
   height: 470px;
 }
@@ -11628,6 +11640,11 @@ ul.tabs li.active {
   .shops h1.fw-fz-60 {
     font-size: 32px;
     padding-left: 15px;
+  }
+}
+@media (min-width: 1325px) {
+  .mobile-shops-items {
+    display: none !important;
   }
 }
 @media (max-width: 1600px) {

@@ -113,6 +113,7 @@ if ($animatedImage.length) {
 
 // modal video
 $(".js-modal-btn").modalVideo();
+
 // WOW js
 new WOW().init();
 
@@ -317,9 +318,21 @@ $("#popup-feedback-form").submit(function () {
 });
 
 // toggle
-$('.js-mobile-toggle-menu').on('click', function () {
-    $('.js-toggle-footer-menu').slideToggle();
-});
+    $('.js-mobile-toggle-menu').on('click', function () {
+        $('.js-toggle-footer-menu').slideToggle();
+    });
+
+    $(function () {
+       var width = $(window).width();
+       if(width <= 1325){
+           $('.js-show-mobile-shops-items').on('click', function () {
+               $('.js-mobile-shops-items').slideToggle();
+           });
+       }else {
+           return;
+       }
+    });
+
 // tabs
 $(function () {
     $('.js-map-navigation-item').on('click', function () {
