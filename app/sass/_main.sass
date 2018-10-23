@@ -85,8 +85,12 @@ h1
     background-position: center center
 
 .header-slider
+    .header-slide--bg
+        background-image: url('../images/main/header/header-bg.jpg')
+        background-size: cover
+        background-position: center center
     .header-slider-slide
-        img
+        img,.header-slide--bg
             transition: all 6s ease
             transform: scale(1.2)
             opacity: 0
@@ -111,7 +115,7 @@ h1
     .owl-item.active
         .header-slider-slide
             overflow: hidden
-            img
+            img,.header-slide--bg
                 transition: all 6s ease
                 transform: scale(1)
                 opacity: 1

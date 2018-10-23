@@ -305,9 +305,12 @@
 
 	.header-slider
 		background-color: $colorWhite
+		.header-slide--bg
+			height: 310px
 		&-slide
 			display: flex
 			flex-direction: column
+			overflow: hidden
 			.slider-all-history-mobile
 				display: block
 				bottom: -40px
@@ -341,6 +344,8 @@
 		&--title
 			margin-bottom: 30px
 @media (max-width: 600px)
+	.header-slide--bg
+		height: 170px
 	.popup
 		padding: 15px
 		span.fw-fz-38
@@ -471,7 +476,7 @@
 				font-size: 10px
 				text-transform: uppercase
 				max-width: 70%
-			&-scale
+			&-scale,.header-slide--bg
 				min-height: 165px
 				height: 165px
 	.section-history-in-numbers
