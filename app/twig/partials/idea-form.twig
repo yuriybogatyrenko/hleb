@@ -1,36 +1,48 @@
 <div>
-    <div class="fw-fz-60 fw-font-ml">Форма подачи идеи</div>
+    <div class="fw-fz-60 fw-font-ml">Подать идею</div>
 
     <form action="#">
         <div class="ideas__form fw-grid fw-grid-195 fw-mb-40">
             <div class="fw-width-1-2">
-                <input type="text" class="fw-reset form__text-input fw-width-1-1"
-                       placeholder="ИМЯ">
+                <label class="ideas__show-mobile fw-fz-14 fw-color-dark-text fw-text-uppercase">Фамилия, Имя, Отчество</label>
+                <input type="text" class="ideas__hide-mobile fw-reset form__text-input fw-width-1-1" placeholder="ИМЯ">
+                <input type="text" class="ideas__show-mobile fw-reset form__text-input fw-width-1-1 fw-fz-14" placeholder="Как к вам обращаться">
             </div>
             <div class="fw-width-1-2">
-                <input type="text" class="fw-reset form__text-input fw-width-1-1"
-                       placeholder="E-MAIL">
+                <label class="ideas__show-mobile fw-fz-14 fw-color-dark-text fw-text-uppercase">E-mail</label>
+                <input type="text" class="ideas__hide-mobile fw-reset form__text-input fw-width-1-1" placeholder="E-MAIL">
+                <input type="text" class="ideas__show-mobile fw-reset form__text-input fw-width-1-1 fw-fz-14" placeholder="Электронная почта">
             </div>
             <div class="fw-width-1-2">
-                <input type="text" class="fw-reset form__text-input fw-width-1-1"
-                       placeholder="НАЗВАНИЕ ИДЕИ">
+                <label class="ideas__show-mobile fw-fz-14 fw-color-dark-text fw-text-uppercase">НАЗВАНИЕ ИДЕИ</label>
+                <input type="text" class="ideas__hide-mobile fw-reset form__text-input fw-width-1-1" placeholder="НАЗВАНИЕ ИДЕИ">
+                <input type="text" class="ideas__show-mobile fw-reset form__text-input fw-width-1-1 fw-fz-14" placeholder="Название вашей идеи">
             </div>
             <div class="fw-width-1-2">
-                <select class="form__select fw-fz-14 fw-text-uppercase fw-font-ml fw-mb-60" name="message-thems" id="message-thems">
+                <label class="ideas__show-mobile fw-fz-14 fw-color-dark-text fw-text-uppercase">Категория идеи</label>
+                <select class="ideas__hide-mobile form__select fw-fz-14 fw-text-uppercase fw-font-ml fw-mb-60" name="message-thems" id="message-thems">
                     <option value="1">ВЫБЕРИТЕ ТЕМУ ОБРАЩЕНИЯ</option>
                     <option value="1">Выберите тему обращения1</option>
                     <option value="1">Выберите тему обращения2</option>
                     <option value="1">Выберите тему обращения3</option>
                 </select>
+
+                <select class="form__select ideas__show-mobile fw-fz-14 fw-text-uppercase fw-font-ml fw-mb-60" name="message-thems" id="message-thems">
+                    <option value="1">Выберите категорию</option>
+                    <option value="1">Выберите категорию 1</option>
+                    <option value="1">Выберите категорию 2</option>
+                    <option value="1">Выберите категорию 3</option>
+                </select>
             </div>
             <div class="fw-width-1-1">
-                <textarea class="form__textarea fw-width-1-1 fw-height-138"
-                          placeholder="КРАТКОЕ ОПИСАНИЕ ИДЕИ"></textarea>
+                <label class="ideas__show-mobile fw-fz-14 fw-color-dark-text fw-text-uppercase">Описание</label>
+                <textarea class="ideas__hide-mobile form__textarea fw-width-1-1 fw-height-138" placeholder="КРАТКОЕ ОПИСАНИЕ ИДЕИ"></textarea>
+                <textarea class="ideas__show-mobile form__textarea fw-width-1-1 fw-height-138 fw-fz-14" placeholder="Кратко опишите идею"></textarea>
             </div>
             <div class="fw-width-1-1 fw-text-uppercase">
-                <div class="fw-flex fw-flex-middle">
-                    <div>являетесь ли вы сотрудником оао «хлебпром»?</div>
-                    <div class="fw-flex fw-flex-middle">
+                <div class="ideas__radio fw-flex fw-flex-middle">
+                    <div class="ideas__radio-text">являетесь ли вы сотрудником оао «хлебпром»?</div>
+                    <div class="ideas__radio-wrap fw-flex fw-flex-middle">
                         <label class="fw-radio fw-text-uppercase fw-ml-20">
                             <input type="radio" name="3" class="fw-radio__input fw-hidden">
                             <i class="fw-radio__placeholder"></i>

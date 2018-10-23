@@ -33,6 +33,31 @@
 @media (max-width: 768px)
 	.ideas
 		padding-bottom: 50px
+		&__form
+			font-size: 14px
+			.fw-checkbox__placeholder
+				min-width: 20px
+				min-height: 20px
+		&__radio
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+		.fw-radio__placeholder
+			width: 12px
+			height: 12px
+			margin-right: 5px
+		&__hide-mobile
+			display: none
+		&__show-mobile
+			display: block
+		textarea.ideas__show-mobile
+			padding: 15px
+			margin-top: 15px
+		&__radio-wrap
+			padding-top: 35px
+			label
+				&:first-child
+					margin-left: 0
 		.pagination
 			display: none
 		.fw-button
@@ -72,7 +97,10 @@
 			padding-left: 15px
 			padding-right: 15px
 		div.fw-mt-100.fw-pt-80
-			display: none
+			margin-top: 0
+			padding-top: 60px
+			padding-left: 15px
+			padding-right: 15px
 		&__menu-link
 			font-size: 12px
 		&__menu-wrap
@@ -94,4 +122,8 @@
 		.fw-fz-18
 			font-size: 14px
 		div.fw-fz-60
-			display: none
+			font-size: 32px
+			margin-bottom: 40px
+@media (min-width: 768px)
+	.ideas__show-mobile
+		display: none
