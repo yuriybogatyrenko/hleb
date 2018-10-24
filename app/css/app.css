@@ -10280,14 +10280,12 @@ ul.tabs li.active {
   }
   .about .geography-map-wrapper {
     padding-left: 0;
+    overflow: auto;
     padding-right: 0;
   }
   .about .geography-map-wrapper .map-alert {
     max-width: 330px;
-    padding-top: 35px;
-    padding-left: 30px;
-    padding-right: 70px;
-    padding-bottom: 45px;
+    padding: 35px 70px 45px 30px;
   }
   .about .geography-map-wrapper .map-alert-content {
     padding-top: 15px;
