@@ -323,14 +323,9 @@ $("#popup-feedback-form").submit(function () {
     });
 
     $(function () {
-       var width = $(window).width();
-       if(width <= 1325){
-           $('.js-show-mobile-shops-items').on('click', function () {
-               $('.js-mobile-shops-items').slideToggle();
-           });
-       }else {
-           return;
-       }
+        $('.js-show-mobile-shops-items').on('click', function () {
+            $('.js-mobile-shops-items').slideToggle();
+        });
     });
 
 // tabs
