@@ -11587,6 +11587,9 @@ ul.tabs li.active {
   .shops .mobile-shops-items .custom-scrollbar {
     padding-right: 15px;
   }
+  .shops .mobile-shops-items .fw-color-pale-yellow, .shops .mobile-shops-items .corporate-life-slider .owl-dots, .corporate-life-slider .shops .mobile-shops-items .owl-dots {
+    color: #a6a6a6;
+  }
 }
 @media (max-width: 800px) {
   .shops__filter .fw-checkbox__content {
