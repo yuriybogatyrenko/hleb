@@ -354,7 +354,8 @@ $(document).ready(function () {
             $(this).addClass("active");
         });
 
-        $("ul.fixed-menu-tabs-navigation li").on('click', function () {
+        $("ul.fixed-menu-tabs-navigation .js-submenumenu-open").on('click', function (e) {
+            e.preventDefault();
             var activeTab = $(this).attr("rel");
             $('.js-fixed-menu-right').addClass('active');
             $('.js-fixed-menu-tab-content').removeClass('active');
@@ -365,8 +366,7 @@ $(document).ready(function () {
             });
 
             $("ul.fixed-menu-tabs-navigation li").removeClass("active");
-            $(this).addClass("active");
-
+            $(this).closest('li').addClass("active");
         });
 
     });
