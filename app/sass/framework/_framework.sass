@@ -51,6 +51,8 @@
   .fw-right-#{$value}
     right: $value+px
 
+.fw-rotate-180
+  transform: rotate(180deg)
 .fw-link
   &:hover
     text-decoration: none
@@ -60,3 +62,17 @@
 
     &:hover
       text-decoration: underline
+
+@media (max-width: 1000px)
+  .about
+    .mobile-map-info-navigation
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      top: 200px
+      z-index: 9
+@media (max-width: 650px)
+  .about
+    .mobile-map-info-navigation
+      top: 140px
