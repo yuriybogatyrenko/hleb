@@ -10191,6 +10191,7 @@ ul.tabs li.active {
     padding-left: 0;
     padding-top: 20px;
     position: relative;
+    height: auto;
     color: #caa98b;
   }
   .about .video--text h1 {
